@@ -1,4 +1,5 @@
-{
+[
+  {
     "heic_id": "6407",
     "gym": "SmartFit CDMX",
     "date": "260228",
@@ -7,26 +8,83 @@
     "cardio_type": "stair climbers",
     "cardio_duration_minutes": 15,
     "exercises": {
-      "leg_press": [
-        {"weight_unit": "lbs",
-        "weight": 160,
-        "duration_sec": 90},
-        {"weight_unit": "lbs",
-        "weight": 160,
-        "duration_sec": 90},
-        {"weight_unit": "lbs",
-        "weight": 160,
-        "duration_sec": 90}],
-      "seated_reverse_fly": [
-        {"weight_unit": "lbs",
-        "weight": 20,
-        "reps_each": 20},
-        {"weight_unit": "lbs",
-        "weight": 25,
-        "reps_each": 20},
-        {"weight_unit": "lbs",
-        "weight": 25,
-        "reps_each": 20}
-      ]
+      "leg_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 160, "duration_sec": 90},
+          {"weight": 160, "duration_sec": 90},
+          {"weight": 160, "duration_sec": 90}
+        ]
+      },
+      "seated_reverse_fly": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {"weight": 20},
+          {"weight": 25},
+          {"weight": 25}
+        ]
+      },
+      "seated_ab_crunch": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 35, "duration_sec": 90},
+          {"weight": 25, "duration_sec": 90},
+          {"weight": 25, "duration_sec": 90}
+        ]
+      },
+      "bend_w_bar": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 60, "duration_sec": 90},
+          {"weight": 60, "duration_sec": 90},
+          {"weight": 60, "duration_sec": 90}
+        ]
+      }
     }
-}
+  },
+  {
+    "heic_id": "6407",
+    "gym": "SmartFit CDMX",
+    "date": "260228",
+    "pain_level": "0.5",
+    "pain_location": "left trapz",
+    "cardio_type": "stair climbers",
+    "cardio_duration_minutes": 15,
+    "exercises": {
+      "leg_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 160, "duration_sec": 90},
+          {"weight": 160, "duration_sec": 90},
+          {"weight": 160, "duration_sec": 90}
+        ]
+      },
+      "seated_reverse_fly": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {"weight": 20},
+          {"weight": 25},
+          {"weight": 25}
+        ]
+      },
+      "seated_ab_crunch": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 35, "duration_sec": 90},
+          {"weight": 25, "duration_sec": 90},
+          {"weight": 25, "duration_sec": 90}
+        ]
+      },
+      "bend_w_bar": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 60, "duration_sec": 90},
+          {"weight": 60, "duration_sec": 90},
+          {"weight": 60, "duration_sec": 90}
+        ]
+      }
+    }
+  }
+]
