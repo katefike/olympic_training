@@ -6,7 +6,7 @@
     "pain_location": "left trapz",
     "cardio_type": "stair climbers",
     "cardio_duration_minutes": 15,
-    "exercises": [
+    "exercises": {
       "leg_press": [
         {"weight_unit": "lbs",
         "weight": 160,
@@ -26,7 +26,7 @@
         "reps_each": 20},
         {"weight_unit": "lbs",
         "weight": 25,
-        "reps_each": 20},
-      ],
-    ],
-},
+        "reps_each": 20}
+      ]
+    }
+}
