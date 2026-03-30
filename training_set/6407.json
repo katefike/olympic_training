@@ -46,43 +46,126 @@
   {
     "heic_id": "6407",
     "gym": "SmartFit CDMX",
-    "date": "260228",
-    "pain_level": "0.5",
-    "pain_location": "left trapz",
-    "cardio_type": "stair climbers",
+    "date": "260312",
+    "pain_level": "0",
+    "pain_location": "stiff neck",
+    "cardio_type": "recline bike",
     "cardio_duration_minutes": 15,
     "exercises": {
-      "leg_press": {
+      "calf_xtn": {
         "weight_unit": "lbs",
         "sets": [
-          {"weight": 160, "duration_sec": 90},
-          {"weight": 160, "duration_sec": 90},
-          {"weight": 160, "duration_sec": 90}
+          {"weight": 80, "duration_sec": 90},
+          {"weight": 80, "duration_sec": 90},
+          {"weight": 80, "duration_sec": 90}
         ]
       },
-      "seated_reverse_fly": {
+      "back_xtn": {
         "weight_unit": "lbs",
-        "reps_each": 20,
         "sets": [
-          {"weight": 20},
-          {"weight": 25},
-          {"weight": 25}
+          {"weight": 140, "duration_sec": 90}
         ]
       },
       "seated_ab_crunch": {
         "weight_unit": "lbs",
         "sets": [
-          {"weight": 35, "duration_sec": 90},
           {"weight": 25, "duration_sec": 90},
           {"weight": 25, "duration_sec": 90}
         ]
       },
-      "bend_w_bar": {
+      "prone_leg_curl": {
         "weight_unit": "lbs",
         "sets": [
-          {"weight": 60, "duration_sec": 90},
-          {"weight": 60, "duration_sec": 90},
-          {"weight": 60, "duration_sec": 90}
+          {"weight": 70, "duration_sec": 90}
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6407",
+    "gym": "SmartFit CDMX",
+    "date": "260313",
+    "pain_level": "1",
+    "pain_location": "left scapula",
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "exercises": {
+      "leg_xtsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 50, "duration_sec": 90},
+          {"weight": 50, "duration_sec": 90},
+          {"weight": 50, "duration_sec": 90}
+        ]
+      },
+      "prone_leg_curl": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 70, "duration_sec": 90},
+          {"weight": 70, "duration_sec": 90},
+          {"weight": 70, "duration_sec": 78}
+        ]
+      },
+      "gg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 70, "duration_sec": 90},
+          {"weight": 80, "duration_sec": 90},
+          {"weight": 80, "duration_sec": 90}
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 80, "duration_sec": 90},
+          {"weight": 90, "duration_sec": 80},
+          {"weight": 85, "duration_sec": 90}
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6407",
+    "gym": "Vikings CDMX",
+    "date": "260320",
+    "pain_level": "0",
+    "pain_location": "sore quads",
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "exercises": {
+      "fly": {
+        "weight_unit": "kgs",
+        "reps_each": 20,
+        "sets": [
+          {"weight": 2},
+          {"weight": 2},
+          {"weight": 2}
+        ]
+      },
+      "tricep_curl": {
+        "weight_unit": "kgs",
+        "reps_each": 20,
+        "sets": [
+          {"weight": 4},
+          {"weight": 4},
+          {"weight": 4}
+        ]
+      },
+      "lat_pulldown": {
+        "weight_unit": "kgs",
+        "reps_each": 20,
+        "sets": [
+          {"weight": 6},
+          {"weight": 8},
+          {"weight": 8}
+        ]
+      },
+      "plank": {
+        "weight_unit": null,
+        "sets": [
+          {"weight": null, "duration_sec": 90},
+          {"weight": null, "duration_sec": 90},
+          {"weight": null, "duration_sec": 90}
         ]
       }
     }
