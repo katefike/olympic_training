@@ -138,37 +138,19 @@ def parse_workouts_json(text: str) -> list[dict]:
     return workouts
 
 
-def normalize_pain_entries(raw: dict) -> list[dict]:
-    pain = raw.get("pain")
-    entries: list[dict] = []
-    if isinstance(pain, list):
-        for item in pain:
-            if isinstance(item, dict):
-                entries.append(
-                    {
-                        "pain_level": item.get("pain_level"),
-                        "pain_location": item.get("pain_location"),
-                    }
-                )
-    if entries:
-        return entries
-    return [
-        {
-            "pain_level": raw.get("pain_level"),
-            "pain_location": raw.get("pain_location"),
-        }
-    ]
-
-
 def normalize_record(raw: dict, heic_id: str) -> dict:
     exercises = raw.get("exercises")
     if not isinstance(exercises, dict):
         exercises = {}
+
+    pain = raw.get("pain")
+    if not isinstance(pain, list):
+        pain = []
     return {
         "heic_id": heic_id,
         "gym": raw.get("gym"),
         "date": raw.get("date"),
-        "pain": normalize_pain_entries(raw),
+        "pain": pain,
         "cardio_type": raw.get("cardio_type"),
         "cardio_duration_minutes": raw.get("cardio_duration_minutes"),
         "notes": raw.get("notes"),
@@ -337,9 +319,12 @@ def main() -> None:
                     if isinstance(r, dict):
                         r2 = dict(r)
                         r2.pop("heic_id", None)
-                        r2["pain"] = normalize_pain_entries(r2)
+                        # training_set is now expected to already use the new "pain" list format,
+                        # but strip legacy keys just in case.
                         r2.pop("pain_level", None)
                         r2.pop("pain_location", None)
+                        if not isinstance(r2.get("pain"), list):
+                            r2["pain"] = []
                         records_wo_heic_id.append(r2)
 
                 example_output_json = {"workouts": records_wo_heic_id}
