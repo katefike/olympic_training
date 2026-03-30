@@ -62,6 +62,7 @@ Each exercise value is an object with:
 
 Rules:
 - Prefer numbers from the page; never invent weights or times.
+- If any text/numbers are crossed out, do not include them in the JSON.
 - If nothing on the page is legible as workout data, return {"workouts":[]}.
 - Do not include "heic_id" in your output."""
 
