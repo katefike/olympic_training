@@ -62,6 +62,9 @@ Each exercise value is an object with:
 
 Rules:
 - Prefer numbers from the page; never invent weights or times.
+- If weight is present and no unit is written, assume "weight_unit" is "lbs".
+- Use "weight_unit": "kg" only when kg is explicitly written.
+- Use "weight_unit": null only when no weight value is recorded for that exercise.
 - If a set duration is written (commonly 0..90), include it as "duration_sec" for that set.
 - If the page uses "E 20 20 20" style notation, interpret it as reps each set and add "reps_each": 20 (or visible number).
 - If the page uses "T 20 20 20" style notation, interpret it as total reps and add "reps_total": 20 (or visible number).
