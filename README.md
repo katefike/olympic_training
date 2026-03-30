@@ -42,13 +42,15 @@ export OPENAI_VISION_MODEL=gpt-4o
 ```bash
 source .venv/bin/activate
 export OPENAI_API_KEY=sk-...
-python __main__.py
+python __main__.py --limit 1
 ```
 
 **Useful options**
 
 | Flag | Meaning |
 |------|---------|
+| `--heic-from N` / `--heic-to M` | Only process `IMG_<id>.heic` files whose numeric id is between `N` and `M` inclusive (both flags required together). Applied before `--limit`. |
+| `--example-heic-id N` | Load `heics/IMG_<N>.*` and `training_set/<N>.json` as a few-shot reference to help the model match your JSON formatting. |
 | `--limit N` | Process only the first `N` images (good for a cheap test run). |
 | `--model NAME` | Vision model id (overrides `OPENAI_VISION_MODEL` and the default). |
 | `--sleep SECONDS` | Pause between API calls to reduce rate-limit pressure. |
@@ -57,6 +59,8 @@ Examples:
 
 ```bash
 python __main__.py --limit 1
+python __main__.py --heic-from 6408 --heic-to 6716
+python __main__.py --example-heic-id 6428 --heic-from 6408 --heic-to 6410
 python __main__.py --model gpt-4o --sleep 0.5
 ```
 

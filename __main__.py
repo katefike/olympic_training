@@ -148,14 +148,36 @@ def vision_extract(
     client: OpenAI,
     model: str,
     jpeg_bytes: bytes,
+    *,
+    example_jpeg_bytes: bytes | None = None,
+    example_output_json: dict | None = None,
 ) -> list[dict]:
-    b64 = base64.standard_b64encode(jpeg_bytes).decode("ascii")
-    url = f"data:image/jpeg;base64,{b64}"
+    def to_data_url(jpeg: bytes) -> str:
+        b64 = base64.standard_b64encode(jpeg).decode("ascii")
+        return f"data:image/jpeg;base64,{b64}"
+
+    url = to_data_url(jpeg_bytes)
+
+    extra_messages: list[dict] = []
+    if example_jpeg_bytes is not None and example_output_json is not None:
+        example_url = to_data_url(example_jpeg_bytes)
+        example_json_text = json.dumps(example_output_json, ensure_ascii=False)
+        extra_messages = [
+            {
+                "role": "user",
+                "content": [
+                    {"type": "text", "text": "Example image and its expected JSON transcription (reference only)."},
+                    {"type": "image_url", "image_url": {"url": example_url}},
+                ],
+            },
+            {"role": "assistant", "content": example_json_text},
+        ]
 
     resp = client.chat.completions.create(
         model=model,
         messages=[
             {"role": "system", "content": SYSTEM_PROMPT},
+            *extra_messages,
             {
                 "role": "user",
                 "content": [
@@ -209,6 +231,13 @@ def main() -> None:
         metavar="N",
         help="Only process IMG_<N>.heic files with numeric id <= N (use with --heic-from).",
     )
+    parser.add_argument(
+        "--example-heic-id",
+        type=int,
+        default=None,
+        metavar="N",
+        help="Optional: use heics/IMG_<N>.* + training_set/<N>.json as a few-shot example for formatting/style.",
+    )
     args = parser.parse_args()
 
     if (args.heic_from is None) ^ (args.heic_to is None):
@@ -243,6 +272,43 @@ def main() -> None:
             print(f"No .heic files under {HEICS_DIR}")
         return
 
+    example_jpeg_bytes: bytes | None = None
+    example_output_json: dict | None = None
+    if args.example_heic_id is not None:
+        example_id_str = str(args.example_heic_id)
+
+        example_heic_path: Path | None = None
+        for p in iter_heic_files(HEICS_DIR):
+            if heic_id_from_path(p) == example_id_str:
+                example_heic_path = p
+                break
+
+        example_json_path = ROOT / "training_set" / f"{example_id_str}.json"
+        if example_heic_path is None or not example_json_path.exists():
+            print(
+                f"Warning: example not loaded (heic_path={example_heic_path}, json={example_json_path}).",
+                file=sys.stderr,
+            )
+        else:
+            example_jpeg_bytes = heic_to_jpeg_bytes(example_heic_path)
+            raw_records = json.loads(example_json_path.read_text(encoding="utf-8"))
+            if not isinstance(raw_records, list):
+                print(
+                    f"Warning: example json had unexpected shape (expected list): {example_json_path}",
+                    file=sys.stderr,
+                )
+            else:
+                # System prompt says: do not include "heic_id" in model output,
+                # but the training_set files include it. Strip it from the example.
+                records_wo_heic_id: list[dict] = []
+                for r in raw_records:
+                    if isinstance(r, dict):
+                        r2 = dict(r)
+                        r2.pop("heic_id", None)
+                        records_wo_heic_id.append(r2)
+
+                example_output_json = {"workouts": records_wo_heic_id}
+
     client = OpenAI()
 
     for i, heic_path in enumerate(files):
@@ -251,7 +317,13 @@ def main() -> None:
         jpeg = heic_to_jpeg_bytes(heic_path)
 
         try:
-            raw_list = vision_extract(client, args.model, jpeg)
+            raw_list = vision_extract(
+                client,
+                args.model,
+                jpeg,
+                example_jpeg_bytes=example_jpeg_bytes,
+                example_output_json=example_output_json,
+            )
         except Exception as e:
             print(f"{heic_path.name}: error ({e!r}), writing empty placeholder.", file=sys.stderr)
             raw_list = []
