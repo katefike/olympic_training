@@ -58,10 +58,10 @@ python __main__.py --limit 1
 Examples:
 
 ```bash
-python __main__.py --limit 1
-python __main__.py --heic-from 6408 --heic-to 6716
-python __main__.py --example-heic-id 6428 --heic-from 6408 --heic-to 6410
-python __main__.py --model gpt-4o --sleep 0.5
+python3 __main__.py --limit 1
+python3 __main__.py --heic-from 6408 --heic-to 6716
+python3 __main__.py --example-heic-id 6428 --heic-from 6408 --heic-to 6410
+python3 __main__.py --model gpt-4o --sleep 0.5
 ```
 
 If a request fails for one file, the script still writes `automated_data/<id>.json` as an empty array `[]` and prints an error for that file on stderr.
