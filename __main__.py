@@ -62,6 +62,10 @@ Each exercise value is an object with:
 
 Rules:
 - Prefer numbers from the page; never invent weights or times.
+- If a set duration is written (commonly 0..90), include it as "duration_sec" for that set.
+- If the page uses "E 20 20 20" style notation, interpret it as reps each set and add "reps_each": 20 (or visible number).
+- If the page uses "T 20 20 20" style notation, interpret it as total reps and add "reps_total": 20 (or visible number).
+- If E/T notation is present for an exercise, do not omit reps fields even when set durations are also present.
 - If any text/numbers are crossed out, do not include them in the JSON.
 - If nothing on the page is legible as workout data, return {"workouts":[]}.
 - Do not include "heic_id" in your output."""
