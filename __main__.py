@@ -9,6 +9,7 @@ handwritten/structured logs need layout understanding, not plain OCR.
   export OPENAI_API_KEY=...
   python __main__.py
   python __main__.py --limit 1
+  python __main__.py --heic-from 6408 --heic-to 6716
 """
 
 from __future__ import annotations
@@ -84,6 +85,21 @@ def iter_heic_files(directory: Path) -> list[Path]:
             continue
         out.append(p)
     return out
+
+
+def filter_heic_paths_by_numeric_id(
+    paths: list[Path], low: int, high: int
+) -> list[Path]:
+    """Keep paths whose ``IMG_<n>`` id is in ``low``..``high`` (inclusive)."""
+    selected: list[Path] = []
+    for p in paths:
+        hid = heic_id_from_path(p)
+        if not hid.isdigit():
+            continue
+        n = int(hid)
+        if low <= n <= high:
+            selected.append(p)
+    return selected
 
 
 def heic_to_jpeg_bytes(path: Path, max_side: int = 2048, quality: int = 88) -> bytes:
@@ -179,7 +195,26 @@ def main() -> None:
         default=0.0,
         help="Seconds to sleep between API calls (rate limiting).",
     )
+    parser.add_argument(
+        "--heic-from",
+        type=int,
+        default=None,
+        metavar="N",
+        help="Only process IMG_<N>.heic files with numeric id >= N (use with --heic-to).",
+    )
+    parser.add_argument(
+        "--heic-to",
+        type=int,
+        default=None,
+        metavar="N",
+        help="Only process IMG_<N>.heic files with numeric id <= N (use with --heic-from).",
+    )
     args = parser.parse_args()
+
+    if (args.heic_from is None) ^ (args.heic_to is None):
+        parser.error("--heic-from and --heic-to must be given together")
+    if args.heic_from is not None and args.heic_from > args.heic_to:
+        parser.error("--heic-from must be <= --heic-to")
 
     if not os.environ.get("OPENAI_API_KEY"):
         print(
@@ -191,11 +226,21 @@ def main() -> None:
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     files = iter_heic_files(HEICS_DIR)
+    if args.heic_from is not None:
+        files = filter_heic_paths_by_numeric_id(
+            files, args.heic_from, args.heic_to
+        )
     if args.limit is not None:
         files = files[: args.limit]
 
     if not files:
-        print(f"No .heic files under {HEICS_DIR}")
+        if args.heic_from is not None:
+            print(
+                f"No .heic files with id {args.heic_from}..{args.heic_to} under {HEICS_DIR}",
+                file=sys.stderr,
+            )
+        else:
+            print(f"No .heic files under {HEICS_DIR}")
         return
 
     client = OpenAI()
