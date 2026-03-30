@@ -1,0 +1,131 @@
+[
+  {
+    "heic_id": "6428",
+    "gym": null,
+    "date": "241021",
+    "pain_level": 4,
+    "pain_location": "left neck; jaw",
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": "after car camping",
+    "exercises": {
+      "gg": {
+        "weight_unit": "lbs",
+        "notes": "crotch pain",
+        "sets": [
+          {"weight": 190, "duration_sec": 67},
+          {"weight": 190, "duration_sec": 78},
+          {"weight": 190, "duration_sec": 78}
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 140, "duration_sec": 66},
+          {"weight": 140, "duration_sec": 70},
+          {"weight": 140, "duration_sec": 73}
+        ]
+      },
+      "back_extnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 140, "duration_sec": 90},
+          {"weight": 145, "duration_sec": 90},
+          {"weight": 145, "duration_sec": 90}
+        ]
+      },
+      "ab_crunch": {
+        "weight_unit": "lbs",
+        "notes": "in use",
+        "sets": [
+          {"weight": 50, "duration_sec": 90}
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6428",
+    "gym": "Tellison's",
+    "date": "241023",
+    "pain_level": 2,
+    "pain_location": "left jaw",
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "exercises": {
+      "hip_thrust_nautilus": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 100, "duration_sec": 90},
+          {"weight": 100, "duration_sec": 90},
+          {"weight": 100, "duration_sec": 90}
+        ]
+      },
+      "calf_raise": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 70, "duration_sec": 75},
+          {"weight": 60, "duration_sec": 90},
+          {"weight": 60, "duration_sec": 90}
+        ]
+      },
+      "chest_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 50, "duration_sec": 90},
+          {"weight": 40, "duration_sec": 90},
+          {"weight": 40, "duration_sec": 90}
+        ]
+      },
+      "rear_delt": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 30, "duration_sec": 90},
+          {"weight": 40, "duration_sec": 90},
+          {"weight": 30, "duration_sec": 90}
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6428",
+    "gym": "Tellison's",
+    "date": "241025",
+    "pain_level": 3,
+    "pain_location": "left jaw",
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "exercises": {
+      "gg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 120, "duration_sec": 48},
+          {"weight": 100, "duration_sec": 90},
+          {"weight": 100, "duration_sec": 90}
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 100, "duration_sec": 90},
+          {"weight": 100, "duration_sec": 90},
+          {"weight": 110, "duration_sec": 90}
+        ]
+      },
+      "pullover": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 60, "duration_sec": 90},
+          {"weight": 65, "duration_sec": 90},
+          {"weight": 70, "duration_sec": 90}
+        ]
+      },
+      "abdominal": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 50, "duration_sec": 90},
+          {"weight": 55, "duration_sec": 90}
+        ]
+      }
+    }
+  }
+]
