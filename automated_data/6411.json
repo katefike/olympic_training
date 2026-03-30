@@ -1,0 +1,268 @@
+[
+  {
+    "heic_id": "6411",
+    "gym": null,
+    "date": "251209",
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": null
+      }
+    ],
+    "cardio_type": "recumbent bike",
+    "cardio_duration_minutes": 15,
+    "notes": null,
+    "exercises": {
+      "leg_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 160,
+            "duration_sec": 90
+          },
+          {
+            "weight": 160,
+            "duration_sec": 90
+          },
+          {
+            "weight": 160,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "calf_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 80,
+            "duration_sec": 90
+          },
+          {
+            "weight": 80,
+            "duration_sec": 90
+          },
+          {
+            "weight": 80,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "superman": {
+        "weight_unit": null,
+        "notes": "stiff neck",
+        "sets": [
+          {
+            "weight": 25,
+            "duration_sec": 90
+          },
+          {
+            "weight": 25,
+            "duration_sec": 90
+          },
+          {
+            "weight": 25,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bosu_leg_lift": {
+        "weight_unit": null,
+        "notes": "par neck",
+        "sets": [
+          {
+            "duration_sec": 62
+          },
+          {
+            "duration_sec": 60
+          },
+          {
+            "duration_sec": 60
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6411",
+    "gym": null,
+    "date": "251211",
+    "pain": [
+      {
+        "pain_level": 3,
+        "pain_location": "L knee"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "banded_stand_walk": {
+        "weight_unit": null,
+        "reps_each": 20,
+        "sets": [
+          {}
+        ]
+      },
+      "clam_shell": {
+        "weight_unit": null,
+        "reps_each": 20,
+        "sets": [
+          {}
+        ]
+      },
+      "boat_w_band": {
+        "weight_unit": null,
+        "notes": "sprain R neck",
+        "reps_total": 40,
+        "sets": [
+          {},
+          {}
+        ]
+      },
+      "bulgarian_split_squat": {
+        "weight_unit": null,
+        "reps_each": 20,
+        "sets": [
+          {}
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6411",
+    "gym": null,
+    "date": "251213",
+    "pain": [
+      {
+        "pain_level": 0.5,
+        "pain_location": "L knee"
+      }
+    ],
+    "cardio_type": "elliptical",
+    "cardio_duration_minutes": 15,
+    "notes": null,
+    "exercises": {
+      "seated_reverse_fly": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 20
+          },
+          {
+            "weight": 25
+          },
+          {
+            "weight": 25
+          }
+        ]
+      },
+      "prone_leg_curl": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 65,
+            "duration_sec": 90
+          },
+          {
+            "weight": 65,
+            "duration_sec": 90
+          },
+          {
+            "weight": 65,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "tricep_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 20,
+            "duration_sec": 90
+          },
+          {
+            "weight": 25,
+            "duration_sec": 90
+          },
+          {
+            "weight": 20,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "abdominal_crunch_seated": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 60,
+            "duration_sec": 90
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6411",
+    "gym": null,
+    "date": "251216",
+    "pain": [
+      {
+        "pain_level": 2,
+        "pain_location": "Headache L trapezius"
+      }
+    ],
+    "cardio_type": "elliptical",
+    "cardio_duration_minutes": 15,
+    "notes": null,
+    "exercises": {
+      "sumo_squat": {
+        "weight_unit": "lbs",
+        "reps_total": 20,
+        "sets": [
+          {
+            "weight": 25
+          },
+          {
+            "weight": 25
+          },
+          {
+            "weight": 25
+          }
+        ]
+      },
+      "tricep_press": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 10
+          },
+          {
+            "weight": 10
+          },
+          {
+            "weight": 10
+          }
+        ]
+      },
+      "bend_w_bar": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 70,
+            "duration_sec": 90
+          }
+        ]
+      }
+    }
+  }
+]

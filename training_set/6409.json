@@ -1,10 +1,14 @@
 [
   {
     "heic_id": "6409",
-    "gym": "Smartfit CDMX",
+    "gym": "Planet Fitness",
     "date": "260104",
-    "pain_level": 0,
-    "pain_location": null,
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": null
+      }
+    ],
     "cardio_typef": "elliptical",
     "cardio_duration_minutes": 15,
     "notes": null,
@@ -73,7 +77,7 @@
   },
   {
     "heic_id": "6409",
-    "gym": "Smartfit CDMX",
+    "gym": "Planet Fitness",
     "date": "260106",
     "pain": [
       {
@@ -87,7 +91,7 @@
     ],
     "cardio_type": "elliptical",
     "cardio_duration_minutes": 15,
-    "notes": "L knee under cup 1/10",
+    "notes": null,
     "exercises": {
       "prone_leg_curl": {
         "weight_unit": "lbs",
@@ -101,7 +105,8 @@
             "duration_sec": 75
           },
           {
-            "weight": 77.5
+            "weight": 77.5,
+            "duration_sec": 90
           }
         ]
       },
@@ -135,6 +140,20 @@
             "duration_sec": 90
           }
         ]
+      },
+      "boat": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 76
+          },
+          {
+            "duration_sec": 65
+          },
+          {
+            "duration_sec": 56
+          }
+        ]
       }
     }
   },
@@ -142,8 +161,12 @@
     "heic_id": "6409",
     "gym": "Smartfit CDMX",
     "date": "260119",
-    "pain_level": "No Pain",
-    "pain_location": null,
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": null
+      }
+    ],
     "cardio_type": "elliptical",
     "cardio_duration_minutes": 30,
     "notes": "Start Mexico",
@@ -168,7 +191,7 @@
         "reps_each": 20,
         "sets": [
           {
-            "weight": 30
+            Smartfit CDMX"weight": 30
           },
           {
             "weight": 30
@@ -216,15 +239,19 @@
     "heic_id": "6409",
     "gym": "Smartfit CDMX",
     "date": "260202",
-    "pain_level": "0.5",
-    "pain_location": "L knee",
+    "pain": [
+      {
+        "pain_level": 0.5,
+        "pain_location": "L knee"
+      }
+    ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
     "notes": null,
     "exercises": {
       "pushup": {
         "weight_unit": null,
-        "reps_each": 5,
+        "reps_total": 5,
         "sets": [
           {},
           {},
@@ -249,7 +276,7 @@
           {}
         ]
       },
-      "chest_press_plank": {
+      "plank": {
         "weight_unit": null,
         "sets": [
           {
