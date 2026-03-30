@@ -1,0 +1,268 @@
+[
+  {
+    "heic_id": "6409",
+    "gym": "Smartfit CDMX",
+    "date": "260104",
+    "pain_level": 0,
+    "pain_location": null,
+    "cardio_typef": "elliptical",
+    "cardio_duration_minutes": 15,
+    "notes": null,
+    "exercises": {
+      "side_kick_out": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 5
+          },
+          {
+            "weight": 5
+          },
+          {
+            "weight": 5
+          }
+        ]
+      },
+      "side_kick_in": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 10
+          },
+          {
+            "weight": 5
+          },
+          {
+            "weight": 5
+          }
+        ]
+      },
+      "kick_back": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 10
+          },
+          {
+            "weight": 15
+          },
+          {
+            "weight": 10
+          }
+        ]
+      },
+      "march": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 10
+          },
+          {
+            "weight": 10
+          },
+          {
+            "weight": 10
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6409",
+    "gym": "Smartfit CDMX",
+    "date": "260106",
+    "pain": [
+      {
+        "pain_level": 2,
+        "pain_location": "L trapz"
+      },
+      {
+        "pain_level": 1,
+        "pain_location": "L knee under cap"
+      }
+    ],
+    "cardio_type": "elliptical",
+    "cardio_duration_minutes": 15,
+    "notes": "L knee under cup 1/10",
+    "exercises": {
+      "prone_leg_curl": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 80,
+            "duration_sec": 75
+          },
+          {
+            "weight": 77.5
+          }
+        ]
+      },
+      "hip_thrust_machine": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 50,
+            "duration_sec": 90
+          },
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 70,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "wall_sit": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6409",
+    "gym": "Smartfit CDMX",
+    "date": "260119",
+    "pain_level": "No Pain",
+    "pain_location": null,
+    "cardio_type": "elliptical",
+    "cardio_duration_minutes": 30,
+    "notes": "Start Mexico",
+    "exercises": {
+      "kickback_machine": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 30
+          },
+          {
+            "weight": 30
+          },
+          {
+            "weight": 45
+          }
+        ]
+      },
+      "chest_fly": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 30
+          },
+          {
+            "weight": 30
+          },
+          {
+            "weight": 30
+          }
+        ]
+      },
+      "seated_reverse_fly": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 20
+          },
+          {
+            "weight": 20
+          },
+          {
+            "weight": 20
+          }
+        ]
+      },
+      "prone_leg_curl": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 80,
+            "duration_sec": 63
+          },
+          {
+            "weight": 75,
+            "duration_sec": 68
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6409",
+    "gym": "Smartfit CDMX",
+    "date": "260202",
+    "pain_level": "0.5",
+    "pain_location": "L knee",
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "pushup": {
+        "weight_unit": null,
+        "reps_each": 5,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      },
+      "clam_shell": {
+        "weight_unit": null,
+        "reps_each": 20,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      },
+      "tricep_xtn": {
+        "weight_unit": null,
+        "reps_each": 20,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      },
+      "chest_press_plank": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          }
+        ]
+      }
+    }
+  }
+]

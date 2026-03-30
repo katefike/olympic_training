@@ -3,8 +3,12 @@
     "heic_id": "6430",
     "gym": null,
     "date": 240923,
-    "pain_level": 1,
-    "pain_location": "base of skull",
+    "pain": [
+      {
+        "pain_level": 1,
+        "pain_location": "base of skull"
+      }
+    ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
     "exercises": {
@@ -43,8 +47,12 @@
     "heic_id": "6430",
     "gym": null,
     "date": null,
-    "pain_level": null,
-    "pain_location": null,
+    "pain": [
+      {
+        "pain_level": null,
+        "pain_location": null
+      }
+    ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
     "exercises": {
@@ -83,8 +91,12 @@
     "heic_id": "6430",
     "gym": null,
     "date": null,
-    "pain_level": null,
-    "pain_location": null,
+    "pain": [
+      {
+        "pain_level": null,
+        "pain_location": null
+      }
+    ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
     "exercises": {
@@ -129,8 +141,12 @@
     "heic_id": "6430",
     "gym": null,
     "date": null,
-    "pain_level": 0,
-    "pain_location": null,
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": null
+      }
+    ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
     "exercises": {
@@ -173,8 +189,12 @@
     "heic_id": "6430",
     "gym": null,
     "date": null,
-    "pain_level": null,
-    "pain_location": null,
+    "pain": [
+      {
+        "pain_level": null,
+        "pain_location": null
+      }
+    ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
     "exercises": {

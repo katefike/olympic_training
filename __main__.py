@@ -46,8 +46,10 @@ Return ONLY valid JSON with this exact top-level shape:
 Each element of "workouts" must have these keys (use null when not visible or not applicable):
 - "gym": string or null
 - "date": string in YYMMDD form if you can infer it from the page, else null
-- "pain_level": number, or string like "0.5", or null
-- "pain_location": string or null
+- "pain": array of objects, where each object has:
+  - "pain_level": number, or string like "0.5", or null
+  - "pain_location": string or null
+  Use one object when there is only one pain entry; use multiple objects when multiple pain entries are recorded.
 - "cardio_type": string or null
 - "cardio_duration_minutes": number or null
 - "notes": string or null (session-level notes only)
@@ -69,6 +71,7 @@ Rules:
 - If the page uses "E 20 20 20" style notation, interpret it as reps each set and add "reps_each": 20 (or visible number).
 - If the page uses "T 20 20 20" style notation, interpret it as total reps and add "reps_total": 20 (or visible number).
 - If E/T notation is present for an exercise, do not omit reps fields even when set durations are also present.
+- If the page says "No pain", set "pain" to [{"pain_level": 0, "pain_location": null}].
 - If any text/numbers are crossed out, do not include them in the JSON.
 - If nothing on the page is legible as workout data, return {"workouts":[]}.
 - Do not include "heic_id" in your output."""
@@ -135,6 +138,28 @@ def parse_workouts_json(text: str) -> list[dict]:
     return workouts
 
 
+def normalize_pain_entries(raw: dict) -> list[dict]:
+    pain = raw.get("pain")
+    entries: list[dict] = []
+    if isinstance(pain, list):
+        for item in pain:
+            if isinstance(item, dict):
+                entries.append(
+                    {
+                        "pain_level": item.get("pain_level"),
+                        "pain_location": item.get("pain_location"),
+                    }
+                )
+    if entries:
+        return entries
+    return [
+        {
+            "pain_level": raw.get("pain_level"),
+            "pain_location": raw.get("pain_location"),
+        }
+    ]
+
+
 def normalize_record(raw: dict, heic_id: str) -> dict:
     exercises = raw.get("exercises")
     if not isinstance(exercises, dict):
@@ -143,8 +168,7 @@ def normalize_record(raw: dict, heic_id: str) -> dict:
         "heic_id": heic_id,
         "gym": raw.get("gym"),
         "date": raw.get("date"),
-        "pain_level": raw.get("pain_level"),
-        "pain_location": raw.get("pain_location"),
+        "pain": normalize_pain_entries(raw),
         "cardio_type": raw.get("cardio_type"),
         "cardio_duration_minutes": raw.get("cardio_duration_minutes"),
         "notes": raw.get("notes"),
@@ -313,6 +337,9 @@ def main() -> None:
                     if isinstance(r, dict):
                         r2 = dict(r)
                         r2.pop("heic_id", None)
+                        r2["pain"] = normalize_pain_entries(r2)
+                        r2.pop("pain_level", None)
+                        r2.pop("pain_location", None)
                         records_wo_heic_id.append(r2)
 
                 example_output_json = {"workouts": records_wo_heic_id}

@@ -3,8 +3,12 @@
     "heic_id": "6408",
     "gym": "Smartfit CDMX",
     "date": "250209",
-    "pain_level": "2",
-    "pain_location": "L knee",
+    "pain": [
+      {
+        "pain_level": 2,
+        "pain_location": "L knee"
+      }
+    ],
     "cardio_type": "elliptical",
     "cardio_duration_minutes": 30,
     "notes": null,
@@ -66,8 +70,12 @@
     "heic_id": "6408",
     "gym": "Smartfit CDMX",
     "date": "250216",
-    "pain_level": "0.5",
-    "pain_location": "L knee",
+    "pain": [
+      {
+        "pain_level": 0.5,
+        "pain_location": "L knee"
+      }
+    ],
     "cardio_type": "elliptical zone 2-3",
     "cardio_duration_minutes": 15,
     "notes": "Start CGPT Glute",
@@ -146,8 +154,12 @@
     "heic_id": "6408",
     "gym": "Smartfit CDMX",
     "date": "260218",
-    "pain_level": "No Pain",
-    "pain_location": null,
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": null
+      }
+    ],
     "cardio_type": "bike recline zone 2",
     "cardio_duration_minutes": 15,
     "notes": null,
@@ -218,8 +230,12 @@
     "heic_id": "6408",
     "gym": "Smartfit CDMX",
     "date": "260221",
-    "pain_level": "No Pain",
-    "pain_location": null,
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": null
+      }
+    ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
     "notes": null,

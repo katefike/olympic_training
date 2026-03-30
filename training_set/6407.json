@@ -3,8 +3,12 @@
     "heic_id": "6407",
     "gym": "SmartFit CDMX",
     "date": "260228",
-    "pain_level": "0.5",
-    "pain_location": "left trapz",
+    "pain": [
+      {
+        "pain_level": 0.5,
+        "pain_location": "left trapz"
+      }
+    ],
     "cardio_type": "stair climbers",
     "cardio_duration_minutes": 15,
     "exercises": {
@@ -47,8 +51,12 @@
     "heic_id": "6407",
     "gym": "SmartFit CDMX",
     "date": "260312",
-    "pain_level": "0",
-    "pain_location": "stiff neck",
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": "stiff neck"
+      }
+    ],
     "cardio_type": "recline bike",
     "cardio_duration_minutes": 15,
     "exercises": {
@@ -85,8 +93,12 @@
     "heic_id": "6407",
     "gym": "SmartFit CDMX",
     "date": "260313",
-    "pain_level": "1",
-    "pain_location": "left scapula",
+    "pain": [
+      {
+        "pain_level": 1,
+        "pain_location": "left scapula"
+      }
+    ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
     "exercises": {
@@ -128,8 +140,12 @@
     "heic_id": "6407",
     "gym": "Vikings CDMX",
     "date": "260320",
-    "pain_level": "0",
-    "pain_location": "sore quads",
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": "sore quads"
+      }
+    ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
     "exercises": {

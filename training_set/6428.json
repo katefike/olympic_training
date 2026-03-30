@@ -3,8 +3,12 @@
     "heic_id": "6428",
     "gym": null,
     "date": "241021",
-    "pain_level": 4,
-    "pain_location": "left neck; jaw",
+    "pain": [
+      {
+        "pain_level": 4,
+        "pain_location": "left neck; jaw"
+      }
+    ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
     "notes": "after car camping",
@@ -47,8 +51,12 @@
     "heic_id": "6428",
     "gym": "Tellison's",
     "date": "241023",
-    "pain_level": 2,
-    "pain_location": "left jaw",
+    "pain": [
+      {
+        "pain_level": 2,
+        "pain_location": "left jaw"
+      }
+    ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
     "exercises": {
@@ -90,8 +98,12 @@
     "heic_id": "6428",
     "gym": "Tellison's",
     "date": "241025",
-    "pain_level": 3,
-    "pain_location": "left jaw",
+    "pain": [
+      {
+        "pain_level": 3,
+        "pain_location": "left jaw"
+      }
+    ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
     "exercises": {

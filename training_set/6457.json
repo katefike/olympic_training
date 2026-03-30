@@ -3,8 +3,12 @@
     "heic_id": "6457",
     "gym": null,
     "date": null,
-    "pain_level": null,
-    "pain_location": null,
+    "pain": [
+      {
+        "pain_level": null,
+        "pain_location": null
+      }
+    ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
     "exercises": {
@@ -46,8 +50,12 @@
     "heic_id": "6457",
     "gym": null,
     "date": null,
-    "pain_level": null,
-    "pain_location": null,
+    "pain": [
+      {
+        "pain_level": null,
+        "pain_location": null
+      }
+    ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
     "exercises": {
@@ -83,8 +91,12 @@
     "heic_id": "6457",
     "gym": null,
     "date": null,
-    "pain_level": null,
-    "pain_location": null,
+    "pain": [
+      {
+        "pain_level": null,
+        "pain_location": null
+      }
+    ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
     "exercises": {
@@ -126,8 +138,12 @@
     "heic_id": "6457",
     "gym": null,
     "date": null,
-    "pain_level": null,
-    "pain_location": null,
+    "pain": [
+      {
+        "pain_level": null,
+        "pain_location": null
+      }
+    ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
     "exercises": {
@@ -169,8 +185,12 @@
     "heic_id": "6457",
     "gym": null,
     "date": null,
-    "pain_level": null,
-    "pain_location": null,
+    "pain": [
+      {
+        "pain_level": null,
+        "pain_location": null
+      }
+    ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
     "exercises": {
