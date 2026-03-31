@@ -1,12 +1,16 @@
 [
   {
     "heic_id": "6415",
-    "gym": null,
+    "gym": "Planet Fitness",
     "date": "250830",
     "pain": [
       {
+        "pain_level": 0,
+        "pain_location": "stiff neck"
+      }
+      {
         "pain_level": "0.5",
-        "pain_location": "stiff neck, R knee/back"
+        "pain_location": "R knee above kneekcap"
       }
     ],
     "cardio_type": "cycling",
@@ -45,16 +49,18 @@
         ]
       },
       "tricep_pull": {
-        "weight_unit": null,
-        "reps_each": 20,
+        "weight_unit": "lbs",
         "sets": [
           {
+            "weight": 20,
             "duration_sec": 90
           },
           {
-            "duration_sec": 70
+            "weight": 20,
+            "duration_sec": 90
           },
           {
+            "weight": 20,
             "duration_sec": 90
           }
         ]
@@ -80,16 +86,20 @@
   },
   {
     "heic_id": "6415",
-    "gym": null,
+    "gym": "Planet Fitness",
     "date": "250903",
     "pain": [
       {
+        "pain_level": 1,
+        "pain_location": "neck/jaw"
+      },
+      {
         "pain_level": 3,
-        "pain_location": "neck/jaw, R scapula"
+        "pain_location": "R scapula"
       }
     ],
-    "cardio_type": "walking and stair climbing",
-    "cardio_duration_minutes": 35,
+    "cardio_type": "stair climbing",
+    "cardio_duration_minutes": 20,
     "notes": null,
     "exercises": {
       "leg_press_narrow": {
@@ -121,13 +131,13 @@
             "duration_sec": 68
           },
           {
-            "weight": 90,
-            "duration_sec": 86
+            "weight": 80,
+            "duration_sec": 68
           }
         ]
       },
-      "back_xtns_bent_w_band": {
-        "weight_unit": null,
+      "back_xtns": {
+        "weight_unit": "lbs",
         "sets": [
           {
             "weight": 140,
@@ -143,7 +153,7 @@
           }
         ]
       },
-      "superman": {
+      "boat_w_band": {
         "weight_unit": null,
         "sets": [
           {
@@ -166,8 +176,8 @@
         "pain_location": "R knee"
       }
     ],
-    "cardio_type": "walking and recumbent bike",
-    "cardio_duration_minutes": 35,
+    "cardio_type": "recumbent bike",
+    "cardio_duration_minutes": 20,
     "notes": null,
     "exercises": {
       "leg_xtn": {
