@@ -1,0 +1,240 @@
+[
+  {
+    "heic_id": "6415",
+    "gym": null,
+    "date": "250830",
+    "pain": [
+      {
+        "pain_level": "0.5",
+        "pain_location": "stiff neck, R knee/back"
+      }
+    ],
+    "cardio_type": "cycling",
+    "cardio_duration_minutes": 20,
+    "notes": null,
+    "exercises": {
+      "prone_leg_curl": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 65,
+            "duration_sec": 90
+          },
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 60,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "wall_sit": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          }
+        ]
+      },
+      "tricep_pull": {
+        "weight_unit": null,
+        "reps_each": 20,
+        "sets": [
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 70
+          },
+          {
+            "duration_sec": 90
+          }
+        ]
+      },
+      "seated_crunch": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 65,
+            "duration_sec": 90
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6415",
+    "gym": null,
+    "date": "250903",
+    "pain": [
+      {
+        "pain_level": 3,
+        "pain_location": "neck/jaw, R scapula"
+      }
+    ],
+    "cardio_type": "walking and stair climbing",
+    "cardio_duration_minutes": 35,
+    "notes": null,
+    "exercises": {
+      "leg_press_narrow": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 160,
+            "duration_sec": 90
+          },
+          {
+            "weight": 160,
+            "duration_sec": 90
+          },
+          {
+            "weight": 160,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "calf_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 85,
+            "duration_sec": 90
+          },
+          {
+            "weight": 90,
+            "duration_sec": 68
+          },
+          {
+            "weight": 90,
+            "duration_sec": 86
+          }
+        ]
+      },
+      "back_xtns_bent_w_band": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "weight": 140,
+            "duration_sec": 90
+          },
+          {
+            "weight": 140,
+            "duration_sec": 90
+          },
+          {
+            "weight": 140,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "superman": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 54
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6415",
+    "gym": null,
+    "date": "250908",
+    "pain": [
+      {
+        "pain_level": "0.5",
+        "pain_location": "R knee"
+      }
+    ],
+    "cardio_type": "walking and recumbent bike",
+    "cardio_duration_minutes": 35,
+    "notes": null,
+    "exercises": {
+      "leg_xtn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 50,
+            "duration_sec": 90
+          },
+          {
+            "weight": 55,
+            "duration_sec": 90
+          },
+          {
+            "weight": 55,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "seated_curl": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 75,
+            "duration_sec": 70
+          },
+          {
+            "weight": 75,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "abdominal_push": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 85,
+            "duration_sec": 90
+          },
+          {
+            "weight": 85,
+            "duration_sec": 90
+          },
+          {
+            "weight": 85,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bosu_air_walk": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 60
+          },
+          {
+            "duration_sec": 50
+          },
+          {
+            "duration_sec": 55
+          }
+        ]
+      }
+    }
+  }
+]

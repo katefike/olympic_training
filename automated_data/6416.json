@@ -1,0 +1,231 @@
+[
+  {
+    "heic_id": "6416",
+    "gym": null,
+    "date": "250823",
+    "pain": [
+      {
+        "pain_level": null,
+        "pain_location": "stiff neck"
+      }
+    ],
+    "cardio_type": "bike and jump rope",
+    "cardio_duration_minutes": 25,
+    "notes": null,
+    "exercises": {
+      "leg_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 55,
+            "duration_sec": 90
+          },
+          {
+            "weight": 50,
+            "duration_sec": 90
+          },
+          {
+            "weight": 50,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "seated_curl": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 70,
+            "duration_sec": 70
+          },
+          {
+            "weight": 70,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "abdominal_pushdowns": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 85,
+            "duration_sec": 90
+          },
+          {
+            "weight": 80,
+            "duration_sec": 56
+          },
+          {
+            "weight": 70,
+            "duration_sec": 30
+          }
+        ]
+      },
+      "bosu_leg_hold": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 30
+          },
+          {
+            "duration_sec": 20
+          },
+          {
+            "duration_sec": 30
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6416",
+    "gym": null,
+    "date": "250825",
+    "pain": [
+      {
+        "pain_level": 1,
+        "pain_location": "R trapz"
+      }
+    ],
+    "cardio_type": "walk and cycle",
+    "cardio_duration_minutes": 35,
+    "notes": null,
+    "exercises": {
+      "side_kick_in": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 10,
+            "duration_sec": 20
+          },
+          {
+            "weight": 5,
+            "duration_sec": 20
+          },
+          {
+            "weight": 15,
+            "duration_sec": 20
+          }
+        ]
+      },
+      "bridal_kick_back_supported": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 15,
+            "duration_sec": 20
+          },
+          {
+            "weight": 15,
+            "duration_sec": 20
+          },
+          {
+            "weight": 15,
+            "duration_sec": 20
+          }
+        ]
+      },
+      "kick_front_march": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 20
+          },
+          {
+            "duration_sec": 20
+          },
+          {
+            "duration_sec": 20
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6416",
+    "gym": null,
+    "date": "250827",
+    "pain": [
+      {
+        "pain_level": 1,
+        "pain_location": "R scapula"
+      }
+    ],
+    "cardio_type": "walk and stairs",
+    "cardio_duration_minutes": 40,
+    "notes": null,
+    "exercises": {
+      "gg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 115,
+            "duration_sec": 96
+          },
+          {
+            "weight": 115,
+            "duration_sec": 90
+          },
+          {
+            "weight": 115,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 110,
+            "duration_sec": 90
+          },
+          {
+            "weight": 110,
+            "duration_sec": 90
+          },
+          {
+            "weight": 110,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "ab_crunch_lying": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 60,
+            "duration_sec": 88
+          },
+          {
+            "weight": 50,
+            "duration_sec": 90
+          },
+          {
+            "weight": 50,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bend_w_bar": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 50,
+            "duration_sec": 90
+          }
+        ]
+      }
+    }
+  }
+]

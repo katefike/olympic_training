@@ -1,0 +1,237 @@
+[
+  {
+    "heic_id": "6414",
+    "gym": "Planet Fitness",
+    "date": "250910",
+    "pain": [
+      {
+        "pain_level": 1,
+        "pain_location": "R kneck/trapz"
+      }
+    ],
+    "cardio_type": "walk and bike",
+    "cardio_duration_minutes": 35,
+    "notes": null,
+    "exercises": {
+      "ab_crunch_lying": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 60,
+            "duration_sec": 62
+          },
+          {
+            "weight": 50,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "back_xtsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 140,
+            "duration_sec": 90
+          },
+          {
+            "weight": 140,
+            "duration_sec": 90
+          },
+          {
+            "weight": 140,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "sumo_squat": {
+        "weight_unit": null,
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 35
+          },
+          {
+            "weight": 35
+          },
+          {
+            "weight": 35
+          }
+        ]
+      },
+      "bulgarian_split_squat": {
+        "weight_unit": null,
+        "reps_each": 20,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6414",
+    "gym": "Planet Fitness",
+    "date": "250919",
+    "pain": [
+      {
+        "pain_level": 0.5,
+        "pain_location": "L jaw"
+      }
+    ],
+    "cardio_type": "walk and stairs",
+    "cardio_duration_minutes": 35,
+    "notes": null,
+    "exercises": {
+      "side_kick_out": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 5
+          },
+          {
+            "weight": 5
+          },
+          {
+            "weight": 10
+          }
+        ]
+      },
+      "side_kick_in": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 5
+          },
+          {
+            "weight": 5
+          },
+          {
+            "weight": 10
+          }
+        ]
+      },
+      "side_kick_back": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 10
+          },
+          {
+            "weight": 15
+          },
+          {
+            "weight": 20
+          }
+        ]
+      },
+      "kick_front_kick": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 10
+          },
+          {
+            "weight": 10
+          },
+          {
+            "weight": 15
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6414",
+    "gym": "Planet Fitness",
+    "date": "250920",
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": null
+      }
+    ],
+    "cardio_type": "walk/recline cycle",
+    "cardio_duration_minutes": 35,
+    "notes": "pain in L inner kneeafter cycle",
+    "exercises": {
+      "chest_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 40,
+            "duration_sec": 90
+          },
+          {
+            "weight": 40,
+            "duration_sec": 90
+          },
+          {
+            "weight": 40,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "seated_ab_crunch": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 65,
+            "duration_sec": 90
+          },
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 75,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bend_w_bar": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 60,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "overhead_tricep_xtn": {
+        "weight_unit": "lbs",
+        "notes": "2 hands dumbbell",
+        "sets": [
+          {
+            "weight": 15,
+            "duration_sec": 90
+          },
+          {
+            "weight": 15,
+            "duration_sec": 75
+          },
+          {
+            "weight": 15,
+            "duration_sec": 54
+          }
+        ]
+      }
+    }
+  }
+]

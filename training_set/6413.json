@@ -1,0 +1,192 @@
+[
+  {
+    "heic_id": "6413",
+    "gym": null,
+    "date": "250929",
+    "pain": [
+      {
+        "pain_level": "0.5",
+        "pain_location": "L kneck"
+      },
+      {
+        "pain_level": 1,
+        "pain_location": "L knee"
+      }
+    ],
+    "cardio_type": "walk and elliptical",
+    "cardio_duration_minutes": 25,
+    "notes": "knee sore after bike",
+    "exercises": {
+      "seated_reverse_fly": {
+        "weight_unit": "lbs",
+        "reps_total": 20,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      },
+      "wall_sit": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          }
+        ]
+      },
+      "gg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 80,
+            "duration_sec": 80
+          },
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 70,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 90,
+            "duration_sec": 90
+          },
+          {
+            "weight": 90,
+            "duration_sec": 80
+          },
+          {
+            "weight": 80,
+            "duration_sec": 90
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6413",
+    "gym": null,
+    "date": "250929",
+    "pain": [
+      {
+        "pain_level": 1,
+        "pain_location": "L knee"
+      }
+    ],
+    "cardio_type": "walk and elliptical",
+    "cardio_duration_minutes": 30,
+    "notes": "knee burning after stairs",
+    "exercises": {
+      "prone_leg_curl": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 65,
+            "duration_sec": 90
+          },
+          {
+            "weight": 70,
+            "duration_sec": 83
+          },
+          {
+            "weight": 70,
+            "duration_sec": 81
+          }
+        ]
+      },
+      "superman": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 25,
+            "duration_sec": 76
+          },
+          {
+            "weight": 25,
+            "duration_sec": 88
+          },
+          {
+            "weight": 25,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "elevate_core_basic_crunch": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "weight": 5,
+            "duration_sec": 84
+          },
+          {
+            "weight": 5,
+            "duration_sec": 86
+          },
+          {
+            "weight": 5,
+            "duration_sec": 79
+          }
+        ]
+      },
+      "elevate_pull_up_overhand_grip": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "weight": 1,
+            "duration_sec": 90
+          },
+          {
+            "weight": 1,
+            "duration_sec": 61
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6413",
+    "gym": null,
+    "date": "251001",
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": null
+      }
+    ],
+    "cardio_type": "walk and elliptical",
+    "cardio_duration_minutes": 35,
+    "notes": "both knees sore after elliptical 0.5/10",
+    "exercises": {
+      "lat_pull_down": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 60,
+            "duration_sec": 60
+          },
+          {
+            "weight": 60,
+            "duration_sec": 90
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,7 +1,7 @@
 [
   {
     "heic_id": "6411",
-    "gym": null,
+    "gym": "Planet Fitness",
     "date": "251209",
     "pain": [
       {
@@ -9,7 +9,7 @@
         "pain_location": null
       }
     ],
-    "cardio_type": "recumbent bike",
+    "cardio_type": "recline bike",
     "cardio_duration_minutes": 15,
     "notes": null,
     "exercises": {
@@ -67,7 +67,7 @@
       },
       "bosu_leg_lift": {
         "weight_unit": null,
-        "notes": "par neck",
+        "notes": "pain after",
         "sets": [
           {
             "duration_sec": 62
@@ -84,7 +84,7 @@
   },
   {
     "heic_id": "6411",
-    "gym": null,
+    "gym": "Planet Fitness",
     "date": "251211",
     "pain": [
       {
@@ -96,10 +96,12 @@
     "cardio_duration_minutes": null,
     "notes": null,
     "exercises": {
-      "banded_stand_walk": {
+      "banded_squat_walk": {
         "weight_unit": null,
         "reps_each": 20,
         "sets": [
+          {},
+          {},
           {}
         ]
       },
@@ -107,14 +109,16 @@
         "weight_unit": null,
         "reps_each": 20,
         "sets": [
+          {},
+          {},
           {}
         ]
       },
       "boat_w_band": {
         "weight_unit": null,
-        "notes": "sprain R neck",
         "reps_total": 40,
         "sets": [
+          {},
           {},
           {}
         ]
@@ -122,6 +126,7 @@
       "bulgarian_split_squat": {
         "weight_unit": null,
         "reps_each": 20,
+        "notes": "sore in R knee",
         "sets": [
           {}
         ]
@@ -130,7 +135,7 @@
   },
   {
     "heic_id": "6411",
-    "gym": null,
+    "gym": "Planet Fitness",
     "date": "251213",
     "pain": [
       {
@@ -197,10 +202,6 @@
           {
             "weight": 60,
             "duration_sec": 90
-          },
-          {
-            "weight": 60,
-            "duration_sec": 90
           }
         ]
       }
@@ -208,7 +209,7 @@
   },
   {
     "heic_id": "6411",
-    "gym": null,
+    "gym": "Planet Fitness",
     "date": "251216",
     "pain": [
       {
@@ -237,7 +238,7 @@
       },
       "tricep_press": {
         "weight_unit": "lbs",
-        "reps_each": 20,
+        "reps_total": 20,
         "sets": [
           {
             "weight": 10
