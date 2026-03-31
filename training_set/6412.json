@@ -172,7 +172,7 @@
         ]
       },
       "side_kick_out": {
-        "weight_unit": null,
+        "weight_unit": "lbs",
         "reps_each": 20,
         "sets": [
           {},
@@ -201,7 +201,7 @@
     "notes": null,
     "exercises": {
       "side_kick_out": {
-        "weight_unit": null,
+        "weight_unit": "lbs",
         "reps_each": 20,
         "sets": [
           {
@@ -213,7 +213,7 @@
         ]
       },
       "side_kick_in": {
-        "weight_unit": null,
+        "weight_unit": "lbs",
         "reps_each": 20,
         "sets": [
           {
@@ -225,7 +225,7 @@
         ]
       },
       "side_kick_back": {
-        "weight_unit": null,
+        "weight_unit": "lbs",
         "reps_each": 20,
         "sets": [
           {
@@ -237,7 +237,7 @@
         ]
       },
       "front_kick_march": {
-        "weight_unit": null,
+        "weight_unit": "lbs",
         "reps_each": 20,
         "sets": [
           {
