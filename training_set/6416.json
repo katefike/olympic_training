@@ -1,7 +1,7 @@
 [
   {
     "heic_id": "6416",
-    "gym": null,
+    "gym": "Planet Fitness",
     "date": "250823",
     "pain": [
       {
@@ -39,7 +39,7 @@
           },
           {
             "weight": 70,
-            "duration_sec": 70
+            "duration_sec": 90
           },
           {
             "weight": 70,
@@ -49,6 +49,7 @@
       },
       "abdominal_pushdowns": {
         "weight_unit": "lbs",
+        "notes": "needs improvement",
         "sets": [
           {
             "weight": 85,
@@ -74,7 +75,7 @@
             "duration_sec": 20
           },
           {
-            "duration_sec": 30
+            "duration_sec": 20
           }
         ]
       }
@@ -82,7 +83,7 @@
   },
   {
     "heic_id": "6416",
-    "gym": null,
+    "gym": "Planet Fitness",
     "date": "250825",
     "pain": [
       {
@@ -90,55 +91,68 @@
         "pain_location": "R trapz"
       }
     ],
-    "cardio_type": "walk and cycle",
-    "cardio_duration_minutes": 35,
+    "cardio_type": "cycle",
+    "cardio_duration_minutes": 20,
     "notes": null,
     "exercises": {
-      "side_kick_in": {
+      "side_kick_out": {
         "weight_unit": "lbs",
+        "reps_each": 20,
         "sets": [
           {
-            "weight": 10,
-            "duration_sec": 20
+            "weight": 5
           },
           {
-            "weight": 5,
-            "duration_sec": 20
+            "weight": 5
           },
           {
-            "weight": 15,
-            "duration_sec": 20
+            "weight": 5
           }
         ]
       },
-      "bridal_kick_back_supported": {
+      "side_kick_in": {
         "weight_unit": "lbs",
+        "reps_each": 20,
         "sets": [
           {
-            "weight": 15,
-            "duration_sec": 20
+            "weight": 10
           },
           {
-            "weight": 15,
-            "duration_sec": 20
+            "weight": 5
           },
           {
-            "weight": 15,
-            "duration_sec": 20
+            "weight": 5
+          }
+        ]
+      },
+      "kick_back": {
+        "weight_unit": "lbs",
+        "notes": "bent and supported",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 15
+          },
+          {
+            "weight": 15
+          },
+          {
+            "weight": 15
           }
         ]
       },
       "kick_front_march": {
-        "weight_unit": null,
+        "weight_unit": "lbs",
+        "reps_each": 20,
         "sets": [
           {
-            "duration_sec": 20
+            "weight": 5
           },
           {
-            "duration_sec": 20
+            "weight": 5
           },
           {
-            "duration_sec": 20
+            "weight": 10
           }
         ]
       }
@@ -146,7 +160,7 @@
   },
   {
     "heic_id": "6416",
-    "gym": null,
+    "gym": "Planet Fitness",
     "date": "250827",
     "pain": [
       {
@@ -154,17 +168,13 @@
         "pain_location": "R scapula"
       }
     ],
-    "cardio_type": "walk and stairs",
-    "cardio_duration_minutes": 40,
+    "cardio_type": "stairs",
+    "cardio_duration_minutes": 20,
     "notes": null,
     "exercises": {
       "gg": {
         "weight_unit": "lbs",
         "sets": [
-          {
-            "weight": 115,
-            "duration_sec": 96
-          },
           {
             "weight": 115,
             "duration_sec": 90

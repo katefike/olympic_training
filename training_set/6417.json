@@ -1,0 +1,205 @@
+[
+  {
+    "heic_id": "6417",
+    "gym": "Planet Fitness",
+    "date": "230817",
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": null
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "leg_press": {
+        "weight_unit": "lbs",
+        "notes": "wide glute",
+        "sets": [
+          {
+            "weight": 160,
+            "duration_sec": 90
+          },
+          {
+            "weight": 170,
+            "duration_sec": 90
+          },
+          {
+            "weight": 175,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "calf_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 80,
+            "duration_sec": 90
+          },
+          {
+            "weight": 85,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "superman": {
+        "weight_unit": "lbs",
+        "notes": "90 degrees",
+        "sets": [
+          {
+            "weight": 25,
+            "duration_sec": 90
+          },
+          {
+            "weight": 25,
+            "duration_sec": 90
+          },
+          {
+            "weight": 25,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bosu_leg_lift": {
+        "weight_unit": null,
+        "sets": [
+          {"duration_sec": 64},
+          {"duration_sec": 67},
+          {
+            "duration_sec": 61
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6417",
+    "gym": "Planet Fitness",
+    "date": "230819",
+    "pain": [
+      {
+        "pain_level": 0.5,
+        "pain_location": "R knee above kneecap"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "wallsit": {
+        "weight_unit": null,
+        "sets": [
+          {"duration_sec": 90},
+          {"duration_sec": 90},
+          {"duration_sec": 90}
+        ]
+      },
+      "tricep_pull_down": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 20,
+            "duration_sec": 90
+          },
+          {
+            "weight": 25,
+            "duration_sec": 90
+          },
+          {
+            "weight": 20,
+            "duration_sec": 80
+          }
+        ]
+      },
+      "dumbbell_fly": {
+        "weight_unit": "lbs",
+        "reps_total": 50,
+        "sets": [
+          {
+            "weight": 5
+          },
+          {
+            "weight": 5
+          },
+          {
+            "weight": 2.5
+          }
+        ]
+      },
+      "lying_ab_crunch": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 40,
+            "duration_sec": 80
+          },
+          {
+            "weight": 40,
+            "duration_sec": 90
+          },
+          {
+            "weight": 40,
+            "duration_sec": 90
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6417",
+    "gym": "Planet Fitness",
+    "date": "230821",
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": null
+      }
+    ],
+    "cardio_type": "stairs and dance",
+    "cardio_duration_minutes": 30,
+    "notes": "R inner knee pain after 1st rep",
+    "exercises": {
+      "bulgarian_split_squat": {
+        "weight_unit": null,
+        "sets": [
+          {},
+          {}
+        ],
+        "reps_each": 20
+      },
+      "leg_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 60,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "seated_curl": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 75,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "pulldown": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 45,
+            "duration_sec": 90
+          }
+        ]
+      }
+    }
+  }
+]
