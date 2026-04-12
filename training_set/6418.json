@@ -1,0 +1,278 @@
+[
+  {
+    "heic_id": "6418",
+    "gym": "Planet Fitness",
+    "date": "250703",
+    "pain": [
+      {
+        "pain_level": 0.5,
+        "pain_location": "R neck"
+      },
+      {
+        "pain_level": 0.5,
+        "pain_location": "L knee"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "leg_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 55,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "seated_curlback": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 80,
+            "duration_sec": 90
+          },
+          {
+            "weight": 85,
+            "duration_sec": 90
+          },
+          {
+            "weight": 85,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "back_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 150,
+            "duration_sec": 90
+          },
+          {
+            "weight": 130,
+            "duration_sec": 90
+          },
+          {
+            "weight": 140,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "lying_ab_crunch": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 50,
+            "duration_sec": 90
+          },
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 60,
+            "duration_sec": 90
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6418",
+    "gym": "Planet Fitness",
+    "date": "250705",
+    "pain": [
+      {
+        "pain_level": 0.5,
+        "pain_location": "L neck"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "side_kick_out": {
+        "weight_unit": "lbs",
+        "reps_each": 5,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      },
+      "side_kick_in": {
+        "weight_unit": "lbs",
+        "reps_each": 10,
+        "sets": [
+          {},
+          {}
+          {}
+        ]
+      },
+      "kick_back": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 15
+          },
+          {
+            "weight": 25
+          },
+          {
+            "weight": 20
+          }
+        ]
+      },
+      "kick_front_march": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6418",
+    "gym": null,
+    "date": "250707",
+    "pain": [
+      {
+        "pain_level": 0.5,
+        "pain_location": "R knee"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "tricep_pulldown": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 15,
+            "duration_sec": 90
+          },
+          {
+            "weight": 20,
+            "duration_sec": 90
+          },
+          {
+            "weight": 25,
+            "duration_sec": 75
+          }
+        ]
+      },
+      "seated_reverse_fly": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {"weight": 15},
+          {"weight": 15}, 
+          {"weight": 15}
+        ]
+      },
+      "abdominal_push": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 85,
+            "duration_sec": 90
+          },
+          {
+            "weight": 90,
+            "duration_sec": 60
+          },
+          {
+            "weight": 70,
+            "duration_sec": 70
+          }
+        ]
+      },
+      "bosu_leg_lift": {
+        "weight_unit": null,
+        "sets": [
+          {"duration_sec": 60},
+          {"duration_sec": 50},
+          {"duration_sec": 50}
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6418",
+    "gym": "Planet Fitness",
+    "date": "250709",
+    "pain": [
+      {
+        "pain_level": 0.5,
+        "pain_location": "R knee"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "prone_leg_curl": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 65,
+            "duration_sec": 90
+          },
+          {
+            "weight": 75,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "abdominal_crunch_lying": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 50,
+            "duration_sec": 90
+          },
+          {
+            "weight": 60,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "kickback_machine": {
+        "weight_unit": "lbs",
+        "reps_total": 20,
+        "sets": [
+          {
+            "weight": 70
+          },
+          {
+            "weight": 80
+          }
+        ]
+      },
+      "assisted_pullup": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 50
+          }
+        ]
+      }
+    }
+  }
+]
