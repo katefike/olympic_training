@@ -22,11 +22,11 @@
           },
           {
             "weight": 60,
-            "duration_sec": 89
+            "duration_sec": 79
           },
           {
             "weight": 60,
-            "duration_sec": 90
+            "duration_sec": 70
           }
         ]
       },
@@ -39,7 +39,7 @@
           },
           {
             "weight": 95,
-            "duration_sec": 65
+            "duration_sec": 68
           },
           {
             "weight": 80,
@@ -99,7 +99,7 @@
     "exercises": {
       "leg_press": {
         "weight_unit": "lbs",
-        "notes": "feet high/wide",
+        "notes": "feet high/wide (glute)",
         "sets": [
           {
             "weight": 160,
@@ -127,26 +127,40 @@
             "duration_sec": 65
           },
           {
-            "weight": 75,
+            "weight": 100,
             "duration_sec": 60
           }
         ]
       },
       "superman": {
         "weight_unit": null,
-        "notes": "90 degrees butt lift",
-        "sets": [
-          {}
-        ]
-      },
-      "abdominal_push_yer_lift": {
-        "weight_unit": "lbs",
+        "notes": "90 degrees butt tuck",
         "sets": [
           {
-            "weight": 70
+            "weight": 25,
+            "duration_sec": 67
           },
           {
-            "weight": 60
+            "weight": 25,
+            "duration_sec": 82
+          },
+          {
+            "weight": 25,
+            "duration_sec": 61
+          }
+        ]
+      },
+      "bosu_leg_lift": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 70
+          },
+          {
+            "duration_sec": 60
+          },
+          {
+            "duration_sec": 60
           }
         ]
       }
@@ -158,8 +172,8 @@
     "date": "250621",
     "pain": [
       {
-        "pain_level": "L",
-        "pain_location": "jaw"
+        "pain_level": "1",
+        "pain_location": "L jaw"
       }
     ],
     "cardio_type": null,
@@ -235,7 +249,7 @@
     "date": "250623",
     "pain": [
       {
-        "pain_level": 1,
+        "pain_level": "2",
         "pain_location": "L knee"
       }
     ],
@@ -255,7 +269,8 @@
             "duration_sec": 90
           },
           {
-            "weight": 15
+            "weight": 15,
+            "duration_sec": 90
           }
         ]
       },
@@ -283,10 +298,11 @@
           },
           {
             "weight": 85,
-            "duration_sec": 96
+            "duration_sec": 90
           },
           {
-            "weight": 85
+            "weight": 85,
+            "duration_sec": 90
           }
         ]
       },
