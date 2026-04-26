@@ -6,17 +6,27 @@
     "pain": [
       {
         "pain_level": 1,
-        "pain_location": "back neck"
+        "pain_location": "neck"
       },
       {
         "pain_level": 1,
         "pain_location": "knees"
       }
     ],
-    "cardio_type": "wall sit",
+    "cardio_type": null,
     "cardio_duration_minutes": null,
     "notes": null,
     "exercises": {
+      "wall sit": {
+        "sets": [
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          }
+        ]
+      },
       "gg": {
         "weight_unit": "lbs",
         "sets": [
@@ -47,7 +57,7 @@
           },
           {
             "weight": 110,
-            "duration_sec": 72
+            "duration_sec": 79
           }
         ]
       },
@@ -64,7 +74,7 @@
           },
           {
             "weight": 65,
-            "duration_sec": 85
+            "duration_sec": 90
           }
         ]
       }
@@ -87,7 +97,7 @@
   },
   {
     "heic_id": "6419",
-    "gym": null,
+    "gym": "Planet Fitness",
     "date": "230629",
     "pain": [
       {
@@ -117,26 +127,24 @@
       "step_up_trx_pull_up": {
         "weight_unit": null,
         "notes": "chest",
+        "reps_each": 20,
         "sets": [
-          {
-            "duration_sec": 20
-          },
-          {
-            "duration_sec": 20
-          },
-          {
-            "duration_sec": 20
-          }
+          {},
+          {},
+          {}
         ]
       },
       "bosu_leglift": {
         "weight_unit": null,
         "sets": [
           {
-            "weight": 70
+            "duration_sec": 70
           },
           {
-            "weight": 60
+            "duration_sec": 60
+          },
+          {
+            "duration_sec": 60
           }
         ]
       },
@@ -161,7 +169,7 @@
   },
   {
     "heic_id": "6419",
-    "gym": null,
+    "gym": "Planet Fitness",
     "date": "230701",
     "pain": [
       {
@@ -170,7 +178,7 @@
       },
       {
         "pain_level": 1,
-        "pain_location": "kick L"
+        "pain_location": "neck L"
       }
     ],
     "cardio_type": null,
@@ -179,7 +187,7 @@
     "exercises": {
       "leg_press": {
         "weight_unit": "lbs",
-        "notes": "feet low and wide",
+        "notes": "feet low shoulder width",
         "sets": [
           {
             "weight": 85,
@@ -212,8 +220,9 @@
           }
         ]
       },
-      "superman_90": {
+      "superman": {
         "weight_unit": "lbs",
+        "notes": "90",
         "sets": [
           {
             "weight": 25,
