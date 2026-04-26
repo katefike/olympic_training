@@ -5,8 +5,12 @@
     "date": "250427",
     "pain": [
       {
-        "pain_level": "3",
+        "pain_level": "2",
         "pain_location": "R knee"
+      },
+      {
+        "pain_level": "0.5",
+        "pain_location": "L neck"
       }
     ],
     "cardio_type": null,
@@ -17,20 +21,20 @@
         "weight_unit": "lbs",
         "sets": [
           {
-            "weight": 60,
+            "weight": 160,
             "duration_sec": 90
           },
           {
-            "weight": 60,
+            "weight": 160,
             "duration_sec": 90
           },
           {
-            "weight": 60,
+            "weight": 160,
             "duration_sec": 90
           }
         ]
       },
-      "chest_press": {
+      "calf_press": {
         "weight_unit": "lbs",
         "sets": [
           {
@@ -90,7 +94,7 @@
     "pain": [
       {
         "pain_level": "2",
-        "pain_location": "L knee"
+        "pain_location": "L neck"
       }
     ],
     "cardio_type": null,
@@ -114,20 +118,20 @@
           }
         ]
       },
-      "seated_row_curl": {
+      "seated_leg_curl": {
         "weight_unit": "lbs",
         "sets": [
           {
-            "weight": 80,
-            "duration_sec": 60
+            "weight": 85,
+            "duration_sec": 90
           },
           {
-            "weight": 80,
-            "duration_sec": 60
+            "weight": 70,
+            "duration_sec": 90
           },
           {
-            "weight": 80,
-            "duration_sec": 60
+            "weight": 95,
+            "duration_sec": 73
           }
         ]
       },
@@ -148,7 +152,7 @@
           }
         ]
       },
-      "ab_crunch_keep_plate": {
+      "ab_crunch": {
         "weight_unit": "lbs",
         "sets": [
           {
@@ -156,7 +160,7 @@
             "duration_sec": 63
           },
           {
-            "weight": 45,
+            "weight": 40,
             "duration_sec": 90
           },
           {
@@ -222,7 +226,7 @@
           },
           {
             "weight": 115,
-            "duration_sec": 90
+            "duration_sec": 85
           },
           {
             "weight": 115,
@@ -239,7 +243,7 @@
     "pain": [
       {
         "pain_level": "3",
-        "pain_location": "L jaw"
+        "pain_location": "L jaw and ear"
       }
     ],
     "cardio_type": null,
@@ -249,19 +253,19 @@
   },
   {
     "heic_id": "6422",
-    "gym": null,
+    "gym": "Planet Fitness",
     "date": "250504",
     "pain": [
       {
         "pain_level": "3",
-        "pain_location": "L jaw"
+        "pain_location": "L jaw and trapz"
       }
     ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
     "notes": null,
     "exercises": {
-      "superman_90": {
+      "superman": {
         "weight_unit": "lbs",
         "sets": [
           {
@@ -280,7 +284,7 @@
       },
       "seated_reverse_fly": {
         "weight_unit": "lbs",
-        "reps_total": 30,
+        "reps_total": 20,
         "sets": [
           {
             "weight": 10
@@ -298,14 +302,14 @@
         "reps_each": 20,
         "sets": [
           {
-            "weight": 70,
-            "duration_sec": 20
+            "weight": 70
           },
           {
-            "weight": 90,
-            "duration_sec": 20
+            "weight": 90
           },
-          {}
+          {
+            "weight": 90
+          }
         ]
       },
       "abdominal_push": {
@@ -313,7 +317,7 @@
         "sets": [
           {
             "weight": 70,
-            "duration_sec": 90
+            "duration_sec": 75
           },
           {
             "weight": 85,
