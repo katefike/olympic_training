@@ -1,7 +1,7 @@
 [
   {
     "heic_id": "6421",
-    "gym": null,
+    "gym": "Planet Fitness",
     "date": "250506",
     "pain": [
       {
@@ -66,15 +66,16 @@
         "weight_unit": "lbs",
         "sets": [
           {
-            "weight": 66,
+            "weight": 80,
             "duration_sec": 60
           },
           {
-            "weight": 70,
+            "weight": 80,
             "duration_sec": 64
           },
           {
-            "weight": 75
+            "weight": 75,
+            "duration_sec": 90
           }
         ]
       }
@@ -82,17 +83,21 @@
   },
   {
     "heic_id": "6421",
-    "gym": null,
+    "gym": "Planet Fitness",
     "date": "250508",
     "pain": [
       {
         "pain_level": 3,
         "pain_location": "R base of skull"
+      },
+      {
+        "pain_level": 3,
+        "pain_location": "headache"
       }
     ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
-    "notes": "headache",
+    "notes": null,
     "exercises": {
       "barbell_hip_thrust": {
         "weight_unit": "lbs",
@@ -111,7 +116,7 @@
       },
       "kick_back": {
         "weight_unit": "lbs",
-        "reps_each": 10,
+        "reps_each": 20,
         "sets": [
           {
             "weight": 10
@@ -127,11 +132,17 @@
       },
       "side_kick_out": {
         "weight_unit": "lbs",
-        "reps_each": 5,
+        "reps_each": 20,
         "sets": [
-          {},
-          {},
-          {}
+          {
+            "weight": 5
+          },
+          {
+            "weight": 5
+          },
+          {
+            "weight": 5
+          }
         ]
       },
       "side_kick_in": {
@@ -153,7 +164,7 @@
   },
   {
     "heic_id": "6421",
-    "gym": null,
+    "gym": "Planet Fitness",
     "date": "250512",
     "pain": [
       {
@@ -170,14 +181,15 @@
         "sets": [
           {
             "weight": 80,
-            "duration_sec": 73
+            "duration_sec": 71
           },
           {
             "weight": 80,
             "duration_sec": 65
           },
           {
-            "weight": 80
+            "weight": 80,
+            "duration_sec": 65
           }
         ]
       },
@@ -193,7 +205,8 @@
             "duration_sec": 90
           },
           {
-            "weight": 95
+            "weight": 95,
+            "duration_sec": 90
           }
         ]
       },
@@ -205,15 +218,16 @@
             "duration_sec": 90
           },
           {
-            "weight": 145,
+            "weight": 140,
             "duration_sec": 90
           },
           {
-            "weight": 150
+            "weight": 150,
+            "duration_sec": 90
           }
         ]
       },
-      "ab_crunch": {
+      "lying_ab_crunch": {
         "weight_unit": "lbs",
         "sets": [
           {
@@ -222,19 +236,19 @@
           },
           {
             "weight": 50,
-            "duration_sec": 70
+            "duration_sec": 60
           },
           {
-            "weight": 50
+            "weight": 50,
+            "duration_sec": 70
           }
-        ],
-        "notes": "back flat"
+        ]
       }
     }
   },
   {
     "heic_id": "6421",
-    "gym": null,
+    "gym": "Planet Fitness",
     "date": "250515",
     "pain": [
       {
@@ -265,15 +279,16 @@
         "weight_unit": "lbs",
         "sets": [
           {
-            "weight": 110,
+            "weight": 100,
             "duration_sec": 90
           },
           {
             "weight": 115,
-            "duration_sec": 96
+            "duration_sec": 90
           },
           {
-            "weight": 115
+            "weight": 115,
+            "duration_sec": 90
           }
         ]
       },
@@ -282,14 +297,15 @@
         "sets": [
           {
             "weight": 110,
-            "duration_sec": 65
+            "duration_sec": 60
+          },
+          {
+            "weight": 110,
+            "duration_sec": 60
           },
           {
             "weight": 110,
             "duration_sec": 69
-          },
-          {
-            "weight": 110
           }
         ]
       },
@@ -297,7 +313,7 @@
         "weight_unit": "lbs",
         "sets": [
           {
-            "weight": 85,
+            "weight": 55,
             "duration_sec": 90
           },
           {
@@ -305,7 +321,8 @@
             "duration_sec": 90
           },
           {
-            "weight": 55
+            "weight": 55,
+            "duration_sec": 90
           }
         ]
       }
