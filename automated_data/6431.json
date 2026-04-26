@@ -1,0 +1,264 @@
+[
+  {
+    "heic_id": "6431",
+    "gym": null,
+    "date": "240909",
+    "pain": [
+      {
+        "pain_level": 1,
+        "pain_location": "left jaw"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {}
+  },
+  {
+    "heic_id": "6431",
+    "gym": null,
+    "date": "240913",
+    "pain": [
+      {
+        "pain_level": 1,
+        "pain_location": "left trap"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "seated_curlback": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 75
+          },
+          {
+            "weight": 60
+          },
+          {
+            "weight": 65
+          }
+        ]
+      },
+      "leg_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 80
+          },
+          {
+            "weight": 70
+          },
+          {
+            "weight": 70
+          }
+        ]
+      },
+      "bench_wb": {
+        "weight_unit": null,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      },
+      "crunch": {
+        "weight_unit": null,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6431",
+    "gym": null,
+    "date": "240916",
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": null
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "single_tricep_pulldown": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 15
+          },
+          {
+            "weight": 20
+          },
+          {
+            "weight": 20
+          }
+        ]
+      },
+      "side_kick_out": {
+        "weight_unit": null,
+        "reps_each": 10,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      },
+      "side_kick_in": {
+        "weight_unit": null,
+        "reps_each": 20,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6431",
+    "gym": null,
+    "date": "240919",
+    "pain": [
+      {
+        "pain_level": 1,
+        "pain_location": "left jaw"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "gg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 110
+          },
+          {
+            "weight": 110
+          },
+          {
+            "weight": 115
+          }
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70
+          },
+          {
+            "weight": 75
+          },
+          {
+            "weight": 75
+          }
+        ]
+      },
+      "wall_sit": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          }
+        ]
+      },
+      "plank": {
+        "weight_unit": null,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6431",
+    "gym": null,
+    "date": "240921",
+    "pain": [
+      {
+        "pain_level": 1,
+        "pain_location": "left shoulder"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "leg_xtn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 80
+          },
+          {
+            "weight": 86
+          },
+          {
+            "weight": 90
+          }
+        ]
+      },
+      "leg_curl_prone": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 25
+          },
+          {
+            "weight": 25
+          },
+          {
+            "weight": 25
+          }
+        ]
+      },
+      "head_clinch": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 40
+          },
+          {
+            "weight": 40
+          },
+          {
+            "weight": 50
+          }
+        ]
+      },
+      "crunch_bosu_butterfly": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 55
+          },
+          {
+            "duration_sec": 65
+          },
+          {
+            "duration_sec": 60
+          }
+        ]
+      }
+    }
+  }
+]

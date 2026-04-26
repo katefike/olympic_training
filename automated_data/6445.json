@@ -1,0 +1,343 @@
+[
+  {
+    "heic_id": "6445",
+    "gym": null,
+    "date": null,
+    "pain": [],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "xtsn_de_pierna": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 75,
+            "duration_sec": 72
+          },
+          {
+            "weight": 75,
+            "duration_sec": 77
+          },
+          {
+            "weight": 75,
+            "duration_sec": 76
+          }
+        ]
+      },
+      "contraccion_de_pierna": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 95,
+            "duration_sec": 82
+          },
+          {
+            "weight": 90,
+            "duration_sec": 60
+          }
+        ]
+      },
+      "xtensores_de_hombros": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 30,
+            "duration_sec": 75
+          },
+          {
+            "weight": 35,
+            "duration_sec": 77
+          },
+          {
+            "weight": 35,
+            "duration_sec": 79
+          }
+        ]
+      },
+      "mts_remo_low": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 250,
+            "duration_sec": 90
+          },
+          {
+            "weight": 225,
+            "duration_sec": 90
+          },
+          {
+            "weight": 230,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "contraccion_de_pierna_pierna": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 65,
+            "duration_sec": 90
+          },
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 75,
+            "duration_sec": 63
+          }
+        ]
+      },
+      "xtsn_de_espalda": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 55,
+            "duration_sec": 90
+          },
+          {
+            "weight": 65,
+            "duration_sec": 90
+          },
+          {
+            "weight": 65,
+            "duration_sec": 78
+          }
+        ]
+      },
+      "abdominales": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 45,
+            "duration_sec": 90
+          },
+          {
+            "weight": 50,
+            "duration_sec": 90
+          },
+          {
+            "weight": 55,
+            "duration_sec": 78
+          }
+        ]
+      },
+      "descando_ascendo_asistido": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 40,
+            "duration_sec": 90
+          },
+          {
+            "weight": 33,
+            "duration_sec": 60
+          },
+          {
+            "weight": 33,
+            "duration_sec": 60
+          }
+        ]
+      },
+      "belbell_ply_pulses": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 25,
+            "duration_sec": 56
+          },
+          {
+            "weight": 25,
+            "duration_sec": 61
+          },
+          {
+            "weight": 25,
+            "duration_sec": 58
+          }
+        ]
+      },
+      "goblet_squat": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 30,
+            "duration_sec": 90
+          },
+          {
+            "weight": 25,
+            "duration_sec": 90
+          },
+          {
+            "weight": 30,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bosu_leg_lifts": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 50
+          },
+          {
+            "duration_sec": 58
+          },
+          {
+            "duration_sec": 45
+          }
+        ]
+      },
+      "lunges": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 20
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6445",
+    "gym": null,
+    "date": null,
+    "pain": [
+      {
+        "pain_level": null,
+        "pain_location": "neck pain from pullups?"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "tricep_pull": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 45
+          },
+          {
+            "weight": 85,
+            "duration_sec": 89
+          },
+          {
+            "weight": 15,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "gg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 170,
+            "duration_sec": 90
+          },
+          {
+            "weight": 175,
+            "duration_sec": 77
+          },
+          {
+            "weight": 175,
+            "duration_sec": 62
+          }
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 115,
+            "duration_sec": 72
+          },
+          {
+            "weight": 115,
+            "duration_sec": 90
+          },
+          {
+            "weight": 112,
+            "duration_sec": 52
+          }
+        ]
+      },
+      "heat": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 70
+          },
+          {
+            "duration_sec": 58
+          },
+          {
+            "duration_sec": 66
+          }
+        ]
+      },
+      "kettlebell_fly_pulses": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 25,
+            "duration_sec": 85
+          },
+          {
+            "weight": 25,
+            "duration_sec": 77
+          },
+          {
+            "weight": 25,
+            "duration_sec": 79
+          }
+        ]
+      },
+      "goblet_squat": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 30,
+            "duration_sec": 90
+          },
+          {
+            "weight": 35,
+            "duration_sec": 79
+          },
+          {
+            "weight": 35,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bosu_leg_lift": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 52
+          },
+          {
+            "duration_sec": 43
+          },
+          {
+            "duration_sec": 42
+          }
+        ]
+      },
+      "lunges": {
+        "weight_unit": null,
+        "reps_each": 20,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      }
+    }
+  }
+]

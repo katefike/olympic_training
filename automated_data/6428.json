@@ -1,0 +1,229 @@
+[
+  {
+    "heic_id": "6428",
+    "gym": null,
+    "date": "241021",
+    "pain": [
+      {
+        "pain_level": 4,
+        "pain_location": "left neck & jaw"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": "aft car camping",
+    "exercises": {
+      "gg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 190
+          },
+          {
+            "weight": 180
+          },
+          {
+            "weight": 190
+          }
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 140
+          },
+          {
+            "weight": 140
+          },
+          {
+            "weight": 140
+          }
+        ]
+      },
+      "back_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 140
+          },
+          {
+            "weight": 145
+          },
+          {
+            "weight": 145
+          }
+        ]
+      },
+      "ab_crunch": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 50
+          },
+          {
+            "weight": 55
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6428",
+    "gym": null,
+    "date": "241023",
+    "pain": [
+      {
+        "pain_level": 2,
+        "pain_location": "left jaw"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "hip_thrust_nautilus": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 100
+          },
+          {
+            "weight": 100
+          },
+          {
+            "weight": 100
+          }
+        ]
+      },
+      "calf_raise": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 50
+          },
+          {
+            "weight": 50
+          },
+          {
+            "weight": 50
+          }
+        ]
+      },
+      "tricep_xtnsn_chest_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 60
+          },
+          {
+            "weight": 60
+          },
+          {
+            "weight": 40
+          }
+        ]
+      },
+      "bicep_curl_rear_delt": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 30
+          },
+          {
+            "weight": 40
+          },
+          {
+            "weight": 30
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6428",
+    "gym": null,
+    "date": "241025",
+    "pain": [
+      {
+        "pain_level": 3,
+        "pain_location": "left jaw"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "bulgarian_split_squat": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 48
+          },
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          }
+        ]
+      },
+      "gg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 120
+          },
+          {
+            "weight": 100
+          },
+          {
+            "weight": 100
+          }
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 100
+          },
+          {
+            "weight": 100
+          },
+          {
+            "weight": 110
+          }
+        ]
+      },
+      "pullover": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 60
+          },
+          {
+            "weight": 65
+          },
+          {
+            "weight": 70
+          }
+        ]
+      },
+      "abdominal": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 50
+          },
+          {
+            "weight": 55
+          },
+          {
+            "weight": 60
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,406 @@
+[
+  {
+    "heic_id": "6455",
+    "gym": null,
+    "date": null,
+    "pain": [
+      {
+        "pain_level": null,
+        "pain_location": "neck"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "leg_xtnsn": {
+        "weight_unit": "lbs",
+        "reps_total": 60,
+        "sets": [
+          {
+            "weight": 60
+          },
+          {
+            "weight": 60
+          },
+          {
+            "weight": 60
+          },
+          {
+            "weight": 71
+          },
+          {
+            "weight": 59
+          },
+          {
+            "weight": 90
+          }
+        ]
+      },
+      "leg_curl_prone": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 65
+          },
+          {},
+          {
+            "weight": 60
+          },
+          {},
+          {}
+        ]
+      },
+      "shoulder_press": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 20
+          },
+          {
+            "weight": 20
+          },
+          {
+            "weight": 20
+          },
+          {
+            "weight": 69
+          },
+          {
+            "weight": 72
+          },
+          {
+            "weight": 75
+          }
+        ]
+      },
+      "seated_row": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 60
+          },
+          {
+            "weight": 65
+          },
+          {
+            "weight": 65
+          },
+          {
+            "weight": 90
+          },
+          {
+            "weight": 72
+          },
+          {
+            "weight": 69
+          }
+        ]
+      },
+      "barbell_fly": {
+        "weight_unit": "lbs",
+        "reps_each": 3,
+        "sets": [
+          {},
+          {},
+          {},
+          {
+            "weight": 90
+          },
+          {
+            "weight": 66
+          },
+          {}
+        ]
+      },
+      "goblet_squat": {
+        "weight_unit": "lbs",
+        "reps_each": 30,
+        "sets": [
+          {
+            "weight": 30
+          },
+          {
+            "weight": 30
+          },
+          {
+            "weight": 30
+          },
+          {
+            "weight": 90
+          },
+          {
+            "weight": 75
+          },
+          {
+            "weight": 60
+          }
+        ]
+      },
+      "bend_w_bar": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70
+          },
+          {
+            "weight": 70
+          },
+          {
+            "weight": 70
+          },
+          {
+            "weight": 82
+          },
+          {
+            "weight": 75
+          },
+          {
+            "weight": 63
+          }
+        ]
+      },
+      "bosu_leg_lifts": {
+        "weight_unit": null,
+        "sets": [
+          {},
+          {},
+          {},
+          {},
+          {
+            "weight": 37
+          },
+          {
+            "weight": 49
+          }
+        ]
+      },
+      "seated_curlback": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 100
+          },
+          {
+            "weight": 105
+          },
+          {
+            "weight": 105
+          },
+          {
+            "weight": 90
+          },
+          {
+            "weight": 70
+          },
+          {
+            "weight": 66
+          }
+        ]
+      },
+      "back_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 175
+          },
+          {
+            "weight": 175
+          },
+          {
+            "weight": 180
+          },
+          {
+            "weight": 90
+          },
+          {
+            "weight": 90
+          },
+          {
+            "weight": 75
+          }
+        ]
+      },
+      "ab_crunch": {
+        "weight_unit": "lbs",
+        "reps_each": 30,
+        "sets": [
+          {
+            "weight": 30
+          },
+          {
+            "weight": 30
+          },
+          {
+            "weight": 30
+          },
+          {
+            "weight": 66
+          },
+          {
+            "weight": 72
+          },
+          {
+            "weight": 73
+          }
+        ]
+      },
+      "seated_row_pain": {
+        "weight_unit": "lbs",
+        "notes": "neck pain",
+        "sets": [
+          {
+            "weight": 60
+          },
+          {
+            "weight": 65
+          },
+          {},
+          {
+            "weight": 90
+          },
+          {},
+          {}
+        ]
+      },
+      "leg_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 210
+          },
+          {
+            "weight": 215
+          },
+          {
+            "weight": 220
+          },
+          {
+            "weight": 90
+          },
+          {
+            "weight": 90
+          },
+          {
+            "weight": 67
+          }
+        ]
+      },
+      "gg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 160
+          },
+          {
+            "weight": 160
+          },
+          {
+            "weight": 165
+          },
+          {
+            "weight": 60
+          },
+          {
+            "weight": 90
+          },
+          {}
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 110
+          },
+          {
+            "weight": 110
+          },
+          {
+            "weight": 110
+          },
+          {
+            "weight": 56
+          },
+          {
+            "weight": 65
+          },
+          {
+            "weight": 69
+          }
+        ]
+      },
+      "ab_roll": {
+        "weight_unit": null,
+        "sets": [
+          {},
+          {},
+          {},
+          {
+            "weight": 60
+          },
+          {},
+          {
+            "weight": 96
+          }
+        ]
+      },
+      "leg_lift_w_kb": {
+        "weight_unit": null,
+        "reps_each": 20,
+        "sets": [
+          {},
+          {},
+          {
+            "weight": 20
+          }
+        ]
+      },
+      "superman": {
+        "weight_unit": null,
+        "sets": [
+          {},
+          {},
+          {
+            "weight": 66
+          },
+          {
+            "weight": 72
+          }
+        ]
+      },
+      "kickbacks": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 20
+          },
+          {
+            "weight": 15
+          },
+          {},
+          {
+            "weight": 87
+          },
+          {
+            "weight": 70
+          }
+        ]
+      },
+      "plank": {
+        "weight_unit": null,
+        "sets": [
+          {},
+          {},
+          {
+            "weight": 68
+          },
+          {
+            "weight": 60
+          }
+        ]
+      }
+    }
+  }
+]

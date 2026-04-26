@@ -1,0 +1,267 @@
+[
+  {
+    "heic_id": "6443",
+    "gym": null,
+    "date": null,
+    "pain": [],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "xtnsn_de_pierna": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 80
+          },
+          {
+            "weight": 86
+          },
+          {
+            "weight": 80
+          }
+        ]
+      },
+      "contraccion_de_piernas": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 90
+          },
+          {
+            "weight": 90
+          },
+          {
+            "weight": 80
+          }
+        ]
+      },
+      "xtensa_de_hombros": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 40
+          },
+          {
+            "weight": 30
+          },
+          {
+            "weight": 35
+          }
+        ]
+      },
+      "mts_romero_lois": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 30
+          },
+          {
+            "weight": 30
+          },
+          {
+            "weight": 40
+          }
+        ]
+      },
+      "bosu_leg_lifts": {
+        "weight_unit": null,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      },
+      "xtnsn_de_espalda": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 65
+          },
+          {
+            "weight": 65
+          },
+          {
+            "weight": 65
+          }
+        ]
+      },
+      "abdominales": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 55
+          },
+          {
+            "weight": 55
+          },
+          {
+            "weight": 55
+          }
+        ]
+      },
+      "descalzando_asistido": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 33
+          },
+          {
+            "weight": 40
+          },
+          {
+            "weight": 40
+          }
+        ]
+      },
+      "tricep_pulldown": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 30
+          },
+          {
+            "weight": 30
+          },
+          {
+            "weight": 30
+          }
+        ]
+      },
+      "gg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 175
+          },
+          {
+            "weight": 180
+          }
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 130
+          },
+          {
+            "weight": 130
+          },
+          {
+            "weight": 135
+          }
+        ]
+      },
+      "bosu_leg_lifts_2": {
+        "weight_unit": null,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      },
+      "barbell_pulses": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 25
+          },
+          {
+            "weight": 25
+          },
+          {
+            "weight": 25
+          }
+        ]
+      },
+      "bend_with_bar": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 30
+          },
+          {
+            "weight": 35
+          },
+          {
+            "weight": 30
+          }
+        ]
+      },
+      "contraccion_de_pierna": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 90
+          },
+          {
+            "weight": 80
+          },
+          {
+            "weight": 70
+          }
+        ]
+      },
+      "xtensa_de_hombros_2": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 40
+          },
+          {
+            "weight": 40
+          },
+          {
+            "weight": 40
+          }
+        ]
+      },
+      "lunges": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      },
+      "xtnsn_de_piernas_2": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 80
+          },
+          {
+            "weight": 80
+          },
+          {
+            "weight": 90
+          }
+        ]
+      },
+      "contraccion_de_piernas_2": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 90
+          },
+          {
+            "weight": 90
+          },
+          {
+            "weight": 90
+          }
+        ]
+      },
+      "plank_changes": {
+        "weight_unit": null,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      }
+    }
+  }
+]

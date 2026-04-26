@@ -1,0 +1,264 @@
+[
+  {
+    "heic_id": "6424",
+    "gym": null,
+    "date": "250718",
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": null
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "tricep_pulldown": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 10,
+            "duration_sec": 60
+          },
+          {
+            "weight": 15,
+            "duration_sec": 90
+          },
+          {
+            "weight": 30,
+            "duration_sec": 0
+          }
+        ]
+      },
+      "mts_rear_delt": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 20,
+            "duration_sec": 90
+          },
+          {
+            "weight": 30,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "back_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 55,
+            "duration_sec": 90
+          },
+          {
+            "weight": 65,
+            "duration_sec": 70
+          }
+        ]
+      },
+      "abdominals": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 50,
+            "duration_sec": 90
+          },
+          {
+            "weight": 65,
+            "duration_sec": 60
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6424",
+    "gym": null,
+    "date": "250720",
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": null
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": "8000 steps",
+    "exercises": {
+      "leg_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 80,
+            "duration_sec": 0
+          }
+        ]
+      },
+      "leg_curl_prone": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 65,
+            "duration_sec": 90
+          },
+          {
+            "weight": 65,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "oxf_fly": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 25,
+            "duration_sec": 75
+          },
+          {
+            "weight": 25,
+            "duration_sec": 78
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6424",
+    "gym": null,
+    "date": "250722",
+    "pain": [
+      {
+        "pain_level": null,
+        "pain_location": "stiff shoulder"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "assisted_dip": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 40,
+            "duration_sec": 90
+          },
+          {
+            "weight": 40,
+            "duration_sec": 90
+          },
+          {
+            "weight": 40,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bosu_ball_lift": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 55
+          },
+          {
+            "duration_sec": 53
+          },
+          {
+            "duration_sec": 55
+          }
+        ]
+      },
+      "bulgarian_split_squat": {
+        "weight_unit": null,
+        "notes": "right quad pain",
+        "sets": [
+          {}
+        ]
+      },
+      "pull_down": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 45,
+            "duration_sec": 90
+          },
+          {
+            "weight": 50,
+            "duration_sec": 90
+          },
+          {
+            "weight": 60,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "crunch_machine": {
+        "weight_unit": null,
+        "notes": "lying position",
+        "sets": [
+          {
+            "weight": 10,
+            "duration_sec": 90
+          },
+          {
+            "weight": 15,
+            "duration_sec": 73
+          },
+          {
+            "weight": 10,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "gg": {
+        "weight_unit": "lbs",
+        "pain": "R knee",
+        "sets": [
+          {
+            "weight": 130,
+            "duration_sec": 90
+          },
+          {
+            "weight": 180,
+            "duration_sec": 90
+          },
+          {
+            "weight": 110,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bg": {
+        "weight_unit": null,
+        "notes": "pain 5/10",
+        "sets": [
+          {
+            "weight": 30,
+            "duration_sec": 75
+          },
+          {
+            "weight": 130,
+            "duration_sec": 70
+          },
+          {
+            "weight": 110,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "superman_next": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 70
+          }
+        ]
+      }
+    }
+  }
+]

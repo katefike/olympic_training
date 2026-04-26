@@ -1,0 +1,251 @@
+[
+  {
+    "heic_id": "6419",
+    "gym": "Planet Fitness",
+    "date": "250627",
+    "pain": [
+      {
+        "pain_level": 1,
+        "pain_location": "back neck"
+      },
+      {
+        "pain_level": 1,
+        "pain_location": "knees"
+      }
+    ],
+    "cardio_type": "wall sit",
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "gg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 115,
+            "duration_sec": 90
+          },
+          {
+            "weight": 120,
+            "duration_sec": 90
+          },
+          {
+            "weight": 125,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 110,
+            "duration_sec": 90
+          },
+          {
+            "weight": 110,
+            "duration_sec": 90
+          },
+          {
+            "weight": 110,
+            "duration_sec": 72
+          }
+        ]
+      },
+      "abdominal_sitting": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 55,
+            "duration_sec": 90
+          },
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 65,
+            "duration_sec": 85
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6419",
+    "gym": null,
+    "date": "230629",
+    "pain": [
+      {
+        "pain_level": 0.5,
+        "pain_location": "kneel"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {}
+  },
+  {
+    "heic_id": "6419",
+    "gym": null,
+    "date": "230629",
+    "pain": [
+      {
+        "pain_level": 0.5,
+        "pain_location": "knee L"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "kettle_bell_bend": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 25
+          },
+          {
+            "weight": 30
+          },
+          {
+            "weight": 35
+          }
+        ]
+      },
+      "step_up_trx_pull_up": {
+        "weight_unit": null,
+        "notes": "chest",
+        "sets": [
+          {
+            "duration_sec": 20
+          },
+          {
+            "duration_sec": 20
+          },
+          {
+            "duration_sec": 20
+          }
+        ]
+      },
+      "bosu_leglift": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "weight": 70
+          },
+          {
+            "weight": 60
+          }
+        ]
+      },
+      "plank_leg_curl": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 75,
+            "duration_sec": 59
+          },
+          {
+            "weight": 75,
+            "duration_sec": 62
+          },
+          {
+            "weight": 65,
+            "duration_sec": 50
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6419",
+    "gym": null,
+    "date": "230701",
+    "pain": [
+      {
+        "pain_level": 0.5,
+        "pain_location": "knee L"
+      },
+      {
+        "pain_level": 1,
+        "pain_location": "kick L"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "leg_press": {
+        "weight_unit": "lbs",
+        "notes": "feet low and wide",
+        "sets": [
+          {
+            "weight": 85,
+            "duration_sec": 90
+          },
+          {
+            "weight": 100,
+            "duration_sec": 90
+          },
+          {
+            "weight": 115,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "calf_raise": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 75,
+            "duration_sec": 90
+          },
+          {
+            "weight": 75,
+            "duration_sec": 90
+          },
+          {
+            "weight": 75,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "superman_90": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 25,
+            "duration_sec": 90
+          },
+          {
+            "weight": 25,
+            "duration_sec": 90
+          },
+          {
+            "weight": 25,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "tricep_pulldown": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 15,
+            "duration_sec": 90
+          },
+          {
+            "weight": 20,
+            "duration_sec": 90
+          },
+          {
+            "weight": 20,
+            "duration_sec": 90
+          }
+        ]
+      }
+    }
+  }
+]

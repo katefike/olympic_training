@@ -1,0 +1,234 @@
+[
+  {
+    "heic_id": "6426",
+    "gym": null,
+    "date": "241112",
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": null
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "leg_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 160,
+            "duration_sec": 90
+          },
+          {
+            "weight": 200,
+            "duration_sec": 90
+          },
+          {
+            "weight": 186,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "glute_press": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 90
+          },
+          {
+            "weight": 66
+          },
+          {
+            "weight": 90
+          }
+        ]
+      },
+      "abdominal": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 80,
+            "duration_sec": 70
+          }
+        ]
+      },
+      "tilt_seat_calf": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 45,
+            "duration_sec": 65
+          },
+          {
+            "weight": 45,
+            "duration_sec": 70
+          },
+          {
+            "weight": 45,
+            "duration_sec": 66
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6426",
+    "gym": null,
+    "date": "241128",
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": null
+      }
+    ],
+    "cardio_type": "treadmill",
+    "cardio_duration_minutes": 20,
+    "notes": null,
+    "exercises": {
+      "leg_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 170,
+            "duration_sec": 90
+          },
+          {
+            "weight": 200,
+            "duration_sec": 90
+          },
+          {
+            "weight": 200,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "calf_raise": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 55,
+            "duration_sec": 50
+          },
+          {
+            "weight": 45,
+            "duration_sec": 60
+          },
+          {
+            "weight": 45,
+            "duration_sec": 70
+          }
+        ]
+      },
+      "leg_curl_prone": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 95,
+            "duration_sec": 50
+          },
+          {
+            "weight": 85,
+            "duration_sec": 63
+          },
+          {
+            "weight": 75,
+            "duration_sec": 53
+          }
+        ]
+      },
+      "bosu_leg_lift": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 60
+          },
+          {
+            "duration_sec": 51
+          },
+          {
+            "duration_sec": 59
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6426",
+    "gym": null,
+    "date": "241229",
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": null
+      }
+    ],
+    "cardio_type": "elliptical",
+    "cardio_duration_minutes": 15,
+    "notes": null,
+    "exercises": {
+      "bulgarian_split_squat": {
+        "weight_unit": null,
+        "reps_each": 20,
+        "sets": [
+          {},
+          {}
+        ]
+      },
+      "bend_w_ball": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 30,
+            "duration_sec": 62
+          },
+          {
+            "weight": 30,
+            "duration_sec": 96
+          },
+          {
+            "weight": 30,
+            "duration_sec": 10
+          }
+        ]
+      },
+      "tricep_pull": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 20,
+            "duration_sec": 90
+          },
+          {
+            "weight": 30,
+            "duration_sec": 90
+          },
+          {
+            "weight": 30,
+            "duration_sec": 94
+          }
+        ]
+      },
+      "trampoline_ball": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,258 @@
+[
+  {
+    "heic_id": "6440",
+    "gym": null,
+    "date": null,
+    "pain": [],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "bosu_leg_lift": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 60
+          },
+          {
+            "duration_sec": 51
+          },
+          {
+            "duration_sec": 60
+          }
+        ]
+      },
+      "tricep_pulldown": {
+        "weight_unit": "lbs",
+        "reps_total": 20,
+        "sets": [
+          {
+            "weight": 20
+          },
+          {
+            "weight": 20
+          },
+          {
+            "weight": 20
+          }
+        ]
+      },
+      "pushup_elbows_in": {
+        "weight_unit": null,
+        "reps_each": 10,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      },
+      "ab_crunch_backdown": {
+        "weight_unit": "lbs",
+        "reps_each": 40,
+        "sets": [
+          {
+            "weight": 40
+          },
+          {
+            "weight": 40
+          },
+          {
+            "weight": 40
+          }
+        ]
+      },
+      "gg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70
+          },
+          {
+            "weight": 135
+          },
+          {
+            "weight": 175
+          }
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 145
+          },
+          {
+            "weight": 140
+          },
+          {
+            "weight": 140
+          }
+        ]
+      },
+      "chest_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 40
+          },
+          {
+            "weight": 40
+          },
+          {
+            "weight": 40
+          }
+        ]
+      },
+      "shoulder_press_hands_forward": {
+        "weight_unit": "lbs",
+        "reps_each": 25,
+        "sets": [
+          {
+            "weight": 25
+          },
+          {
+            "weight": 25
+          },
+          {
+            "weight": 25
+          }
+        ]
+      },
+      "cross_assisted_pullup": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 57
+          },
+          {
+            "weight": 48
+          },
+          {
+            "weight": 46
+          }
+        ]
+      },
+      "kettlebell_bent": {
+        "weight_unit": "lbs",
+        "reps_each": 10,
+        "sets": [
+          {
+            "weight": 14
+          },
+          {
+            "weight": 16
+          },
+          {
+            "weight": 16
+          }
+        ]
+      },
+      "side_kick": {
+        "weight_unit": null,
+        "reps_each": 5,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      },
+      "fixed_pulldown": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 75
+          },
+          {
+            "weight": 80
+          },
+          {
+            "weight": 95
+          }
+        ]
+      },
+      "hip_thrust": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 45
+          },
+          {
+            "weight": 95
+          },
+          {
+            "weight": 90
+          }
+        ]
+      },
+      "dip": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 85
+          },
+          {
+            "weight": 85
+          },
+          {
+            "weight": 95
+          }
+        ]
+      },
+      "plank_still": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 82
+          },
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 82
+          }
+        ]
+      },
+      "roller_trapspin": {
+        "weight_unit": null,
+        "reps_total": 30,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      },
+      "leg_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 200
+          },
+          {
+            "weight": 215
+          },
+          {
+            "weight": 210
+          }
+        ]
+      },
+      "kickbacks": {
+        "weight_unit": "lbs",
+        "reps_each": 10,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      },
+      "superman": {
+        "weight_unit": null,
+        "reps_total": 10,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      }
+    }
+  }
+]

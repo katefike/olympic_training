@@ -1,0 +1,325 @@
+[
+  {
+    "heic_id": "6453",
+    "gym": null,
+    "date": null,
+    "pain": [],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "leg_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 60,
+            "duration_sec": 79
+          },
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 65,
+            "duration_sec": 89
+          }
+        ]
+      },
+      "leg_curl_prone": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 65,
+            "duration_sec": 75
+          },
+          {
+            "weight": 65,
+            "duration_sec": 66
+          },
+          {
+            "weight": 65,
+            "duration_sec": 63
+          }
+        ]
+      },
+      "shoulder_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 20,
+            "duration_sec": 63
+          },
+          {
+            "weight": 20,
+            "duration_sec": 65
+          },
+          {
+            "weight": 20,
+            "duration_sec": 68
+          }
+        ]
+      },
+      "seated_row": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 65,
+            "duration_sec": 90
+          },
+          {
+            "weight": 65,
+            "duration_sec": 90
+          },
+          {
+            "weight": 65,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "barbell_fly": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 5,
+            "duration_sec": 90
+          },
+          {
+            "weight": 5,
+            "duration_sec": 90
+          },
+          {
+            "weight": 5,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "goblet_squat": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 40,
+            "duration_sec": 62
+          },
+          {
+            "weight": 35,
+            "duration_sec": 56
+          },
+          {
+            "weight": 35,
+            "duration_sec": 60
+          }
+        ]
+      },
+      "bend_w_bar": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 80,
+            "duration_sec": 75
+          },
+          {
+            "weight": 80,
+            "duration_sec": 57
+          }
+        ]
+      },
+      "bosu_leg_lifts": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "duration_sec": 45
+          },
+          {
+            "duration_sec": 47
+          },
+          {
+            "duration_sec": 50
+          }
+        ]
+      },
+      "seated_curlback": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 105,
+            "duration_sec": 75
+          },
+          {
+            "weight": 105,
+            "duration_sec": 66
+          },
+          {
+            "weight": 105,
+            "duration_sec": 73
+          }
+        ]
+      },
+      "back_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 150,
+            "duration_sec": 40
+          },
+          {
+            "weight": 150,
+            "duration_sec": 90
+          },
+          {
+            "weight": 150,
+            "duration_sec": 86
+          }
+        ]
+      },
+      "ab_crunch": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 35,
+            "duration_sec": 59
+          },
+          {
+            "weight": 35,
+            "duration_sec": 73
+          },
+          {
+            "weight": 35,
+            "duration_sec": 60
+          }
+        ]
+      },
+      "dolphin": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          }
+        ]
+      },
+      "leg_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 220,
+            "duration_sec": 65
+          },
+          {
+            "weight": 220,
+            "duration_sec": 58
+          },
+          {
+            "weight": 220,
+            "duration_sec": 56
+          }
+        ]
+      },
+      "gg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 165,
+            "duration_sec": 54
+          },
+          {
+            "weight": 165,
+            "duration_sec": 76
+          },
+          {
+            "weight": 165,
+            "duration_sec": 76
+          }
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 110,
+            "duration_sec": 56
+          },
+          {
+            "weight": 110,
+            "duration_sec": 61
+          },
+          {
+            "weight": 110,
+            "duration_sec": 66
+          }
+        ]
+      },
+      "abdoller_boat": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 58
+          },
+          {
+            "duration_sec": 58
+          }
+        ]
+      },
+      "leg_lift_w_kb": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 15
+          },
+          {
+            "weight": 15
+          },
+          {
+            "weight": 20
+          }
+        ]
+      },
+      "superman": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 40
+          },
+          {
+            "duration_sec": 70
+          },
+          {
+            "duration_sec": 65
+          }
+        ]
+      },
+      "kickbacks": {
+        "weight_unit": "lbs",
+        "reps_each": 15,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      },
+      "plank": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 67
+          },
+          {
+            "duration_sec": 23
+          },
+          {
+            "duration_sec": 60
+          }
+        ]
+      }
+    }
+  }
+]

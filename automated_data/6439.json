@@ -1,0 +1,307 @@
+[
+  {
+    "heic_id": "6439",
+    "gym": null,
+    "date": "250731",
+    "pain": [
+      {
+        "pain_level": null,
+        "pain_location": "L wrist"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "tricep_pulldown": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 20,
+            "duration_sec": 60
+          },
+          {
+            "weight": 20,
+            "duration_sec": 65
+          },
+          {
+            "weight": 20,
+            "duration_sec": 50
+          }
+        ]
+      },
+      "pushup_elbows_in": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 10
+          },
+          {
+            "duration_sec": 10
+          },
+          {
+            "duration_sec": 10
+          }
+        ]
+      },
+      "ab_crunch": {
+        "weight_unit": "lbs",
+        "notes": "back down",
+        "sets": [
+          {
+            "weight": 40,
+            "duration_sec": 65
+          },
+          {
+            "weight": 40,
+            "duration_sec": 70
+          },
+          {
+            "weight": 40,
+            "duration_sec": 67
+          }
+        ]
+      },
+      "gg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 75,
+            "duration_sec": 67
+          },
+          {
+            "weight": 175,
+            "duration_sec": 90
+          },
+          {
+            "weight": 180,
+            "duration_sec": 75
+          }
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 145,
+            "duration_sec": 56
+          },
+          {
+            "weight": 145,
+            "duration_sec": 60
+          },
+          {
+            "weight": 145,
+            "duration_sec": 56
+          }
+        ]
+      },
+      "shoulder_press": {
+        "weight_unit": "lbs",
+        "notes": "hands facing",
+        "sets": [
+          {
+            "weight": 30,
+            "duration_sec": 90
+          },
+          {
+            "weight": 30,
+            "duration_sec": 90
+          },
+          {
+            "weight": 25,
+            "duration_sec": 60
+          }
+        ]
+      },
+      "chest_press": {
+        "weight_unit": "lbs",
+        "notes": "facsimile",
+        "sets": [
+          {
+            "weight": 40,
+            "duration_sec": 90
+          },
+          {
+            "weight": 45,
+            "duration_sec": 70
+          },
+          {
+            "weight": 45,
+            "duration_sec": 62
+          }
+        ]
+      },
+      "tricep_pulldown_two": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 20,
+            "duration_sec": 70
+          },
+          {
+            "weight": 20,
+            "duration_sec": 77
+          },
+          {
+            "weight": 20,
+            "duration_sec": 61
+          }
+        ]
+      },
+      "side_oblique_plank": {
+        "weight_unit": null,
+        "sets": [
+          {}
+        ]
+      },
+      "kettle_bell_bend": {
+        "weight_unit": "kg",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 12
+          },
+          {
+            "weight": 20
+          },
+          {
+            "weight": 20
+          }
+        ]
+      },
+      "side_kick": {
+        "weight_unit": null,
+        "reps_each": 5,
+        "sets": [
+          {}
+        ]
+      },
+      "fixed_pullown_pumpout": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 85,
+            "duration_sec": 71
+          },
+          {
+            "weight": 85,
+            "duration_sec": 70
+          },
+          {
+            "weight": 70,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "hip_thrust": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 90,
+            "duration_sec": 90
+          },
+          {
+            "weight": 90,
+            "duration_sec": 90
+          },
+          {
+            "weight": 70,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bend_w_bar": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 80,
+            "duration_sec": 68
+          }
+        ]
+      },
+      "bosu_leg_lift": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 60
+          },
+          {
+            "duration_sec": 70
+          },
+          {
+            "duration_sec": 62
+          }
+        ]
+      },
+      "boat": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 64
+          },
+          {
+            "duration_sec": 62
+          },
+          {
+            "duration_sec": 76
+          }
+        ]
+      },
+      "leg_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 210,
+            "duration_sec": 90
+          },
+          {
+            "weight": 210,
+            "duration_sec": 70
+          },
+          {
+            "weight": 180,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "kickbacks": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 10
+          },
+          {
+            "weight": 20
+          },
+          {
+            "weight": 30
+          }
+        ]
+      },
+      "superman": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 70
+          },
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 64
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,330 @@
+[
+  {
+    "heic_id": "6446",
+    "gym": null,
+    "date": null,
+    "pain": [],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "xtsn_de_piern": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 75,
+            "duration_sec": 76
+          },
+          {
+            "weight": 75,
+            "duration_sec": 80
+          },
+          {
+            "weight": 75,
+            "duration_sec": 70
+          }
+        ]
+      },
+      "contraccion_de_piern": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 76
+          },
+          {
+            "weight": 70,
+            "duration_sec": 80
+          },
+          {
+            "weight": 70,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "expulsor_de_pedalos": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 30,
+            "duration_sec": 69
+          },
+          {
+            "weight": 30,
+            "duration_sec": 76
+          },
+          {
+            "weight": 30,
+            "duration_sec": 71
+          }
+        ]
+      },
+      "mts_remo": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 15,
+            "duration_sec": 90
+          },
+          {
+            "weight": 25,
+            "duration_sec": 68
+          },
+          {
+            "weight": 25,
+            "duration_sec": 70
+          }
+        ]
+      },
+      "contraccion_de_piern_sentados": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 60
+          },
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 75,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "xlasde_espalda": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 45,
+            "duration_sec": 90
+          },
+          {
+            "weight": 55,
+            "duration_sec": 70
+          },
+          {
+            "weight": 55,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "abdominales": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 50,
+            "duration_sec": 53
+          },
+          {
+            "weight": 40,
+            "duration_sec": 90
+          },
+          {
+            "weight": 45,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "descando_ascendo_asistido": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 40,
+            "duration_sec": 90
+          },
+          {
+            "weight": 40,
+            "duration_sec": 65
+          },
+          {
+            "weight": 40,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "babell_fly_pulses": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 32,
+            "duration_sec": 82
+          },
+          {
+            "weight": 22,
+            "duration_sec": 52
+          },
+          {
+            "weight": 22,
+            "duration_sec": 70
+          }
+        ]
+      },
+      "goblet_squat": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 25,
+            "duration_sec": 90
+          },
+          {
+            "weight": 25,
+            "duration_sec": 90
+          },
+          {
+            "weight": 25,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bosu_leg_lift": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 53
+          },
+          {
+            "duration_sec": 42
+          },
+          {
+            "duration_sec": 44
+          }
+        ]
+      },
+      "lntners": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 40
+          },
+          {
+            "duration_sec": 40
+          },
+          {
+            "duration_sec": 40
+          }
+        ]
+      },
+      "feltric_hacia_abajo": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 98
+          },
+          {
+            "weight": 70,
+            "duration_sec": 70
+          }
+        ]
+      },
+      "fgj": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 58
+          },
+          {
+            "weight": 70,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bq": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "weight": 115,
+            "duration_sec": 78
+          },
+          {
+            "weight": 115,
+            "duration_sec": 75
+          }
+        ]
+      },
+      "boat": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 62
+          },
+          {
+            "duration_sec": 71
+          }
+        ]
+      },
+      "leg_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 180,
+            "duration_sec": 90
+          },
+          {
+            "weight": 180,
+            "duration_sec": 90
+          },
+          {
+            "weight": 180,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bend_w_bar": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 25,
+            "duration_sec": 90
+          },
+          {
+            "weight": 30,
+            "duration_sec": 90
+          },
+          {
+            "weight": 30,
+            "duration_sec": 96
+          }
+        ]
+      },
+      "kick_to_back": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 20
+          },
+          {
+            "weight": 20
+          },
+          {
+            "weight": 20
+          }
+        ]
+      },
+      "boat_w_weight": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 36
+          },
+          {
+            "duration_sec": 45
+          }
+        ]
+      },
+      "side_to_side": {
+        "weight_unit": null,
+        "sets": [
+          {}
+        ]
+      }
+    }
+  }
+]

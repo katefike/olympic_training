@@ -1,0 +1,202 @@
+[
+  {
+    "heic_id": "6448",
+    "gym": null,
+    "date": null,
+    "pain": [],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "leg_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 75
+          },
+          {
+            "weight": 75
+          },
+          {
+            "weight": 75
+          }
+        ],
+        "reps_total": 62
+      },
+      "leg_curl_prone": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 65
+          },
+          {
+            "weight": 70
+          },
+          {
+            "weight": 70
+          }
+        ],
+        "reps_total": 90
+      },
+      "shoulder_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 30
+          },
+          {
+            "weight": 30
+          }
+        ],
+        "reps_total": 66
+      },
+      "seated_row": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 60
+          },
+          {
+            "weight": 60
+          }
+        ],
+        "reps_total": 90
+      },
+      "seated_curlback": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 105
+          },
+          {
+            "weight": 110
+          },
+          {
+            "weight": 110
+          }
+        ],
+        "reps_total": 86
+      },
+      "back_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 160
+          },
+          {
+            "weight": 160
+          },
+          {
+            "weight": 160
+          }
+        ],
+        "reps_total": 90
+      },
+      "ab_crunch": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 40
+          },
+          {
+            "weight": 40
+          },
+          {
+            "weight": 40
+          }
+        ],
+        "reps_total": 72
+      },
+      "assisted_pullup": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 85
+          },
+          {
+            "weight": 85
+          }
+        ],
+        "reps_total": 90
+      },
+      "back_fly_pulses": {
+        "weight_unit": null,
+        "sets": [
+          {},
+          {}
+        ],
+        "reps_total": 63
+      },
+      "goblet_squat": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 25
+          },
+          {
+            "weight": 25
+          },
+          {
+            "weight": 30
+          }
+        ],
+        "reps_total": 96
+      },
+      "bosu_leg_lift": {
+        "weight_unit": null,
+        "sets": [
+          {},
+          {}
+        ],
+        "reps_total": 63
+      },
+      "lunges": {
+        "weight_unit": null,
+        "sets": [
+          {},
+          {}
+        ],
+        "reps_total": 46
+      },
+      "leg_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 200
+          },
+          {
+            "weight": 200
+          },
+          {
+            "weight": 200
+          }
+        ],
+        "reps_total": 90
+      },
+      "kick_to_side": {
+        "weight_unit": null,
+        "sets": [
+          {},
+          {}
+        ],
+        "reps_each": 5
+      },
+      "plank_with_changes": {
+        "weight_unit": null,
+        "sets": [
+          {},
+          {}
+        ],
+        "reps_total": 66
+      },
+      "superman": {
+        "weight_unit": null,
+        "sets": [
+          {},
+          {}
+        ],
+        "reps_each": 10
+      }
+    }
+  }
+]

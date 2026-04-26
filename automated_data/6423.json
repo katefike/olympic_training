@@ -1,0 +1,283 @@
+[
+  {
+    "heic_id": "6423",
+    "gym": "BodyTech",
+    "date": "250228",
+    "pain": [
+      {
+        "pain_level": 2,
+        "pain_location": "R knee"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "mts_row": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 20,
+            "duration_sec": 90
+          },
+          {
+            "weight": 30,
+            "duration_sec": 90
+          },
+          {
+            "weight": 20,
+            "duration_sec": 80
+          }
+        ]
+      },
+      "shoulder_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 20,
+            "duration_sec": 90
+          },
+          {
+            "weight": 25,
+            "duration_sec": 90
+          },
+          {
+            "weight": 20,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bend_w_bar": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 25,
+            "duration_sec": 90
+          },
+          {
+            "weight": 25,
+            "duration_sec": 90
+          },
+          {
+            "weight": 25,
+            "duration_sec": 90
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6423",
+    "gym": "BodyTech",
+    "date": "250306",
+    "pain": [
+      {
+        "pain_level": 0.5,
+        "pain_location": "R knee"
+      },
+      {
+        "pain_level": 1,
+        "pain_location": "R glut"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "tricep_pull": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 20,
+            "duration_sec": 90
+          },
+          {
+            "weight": 30,
+            "duration_sec": 50
+          },
+          {
+            "weight": 75,
+            "duration_sec": 60
+          }
+        ]
+      },
+      "bosu_leg_lift": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 55
+          },
+          {
+            "duration_sec": 45
+          },
+          {
+            "duration_sec": 40
+          }
+        ]
+      },
+      "fly_machine": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 10,
+            "duration_sec": 65
+          },
+          {
+            "weight": 18,
+            "duration_sec": 78
+          },
+          {
+            "weight": 18,
+            "duration_sec": 74
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6423",
+    "gym": "BodyTech",
+    "date": "250312",
+    "pain": [
+      {
+        "pain_level": 0.8,
+        "pain_location": null
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "bulgarian_split_squat": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 15
+          }
+        ]
+      },
+      "bend_w_bar": {
+        "weight_unit": "lbs",
+        "reps_total": 20,
+        "sets": [
+          {
+            "weight": 25
+          },
+          {
+            "weight": 30
+          }
+        ]
+      },
+      "ab_crunch": {
+        "weight_unit": "lbs",
+        "reps_total": 20,
+        "sets": [
+          {
+            "weight": 50
+          },
+          {
+            "weight": 65
+          }
+        ]
+      },
+      "back_xtnsn": {
+        "weight_unit": "lbs",
+        "reps_total": 20,
+        "sets": [
+          {
+            "weight": 110
+          },
+          {
+            "weight": 130
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6423",
+    "gym": "BodyTech",
+    "date": "250327",
+    "pain": [
+      {
+        "pain_level": 0.5,
+        "pain_location": "R knee"
+      },
+      {
+        "pain_level": null,
+        "pain_location": "burning lower bp"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "leg_xtn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 75,
+            "duration_sec": 96
+          }
+        ]
+      },
+      "leg_curl_prone": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 65,
+            "duration_sec": 90
+          },
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 75,
+            "duration_sec": 40
+          }
+        ]
+      },
+      "bosu_leg_lift": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 65
+          },
+          {
+            "duration_sec": 60
+          },
+          {
+            "duration_sec": 60
+          }
+        ]
+      },
+      "mts_row": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 20,
+            "duration_sec": 90
+          },
+          {
+            "weight": 30,
+            "duration_sec": 70
+          },
+          {
+            "weight": 20,
+            "duration_sec": 70
+          }
+        ]
+      }
+    }
+  }
+]

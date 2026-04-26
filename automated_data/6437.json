@@ -1,0 +1,352 @@
+[
+  {
+    "heic_id": "6437",
+    "gym": null,
+    "date": null,
+    "pain": [
+      {
+        "pain_level": "1",
+        "pain_location": "shoulder"
+      },
+      {
+        "pain_level": null,
+        "pain_location": "right hip"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "wall_sit": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 25,
+            "duration_sec": 81
+          },
+          {
+            "weight": 25,
+            "duration_sec": 90
+          },
+          {
+            "weight": 25,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "tricep_pull_down": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 20,
+            "duration_sec": 90
+          },
+          {
+            "weight": 25,
+            "duration_sec": 67
+          },
+          {
+            "weight": 25,
+            "duration_sec": 65
+          }
+        ]
+      },
+      "fixed_pull_down": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 85,
+            "duration_sec": 90
+          },
+          {
+            "weight": 90,
+            "duration_sec": 74
+          },
+          {
+            "weight": 90,
+            "duration_sec": 0
+          }
+        ]
+      },
+      "ab_crunch": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 40,
+            "duration_sec": 63
+          },
+          {
+            "weight": 40,
+            "duration_sec": 75
+          },
+          {
+            "weight": 40,
+            "duration_sec": 65
+          }
+        ]
+      },
+      "gg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 160,
+            "duration_sec": 70
+          },
+          {
+            "weight": 185,
+            "duration_sec": 90
+          },
+          {
+            "weight": 190,
+            "duration_sec": 67
+          }
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 145,
+            "duration_sec": 80
+          },
+          {
+            "weight": 145,
+            "duration_sec": 65
+          },
+          {
+            "weight": 145,
+            "duration_sec": 0
+          }
+        ]
+      },
+      "chest_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 55,
+            "duration_sec": 90
+          },
+          {
+            "weight": 60,
+            "duration_sec": 67
+          },
+          {
+            "weight": 65,
+            "duration_sec": 0
+          }
+        ]
+      },
+      "back_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 190,
+            "duration_sec": 90
+          },
+          {
+            "weight": 195,
+            "duration_sec": 90
+          },
+          {
+            "weight": 200,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "seated_curlback": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 115,
+            "duration_sec": 90
+          },
+          {
+            "weight": 115,
+            "duration_sec": 90
+          },
+          {
+            "weight": 120,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "leg_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 75,
+            "duration_sec": 90
+          },
+          {
+            "weight": 80,
+            "duration_sec": 78
+          },
+          {
+            "weight": 80,
+            "duration_sec": 65
+          }
+        ]
+      },
+      "seated_low": {
+        "weight_unit": "lbs",
+        "notes": "shoulder",
+        "sets": [
+          {
+            "weight": 65,
+            "duration_sec": 90
+          },
+          {
+            "weight": 70,
+            "duration_sec": 74
+          },
+          {
+            "weight": 75,
+            "duration_sec": 0
+          }
+        ]
+      },
+      "ab_crunch_pullover": {
+        "weight_unit": "lbs",
+        "notes": "pin high",
+        "sets": [
+          {
+            "weight": 40,
+            "duration_sec": 90
+          },
+          {
+            "weight": 45,
+            "duration_sec": 90
+          },
+          {
+            "weight": 45,
+            "duration_sec": 0
+          }
+        ]
+      },
+      "calf_raise": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 45
+          },
+          {
+            "weight": 70,
+            "duration_sec": 61
+          },
+          {
+            "weight": 70,
+            "duration_sec": 64
+          }
+        ]
+      },
+      "hip_thrust": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 90,
+            "duration_sec": 90
+          },
+          {
+            "weight": 90,
+            "duration_sec": 90
+          },
+          {
+            "weight": 110,
+            "duration_sec": 65
+          }
+        ]
+      },
+      "bend_n_bar": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 60,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bosu_leg_lift": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 79
+          },
+          {
+            "duration_sec": 62
+          },
+          {
+            "duration_sec": 54
+          }
+        ]
+      },
+      "leg_press": {
+        "weight_unit": "lbs",
+        "notes": "right hip in pain",
+        "sets": [
+          {
+            "weight": 210,
+            "duration_sec": 90
+          },
+          {
+            "weight": 200,
+            "duration_sec": 71
+          }
+        ]
+      },
+      "kickbacks": {
+        "weight_unit": "lbs",
+        "reps_each": 5,
+        "sets": [
+          {
+            "weight": 20
+          },
+          {
+            "weight": 30
+          },
+          {
+            "weight": 25
+          }
+        ],
+        "notes": null
+      },
+      "superman": {
+        "weight_unit": null,
+        "notes": "jaw pain",
+        "sets": [
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 70
+          },
+          {
+            "duration_sec": 65
+          },
+          {
+            "duration_sec": 5
+          }
+        ]
+      },
+      "hover": {
+        "weight_unit": null,
+        "notes": "shoulder pain",
+        "sets": [
+          {
+            "duration_sec": 82
+          },
+          {
+            "duration_sec": 71
+          },
+          {
+            "duration_sec": 60
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "heic_id": "6433",
+    "gym": null,
+    "date": "240817",
+    "pain": [
+      {
+        "pain_level": 2,
+        "pain_location": "R shoulder"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": "Step deg",
+    "exercises": {
+      "leg_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 84
+          },
+          {
+            "weight": 70,
+            "duration_sec": 105
+          },
+          {
+            "weight": 80,
+            "duration_sec": 91
+          }
+        ]
+      },
+      "leg_curl_prone": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 25,
+            "duration_sec": 85
+          },
+          {
+            "weight": 25,
+            "duration_sec": 85
+          },
+          {
+            "weight": 25,
+            "duration_sec": 71
+          }
+        ]
+      },
+      "side_kick_out": {
+        "weight_unit": "lbs",
+        "reps_each": 10,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      },
+      "side_kick_in": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6433",
+    "gym": null,
+    "date": "240819",
+    "pain": [
+      {
+        "pain_level": 2,
+        "pain_location": "left ear"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": "steroids",
+    "exercises": {
+      "gg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 102,
+            "duration_sec": 62
+          },
+          {
+            "weight": 100,
+            "duration_sec": 90
+          },
+          {
+            "weight": 105,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 78
+          },
+          {
+            "weight": 70,
+            "duration_sec": 68
+          },
+          {
+            "weight": 70,
+            "duration_sec": 67
+          }
+        ]
+      },
+      "wall_sit": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 35
+          },
+          {
+            "duration_sec": 45
+          },
+          {}
+        ]
+      }
+    }
+  }
+]

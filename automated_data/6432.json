@@ -1,0 +1,268 @@
+[
+  {
+    "heic_id": "6432",
+    "gym": null,
+    "date": "240802",
+    "pain": [
+      {
+        "pain_level": 1,
+        "pain_location": "left jaw/trapz"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "calf_raise": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 100,
+            "duration_sec": 90
+          },
+          {
+            "weight": 100,
+            "duration_sec": 90
+          },
+          {
+            "weight": 140,
+            "duration_sec": 68
+          }
+        ]
+      },
+      "lunges": {
+        "weight_unit": "lbs",
+        "reps_total": 40,
+        "sets": [
+          {},
+          {}
+        ]
+      },
+      "bosu_leg_lift": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 55
+          },
+          {
+            "duration_sec": 60
+          },
+          {
+            "duration_sec": 60
+          }
+        ]
+      },
+      "handover_hand_lbr": {
+        "weight_unit": "lbs",
+        "reps_total": 60,
+        "sets": [
+          {
+            "weight": 35
+          },
+          {
+            "weight": 45
+          },
+          {
+            "weight": 50
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6432",
+    "gym": null,
+    "date": "240803",
+    "pain": [
+      {
+        "pain_level": 2,
+        "pain_location": "left jaw/trapz"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "leg_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 180,
+            "duration_sec": 90
+          },
+          {
+            "weight": 180,
+            "duration_sec": 78
+          }
+        ]
+      },
+      "leg_curl_prone": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 25
+          },
+          {
+            "weight": 25
+          },
+          {
+            "weight": 25
+          }
+        ]
+      },
+      "side_kick_out": {
+        "weight_unit": "lbs",
+        "reps_each": 10,
+        "sets": [
+          {},
+          {
+            "weight": 10
+          },
+          {
+            "weight": 10
+          }
+        ]
+      },
+      "side_kick_in": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {},
+          {
+            "weight": 20
+          },
+          {
+            "weight": 20
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6432",
+    "gym": null,
+    "date": "240904",
+    "pain": [
+      {
+        "pain_level": 0.5,
+        "pain_location": "right trapz"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "gg": {
+        "weight_unit": "lbs",
+        "reps_total": 64,
+        "sets": [
+          {
+            "weight": 70
+          },
+          {
+            "weight": 70
+          },
+          {
+            "weight": 70
+          }
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 65
+          },
+          {
+            "weight": 70,
+            "duration_sec": 63
+          },
+          {
+            "weight": 70,
+            "duration_sec": 69
+          }
+        ]
+      },
+      "tricep_pulldown": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 30,
+            "duration_sec": 90
+          },
+          {
+            "weight": 30,
+            "duration_sec": 90
+          },
+          {
+            "weight": 30,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "curl": {
+        "weight_unit": "lbs",
+        "reps_total": 20,
+        "sets": [
+          {
+            "weight": 5
+          },
+          {
+            "weight": 5
+          },
+          {
+            "weight": 5
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6432",
+    "gym": null,
+    "date": "240908",
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": null
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "dolphin_pushups": {
+        "weight_unit": null,
+        "reps_total": 20,
+        "sets": [
+          {},
+          {}
+        ]
+      },
+      "flying_flows": {
+        "weight_unit": null,
+        "reps_total": 20,
+        "sets": [
+          {},
+          {}
+        ]
+      },
+      "pushup": {
+        "weight_unit": null,
+        "reps_total": 10,
+        "sets": [
+          {}
+        ]
+      },
+      "situp": {
+        "weight_unit": null,
+        "reps_total": 20,
+        "sets": [
+          {}
+        ]
+      }
+    }
+  }
+]

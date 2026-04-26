@@ -1,0 +1,314 @@
+[
+  {
+    "heic_id": "6421",
+    "gym": null,
+    "date": "250506",
+    "pain": [
+      {
+        "pain_level": 2,
+        "pain_location": "L jaw"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "leg_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 160,
+            "duration_sec": 90
+          },
+          {
+            "weight": 185,
+            "duration_sec": 90
+          },
+          {
+            "weight": 190,
+            "duration_sec": 85
+          }
+        ]
+      },
+      "calf_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 75,
+            "duration_sec": 90
+          },
+          {
+            "weight": 80,
+            "duration_sec": 59
+          }
+        ]
+      },
+      "lunge": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 30
+          },
+          {
+            "weight": 30
+          },
+          {
+            "weight": 30
+          }
+        ]
+      },
+      "prone_leg_curl": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 66,
+            "duration_sec": 60
+          },
+          {
+            "weight": 70,
+            "duration_sec": 64
+          },
+          {
+            "weight": 75
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6421",
+    "gym": null,
+    "date": "250508",
+    "pain": [
+      {
+        "pain_level": 3,
+        "pain_location": "R base of skull"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": "headache",
+    "exercises": {
+      "barbell_hip_thrust": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 50
+          },
+          {
+            "weight": 100
+          },
+          {
+            "weight": 140
+          }
+        ]
+      },
+      "kick_back": {
+        "weight_unit": "lbs",
+        "reps_each": 10,
+        "sets": [
+          {
+            "weight": 10
+          },
+          {
+            "weight": 10
+          },
+          {
+            "weight": 10
+          }
+        ],
+        "notes": "unsupported"
+      },
+      "side_kick_out": {
+        "weight_unit": "lbs",
+        "reps_each": 5,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      },
+      "side_kick_in": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 10
+          },
+          {
+            "weight": 10
+          },
+          {
+            "weight": 10
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6421",
+    "gym": null,
+    "date": "250512",
+    "pain": [
+      {
+        "pain_level": 0.5,
+        "pain_location": "L jaw"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "leg_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 80,
+            "duration_sec": 73
+          },
+          {
+            "weight": 80,
+            "duration_sec": 65
+          },
+          {
+            "weight": 80
+          }
+        ]
+      },
+      "seated_curl": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 80,
+            "duration_sec": 90
+          },
+          {
+            "weight": 90,
+            "duration_sec": 90
+          },
+          {
+            "weight": 95
+          }
+        ]
+      },
+      "back_xtn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 140,
+            "duration_sec": 90
+          },
+          {
+            "weight": 145,
+            "duration_sec": 90
+          },
+          {
+            "weight": 150
+          }
+        ]
+      },
+      "ab_crunch": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 50,
+            "duration_sec": 62
+          },
+          {
+            "weight": 50,
+            "duration_sec": 70
+          },
+          {
+            "weight": 50
+          }
+        ],
+        "notes": "back flat"
+      }
+    }
+  },
+  {
+    "heic_id": "6421",
+    "gym": null,
+    "date": "250515",
+    "pain": [
+      {
+        "pain_level": 2,
+        "pain_location": "L jaw, neck"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "bulgarian_split_squat": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 20
+          },
+          {
+            "weight": 20
+          },
+          {
+            "weight": 20
+          }
+        ]
+      },
+      "gg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 110,
+            "duration_sec": 90
+          },
+          {
+            "weight": 115,
+            "duration_sec": 96
+          },
+          {
+            "weight": 115
+          }
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 110,
+            "duration_sec": 65
+          },
+          {
+            "weight": 110,
+            "duration_sec": 69
+          },
+          {
+            "weight": 110
+          }
+        ]
+      },
+      "abdominal_sitting": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 85,
+            "duration_sec": 90
+          },
+          {
+            "weight": 55,
+            "duration_sec": 90
+          },
+          {
+            "weight": 55
+          }
+        ]
+      }
+    }
+  }
+]

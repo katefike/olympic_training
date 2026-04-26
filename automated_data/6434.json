@@ -1,0 +1,252 @@
+[
+  {
+    "heic_id": "6434",
+    "gym": null,
+    "date": "240605",
+    "pain": [
+      {
+        "pain_level": 2,
+        "pain_location": "stiff neck"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "leg_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 25,
+            "duration_sec": 60
+          },
+          {
+            "weight": 25,
+            "duration_sec": 60
+          },
+          {
+            "weight": 25,
+            "duration_sec": 66
+          }
+        ]
+      },
+      "leg_curl_plane": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 25,
+            "duration_sec": 60
+          },
+          {
+            "weight": 25,
+            "duration_sec": 61
+          },
+          {
+            "weight": 25,
+            "duration_sec": 66
+          }
+        ]
+      },
+      "side_kick_out": {
+        "weight_unit": null,
+        "reps_each": 10,
+        "sets": [
+          {},
+          {}
+        ]
+      },
+      "side_kick_in": {
+        "weight_unit": null,
+        "reps_each": 20,
+        "sets": [
+          {},
+          {}
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6434",
+    "gym": null,
+    "date": "240608",
+    "pain": [
+      {
+        "pain_level": 5,
+        "pain_location": "TMD"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "gg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 110
+          },
+          {
+            "weight": 105
+          },
+          {
+            "weight": 100
+          }
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 75
+          },
+          {
+            "weight": 70
+          },
+          {
+            "weight": 70
+          }
+        ]
+      },
+      "wall_sit": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 25
+          },
+          {
+            "weight": 25
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6434",
+    "gym": null,
+    "date": "240910",
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": "stiff neck"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "seated_curlback": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 85
+          },
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 75,
+            "duration_sec": 77
+          }
+        ]
+      },
+      "dumbbell_bicep_curl": {
+        "weight_unit": "lbs",
+        "reps_total": 20,
+        "sets": [
+          {
+            "weight": 5
+          },
+          {
+            "weight": 5
+          },
+          {
+            "weight": 5
+          }
+        ]
+      },
+      "lunges_tricep_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 30
+          },
+          {
+            "weight": 30
+          },
+          {
+            "weight": 30
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6434",
+    "gym": null,
+    "date": "240815",
+    "pain": [
+      {
+        "pain_level": 2,
+        "pain_location": "mild TMD"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": "Prednisone",
+    "exercises": {
+      "calf_rise": {
+        "weight_unit": "lbs",
+        "reps_total": 200,
+        "sets": [
+          {
+            "weight": 70
+          },
+          {
+            "weight": 70
+          },
+          {
+            "weight": 70
+          }
+        ]
+      },
+      "lunges": {
+        "weight_unit": null,
+        "reps_total": 40,
+        "sets": [
+          {},
+          {}
+        ]
+      },
+      "bosu_leg_lift": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 63
+          },
+          {
+            "duration_sec": 55
+          },
+          {
+            "duration_sec": 40
+          }
+        ]
+      },
+      "bridge": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 12
+          },
+          {
+            "duration_sec": 30
+          },
+          {
+            "duration_sec": 36
+          }
+        ]
+      }
+    }
+  }
+]

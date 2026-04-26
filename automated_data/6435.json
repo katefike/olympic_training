@@ -1,0 +1,339 @@
+[
+  {
+    "heic_id": "6435",
+    "gym": null,
+    "date": "250722",
+    "pain": [
+      {
+        "pain_level": null,
+        "pain_location": "pen"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "leg_xtsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 80
+          },
+          {
+            "weight": 85
+          },
+          {
+            "weight": 85
+          }
+        ]
+      },
+      "leg_curl_prone": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70
+          },
+          {
+            "weight": 80
+          },
+          {
+            "weight": 80
+          }
+        ]
+      },
+      "side_kicks_out": {
+        "weight_unit": null,
+        "reps_each": 5,
+        "sets": [
+          {},
+          {},
+          {},
+          {
+            "weight": 10
+          }
+        ]
+      },
+      "decline_situps": {
+        "weight_unit": null,
+        "reps_total": 20,
+        "sets": [
+          {}
+        ]
+      },
+      "gg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 195,
+            "duration_sec": 73
+          },
+          {
+            "weight": 195,
+            "duration_sec": 74
+          }
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 145,
+            "duration_sec": 62
+          },
+          {
+            "weight": 145,
+            "duration_sec": 68
+          },
+          {
+            "weight": 140,
+            "duration_sec": 69
+          }
+        ]
+      },
+      "back_xtsn_twice": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 200,
+            "duration_sec": 90
+          },
+          {
+            "weight": 185,
+            "duration_sec": 90
+          },
+          {
+            "weight": 185,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "boat": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 66
+          },
+          {
+            "duration_sec": 65
+          },
+          {
+            "duration_sec": 60
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6435",
+    "gym": null,
+    "date": "250725",
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": "neck"
+      },
+      {
+        "pain_level": 0,
+        "pain_location": "pig"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "seated_curlback": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 120
+          },
+          {
+            "weight": 120
+          },
+          {
+            "weight": 120
+          }
+        ]
+      },
+      "veg_xtsn": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 40
+          }
+        ]
+      },
+      "little_ball_hand": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 20
+          }
+        ]
+      },
+      "abs_crunch": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 50
+          },
+          {
+            "weight": 50
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6435",
+    "gym": null,
+    "date": "260125",
+    "pain": [
+      {
+        "pain_level": null,
+        "pain_location": "stiff_neck"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "calf_raise": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 60,
+            "duration_sec": 8
+          },
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 60,
+            "duration_sec": 73
+          }
+        ]
+      },
+      "hip_thrust": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 100,
+            "duration_sec": 9
+          },
+          {
+            "weight": 100,
+            "duration_sec": 96
+          },
+          {
+            "weight": 130,
+            "duration_sec": 66
+          }
+        ]
+      },
+      "superman": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 58
+          }
+        ]
+      },
+      "bosu_leg_lift": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 73
+          },
+          {
+            "duration_sec": 75
+          },
+          {
+            "duration_sec": 69
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6435",
+    "gym": null,
+    "date": "250805",
+    "pain": [
+      {
+        "pain_level": null,
+        "pain_location": "R shoulder"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "leg_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 180,
+            "duration_sec": 90
+          },
+          {
+            "weight": 180,
+            "duration_sec": 90
+          },
+          {
+            "weight": 180,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "kick_backs": {
+        "weight_unit": "lbs",
+        "reps_total": 20,
+        "sets": [
+          {
+            "weight": 30
+          },
+          {
+            "weight": 40
+          },
+          {
+            "weight": 40
+          }
+        ]
+      },
+      "plank": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 8
+          },
+          {
+            "duration_sec": 75
+          },
+          {
+            "duration_sec": 60
+          }
+        ]
+      },
+      "boat": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 60
+          },
+          {
+            "duration_sec": 59
+          },
+          {
+            "duration_sec": 66
+          }
+        ]
+      }
+    }
+  }
+]

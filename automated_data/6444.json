@@ -1,0 +1,232 @@
+[
+  {
+    "heic_id": "6444",
+    "gym": null,
+    "date": null,
+    "pain": [],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "x1sn_di_pierna": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 75
+          },
+          {
+            "weight": 75
+          },
+          {
+            "weight": 75
+          }
+        ]
+      },
+      "contraccion_de_pierna": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 67
+          },
+          {
+            "weight": 66
+          },
+          {
+            "weight": 90
+          }
+        ]
+      },
+      "x1osa_de_hombres": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 35
+          },
+          {
+            "weight": 40
+          },
+          {
+            "weight": 40
+          }
+        ]
+      },
+      "pats_romero_low": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 30
+          },
+          {
+            "weight": 35
+          },
+          {
+            "weight": 40
+          }
+        ]
+      },
+      "contraccion_de_pierna_prox": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 75
+          },
+          {
+            "weight": 65
+          },
+          {
+            "weight": 75
+          }
+        ]
+      },
+      "x1sn_da_espalda": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 65
+          },
+          {
+            "weight": 65
+          },
+          {
+            "weight": 65
+          }
+        ]
+      },
+      "abdominales_1": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 55
+          },
+          {
+            "weight": 55
+          },
+          {
+            "weight": 55
+          }
+        ]
+      },
+      "descendo_ascendo_asistido": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 33
+          },
+          {
+            "weight": 33
+          },
+          {
+            "weight": 40
+          }
+        ]
+      },
+      "barbell_fly_pulses_1": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 25
+          },
+          {
+            "weight": 25
+          },
+          {
+            "weight": 25
+          }
+        ]
+      },
+      "goblet_squat_1": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 35
+          },
+          {
+            "weight": 35
+          },
+          {
+            "weight": 35
+          }
+        ]
+      },
+      "lunges_1": {
+        "weight_unit": null,
+        "reps_total": 20,
+        "sets": [
+          {},
+          {}
+        ]
+      },
+      "bosu_leg_lift_1": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 68
+          },
+          {
+            "duration_sec": 43
+          },
+          {
+            "duration_sec": 46
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6444",
+    "gym": null,
+    "date": null,
+    "pain": [],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "barbell_fly_pulses_2": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 25
+          },
+          {
+            "weight": 25
+          },
+          {
+            "weight": 25
+          }
+        ]
+      },
+      "goblet_squat_2": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 30
+          },
+          {
+            "weight": 35
+          },
+          {
+            "weight": 35
+          }
+        ]
+      },
+      "bosu_leg_lift_2": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 48
+          },
+          {
+            "duration_sec": 30
+          }
+        ]
+      },
+      "lunges_2": {
+        "weight_unit": null,
+        "reps_total": 20,
+        "sets": [
+          {}
+        ]
+      }
+    }
+  }
+]

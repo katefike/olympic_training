@@ -1,0 +1,266 @@
+[
+  {
+    "heic_id": "6427",
+    "gym": null,
+    "date": "240228",
+    "pain": [
+      {
+        "pain_level": 3,
+        "pain_location": "all left side"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "side_kick_in": {
+        "weight_unit": "lbs",
+        "reps_each": 5,
+        "sets": [
+          {},
+          {}
+        ]
+      },
+      "side_kick_out": {
+        "weight_unit": "lbs",
+        "reps_each": 5,
+        "sets": [
+          {},
+          {}
+        ]
+      },
+      "side_kick_back": {
+        "weight_unit": "lbs",
+        "reps_each": 10,
+        "sets": [
+          {
+            "weight": 10
+          },
+          {
+            "weight": 20
+          },
+          {
+            "weight": 30
+          }
+        ]
+      },
+      "bosu_leg_lift": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 60
+          },
+          {
+            "duration_sec": 61
+          },
+          {
+            "duration_sec": 63
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6427",
+    "gym": null,
+    "date": "240228",
+    "pain": [
+      {
+        "pain_level": 3,
+        "pain_location": "all left side"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "torso_rotation": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 50
+          },
+          {
+            "weight": 40
+          },
+          {
+            "weight": 30
+          }
+        ]
+      },
+      "back_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 85
+          },
+          {
+            "weight": 85
+          },
+          {
+            "weight": 85
+          }
+        ]
+      },
+      "abdominal_bar": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 84
+          },
+          {
+            "weight": 84
+          },
+          {
+            "weight": 84
+          }
+        ]
+      },
+      "leg_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 180
+          },
+          {
+            "weight": 180
+          },
+          {
+            "weight": 180
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6427",
+    "gym": null,
+    "date": "241103",
+    "pain": [
+      {
+        "pain_level": 9,
+        "pain_location": "left side"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {}
+  },
+  {
+    "heic_id": "6427",
+    "gym": null,
+    "date": "241107",
+    "pain": [
+      {
+        "pain_level": 1,
+        "pain_location": "top of shoulders"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "back_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 85,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "abdominal_bar": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 72,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "leg_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 50,
+            "duration_sec": 90
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6427",
+    "gym": null,
+    "date": "241110",
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": "none"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "back_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 85
+          },
+          {
+            "weight": 85
+          },
+          {
+            "weight": 85
+          }
+        ]
+      },
+      "abdominal_bar": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 84
+          },
+          {
+            "weight": 84
+          },
+          {
+            "weight": 84
+          }
+        ]
+      },
+      "leg_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 60
+          },
+          {
+            "weight": 65
+          },
+          {
+            "weight": 60
+          }
+        ]
+      },
+      "leg_curlback": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 50
+          },
+          {
+            "weight": 55
+          },
+          {
+            "weight": 65
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,330 @@
+[
+  {
+    "heic_id": "6422",
+    "gym": "Planet Fitness",
+    "date": "250427",
+    "pain": [
+      {
+        "pain_level": "3",
+        "pain_location": "R knee"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "leg_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 60,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "chest_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 69
+          },
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 70,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "tricep_pull": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 20,
+            "duration_sec": 90
+          },
+          {
+            "weight": 20,
+            "duration_sec": 90
+          },
+          {
+            "weight": 20,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "pull_down": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 45,
+            "duration_sec": 90
+          },
+          {
+            "weight": 45,
+            "duration_sec": 90
+          },
+          {
+            "weight": 45,
+            "duration_sec": 90
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6422",
+    "gym": "Planet Fitness",
+    "date": "250429",
+    "pain": [
+      {
+        "pain_level": "2",
+        "pain_location": "L knee"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "leg_extension": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 85,
+            "duration_sec": 61
+          },
+          {
+            "weight": 80,
+            "duration_sec": 75
+          },
+          {
+            "weight": 80,
+            "duration_sec": 69
+          }
+        ]
+      },
+      "seated_row_curl": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 80,
+            "duration_sec": 60
+          },
+          {
+            "weight": 80,
+            "duration_sec": 60
+          },
+          {
+            "weight": 80,
+            "duration_sec": 60
+          }
+        ]
+      },
+      "back_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 130,
+            "duration_sec": 90
+          },
+          {
+            "weight": 130,
+            "duration_sec": 90
+          },
+          {
+            "weight": 140,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "ab_crunch_keep_plate": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 50,
+            "duration_sec": 63
+          },
+          {
+            "weight": 45,
+            "duration_sec": 90
+          },
+          {
+            "weight": 45,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bend_w_bar": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 50,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bulgarian_split_squat": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          }
+        ]
+      },
+      "gg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 120,
+            "duration_sec": 90
+          },
+          {
+            "weight": 130,
+            "duration_sec": 90
+          },
+          {
+            "weight": 135,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 110,
+            "duration_sec": 90
+          },
+          {
+            "weight": 115,
+            "duration_sec": 90
+          },
+          {
+            "weight": 115,
+            "duration_sec": 63
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6422",
+    "gym": null,
+    "date": "250501",
+    "pain": [
+      {
+        "pain_level": "3",
+        "pain_location": "L jaw"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {}
+  },
+  {
+    "heic_id": "6422",
+    "gym": null,
+    "date": "250504",
+    "pain": [
+      {
+        "pain_level": "3",
+        "pain_location": "L jaw"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "superman_90": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 25,
+            "duration_sec": 90
+          },
+          {
+            "weight": 35,
+            "duration_sec": 80
+          },
+          {
+            "weight": 35,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "seated_reverse_fly": {
+        "weight_unit": "lbs",
+        "reps_total": 30,
+        "sets": [
+          {
+            "weight": 10
+          },
+          {
+            "weight": 20
+          },
+          {
+            "weight": 20
+          }
+        ]
+      },
+      "kickback_machine": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 20
+          },
+          {
+            "weight": 90,
+            "duration_sec": 20
+          },
+          {}
+        ]
+      },
+      "abdominal_push": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 85,
+            "duration_sec": 90
+          },
+          {
+            "weight": 85,
+            "duration_sec": 90
+          }
+        ]
+      }
+    }
+  }
+]

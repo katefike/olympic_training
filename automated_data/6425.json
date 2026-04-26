@@ -1,0 +1,315 @@
+[
+  {
+    "heic_id": "6425",
+    "gym": "YMCA",
+    "date": "250103",
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": null
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": "Hem!!",
+    "exercises": {
+      "shoulder_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 30,
+            "duration_sec": 90
+          },
+          {
+            "weight": 20,
+            "duration_sec": 90
+          },
+          {
+            "weight": 30,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "mts_row": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 20,
+            "duration_sec": 90
+          },
+          {
+            "weight": 20,
+            "duration_sec": 90
+          },
+          {
+            "weight": 20,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "leg_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 95,
+            "duration_sec": 75
+          },
+          {
+            "weight": 90,
+            "duration_sec": 78
+          },
+          {
+            "weight": 95,
+            "duration_sec": 76
+          }
+        ]
+      },
+      "leg_curlback": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 80,
+            "duration_sec": 90
+          },
+          {
+            "weight": 90,
+            "duration_sec": 74
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6425",
+    "gym": null,
+    "date": "250203",
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": null
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": "Post hem",
+    "exercises": {
+      "abdominals": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 40,
+            "duration_sec": 90
+          },
+          {
+            "weight": 40,
+            "duration_sec": 90
+          },
+          {
+            "weight": 40,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "back_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 55,
+            "duration_sec": 90
+          },
+          {
+            "weight": 55,
+            "duration_sec": 90
+          },
+          {
+            "weight": 55,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bulgarian_split_squat": {
+        "weight_unit": "lbs",
+        "reps_total": 20,
+        "sets": [
+          {},
+          {},
+          {}
+        ]
+      },
+      "wall_sit_w/poning": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 60
+          },
+          {
+            "duration_sec": 85
+          },
+          {
+            "duration_sec": 71
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6425",
+    "gym": null,
+    "date": "250206",
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": null
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "tricep_xtns": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 30,
+            "duration_sec": 90
+          },
+          {
+            "weight": 30,
+            "duration_sec": 60
+          },
+          {
+            "weight": 30,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "gg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 150,
+            "duration_sec": 90
+          },
+          {
+            "weight": 130,
+            "duration_sec": 60
+          },
+          {
+            "weight": 130,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "sg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 110,
+            "duration_sec": 90
+          },
+          {
+            "weight": 90,
+            "duration_sec": 90
+          },
+          {
+            "weight": 90,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "superman": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 70
+          }
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6425",
+    "gym": null,
+    "date": "250210",
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": null
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "bosu_leg_lift": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 60
+          },
+          {
+            "duration_sec": 57
+          },
+          {
+            "duration_sec": 45
+          }
+        ]
+      },
+      "shoulder_press": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 80,
+            "duration_sec": 79
+          },
+          {
+            "weight": 30,
+            "duration_sec": 90
+          },
+          {
+            "weight": 30,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bulgarian_split_squat": {
+        "weight_unit": "lbs",
+        "reps_total": 20,
+        "sets": [
+          {
+            "weight": 7
+          },
+          {},
+          {}
+        ]
+      },
+      "band_tuber": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 25,
+            "duration_sec": 90
+          },
+          {
+            "weight": 25,
+            "duration_sec": 90
+          },
+          {
+            "weight": 25,
+            "duration_sec": 90
+          }
+        ]
+      }
+    }
+  }
+]
