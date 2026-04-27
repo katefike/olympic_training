@@ -1,7 +1,7 @@
 [
   {
     "heic_id": "6426",
-    "gym": null,
+    "gym": "Tennyson's",
     "date": "241112",
     "pain": [
       {
@@ -9,8 +9,8 @@
         "pain_location": null
       }
     ],
-    "cardio_type": null,
-    "cardio_duration_minutes": null,
+    "cardio_type": "stair climbers",
+    "cardio_duration_minutes": 15,
     "notes": null,
     "exercises": {
       "leg_press": {
@@ -25,12 +25,12 @@
             "duration_sec": 90
           },
           {
-            "weight": 186,
+            "weight": 185,
             "duration_sec": 90
           }
         ]
       },
-      "glute_press": {
+      "kickback_machine": {
         "weight_unit": "lbs",
         "reps_each": 20,
         "sets": [
@@ -38,7 +38,7 @@
             "weight": 90
           },
           {
-            "weight": 66
+            "weight": 55
           },
           {
             "weight": 90
@@ -75,7 +75,7 @@
           },
           {
             "weight": 45,
-            "duration_sec": 66
+            "duration_sec": 60
           }
         ]
       }
@@ -83,7 +83,7 @@
   },
   {
     "heic_id": "6426",
-    "gym": null,
+    "gym": "BodyTech",
     "date": "241128",
     "pain": [
       {
@@ -103,7 +103,7 @@
             "duration_sec": 90
           },
           {
-            "weight": 200,
+            "weight": 190,
             "duration_sec": 90
           },
           {
@@ -137,11 +137,11 @@
             "duration_sec": 50
           },
           {
-            "weight": 85,
+            "weight": 95,
             "duration_sec": 63
           },
           {
-            "weight": 75,
+            "weight": 95,
             "duration_sec": 53
           }
         ]
@@ -156,7 +156,7 @@
             "duration_sec": 51
           },
           {
-            "duration_sec": 59
+            "duration_sec": 50
           }
         ]
       }
@@ -164,7 +164,7 @@
   },
   {
     "heic_id": "6426",
-    "gym": null,
+    "gym": "BodyTech",
     "date": "241229",
     "pain": [
       {
@@ -172,7 +172,7 @@
         "pain_location": null
       }
     ],
-    "cardio_type": "elliptical",
+    "cardio_type": "stair climbers",
     "cardio_duration_minutes": 15,
     "notes": null,
     "exercises": {
@@ -184,8 +184,8 @@
           {}
         ]
       },
-      "bend_w_ball": {
-        "weight_unit": "lbs",
+      "bend_w_bar": {
+        "weight_unit": "kg",
         "sets": [
           {
             "weight": 30,
@@ -193,11 +193,11 @@
           },
           {
             "weight": 30,
-            "duration_sec": 96
+            "duration_sec": 90
           },
           {
             "weight": 30,
-            "duration_sec": 10
+            "duration_sec": 90
           }
         ]
       },
@@ -213,14 +213,17 @@
             "duration_sec": 90
           },
           {
-            "weight": 30,
-            "duration_sec": 94
+            "weight": 20,
+            "duration_sec": 90
           }
         ]
       },
       "trampoline_ball": {
         "weight_unit": null,
         "sets": [
+          {
+            "duration_sec": 90
+          },
           {
             "duration_sec": 90
           },

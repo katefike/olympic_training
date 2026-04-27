@@ -1,16 +1,16 @@
 [
   {
     "heic_id": "6429",
-    "gym": null,
-    "date": "240707",
+    "gym": "Tennyson's",
+    "date": "241007",
     "pain": [
       {
         "pain_level": 0,
         "pain_location": null
       }
     ],
-    "cardio_type": null,
-    "cardio_duration_minutes": null,
+    "cardio_type": "stair climbers",
+    "cardio_duration_minutes": 15,
     "notes": null,
     "exercises": {
       "hip_thrusts": {
@@ -21,9 +21,9 @@
             "duration_sec": 90
           },
           {
-            "weight": 100
-          },
-          {}
+            "weight": 100,
+            "duration_sec": 90
+          }
         ]
       },
       "calf_raise": {
@@ -62,17 +62,12 @@
       },
       "oblique_crunch_machine": {
         "weight_unit": "lbs",
-        "reps_each": 10,
+        "reps_each": 20,
         "sets": [
-          {
-            "weight": null
-          },
+          {},
           {},
           {
-            "weight": 70
-          },
-          {
-            "weight": 20
+            "weight": 10
           }
         ]
       }
@@ -80,16 +75,16 @@
   },
   {
     "heic_id": "6429",
-    "gym": null,
-    "date": "240709",
+    "gym": "Tennyson's",
+    "date": "241009",
     "pain": [
       {
         "pain_level": 2,
         "pain_location": "left trapz"
       }
     ],
-    "cardio_type": null,
-    "cardio_duration_minutes": null,
+    "cardio_type": "stair climbers",
+    "cardio_duration_minutes": 15,
     "notes": null,
     "exercises": {
       "bulgarian_split_squat": {
@@ -101,7 +96,7 @@
           {}
         ]
       },
-      "band_w_lb": {
+      "band_w_bar": {
         "weight_unit": "lbs",
         "sets": [
           {
@@ -114,7 +109,7 @@
           },
           {
             "weight": 70,
-            "duration_sec": 96
+            "duration_sec": 90
           }
         ]
       },
@@ -135,15 +130,23 @@
       "superman": {
         "weight_unit": null,
         "sets": [
-          {}
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          }
         ]
       }
     }
   },
   {
     "heic_id": "6429",
-    "gym": null,
-    "date": "240711",
+    "gym": "Tennyson's",
+    "date": "241011",
     "pain": [
       {
         "pain_level": 1,
@@ -158,27 +161,45 @@
         "weight_unit": "lbs",
         "reps_each": 20,
         "sets": [
-          {},
-          {},
-          {}
+          {
+            "weight": 5
+          },
+          {
+            "weight": 5
+          },
+          {
+            "weight": 5
+          }
         ]
       },
       "side_kicks_out": {
         "weight_unit": "lbs",
         "reps_each": 20,
         "sets": [
-          {},
-          {},
-          {}
+          {
+            "weight": 5
+          },
+          {
+            "weight": 5
+          },
+          {
+            "weight": 5
+          }
         ]
       },
       "side_kicks_back": {
         "weight_unit": "lbs",
         "reps_each": 20,
         "sets": [
-          {},
-          {},
-          {}
+          {
+            "weight": 10
+          },
+          {
+            "weight": 10
+          },
+          {
+            "weight": 10
+          }
         ]
       },
       "plank": {
@@ -199,8 +220,8 @@
   },
   {
     "heic_id": "6429",
-    "gym": null,
-    "date": "240715",
+    "gym": "Tennyson's",
+    "date": "241015",
     "pain": [
       {
         "pain_level": 2,

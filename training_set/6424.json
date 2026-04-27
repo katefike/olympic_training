@@ -1,7 +1,7 @@
 [
   {
     "heic_id": "6424",
-    "gym": null,
+    "gym": "BodyTech",
     "date": "250718",
     "pain": [
       {
@@ -14,24 +14,20 @@
     "notes": null,
     "exercises": {
       "tricep_pulldown": {
-        "weight_unit": "lbs",
+        "weight_unit": "kg",
         "sets": [
           {
             "weight": 10,
             "duration_sec": 60
           },
           {
-            "weight": 15,
-            "duration_sec": 90
-          },
-          {
             "weight": 30,
-            "duration_sec": 0
+            "duration_sec": 90
           }
         ]
       },
-      "mts_rear_delt": {
-        "weight_unit": "lbs",
+      "mts_remo_alto": {
+        "weight_unit": "kg",
         "sets": [
           {
             "weight": 20,
@@ -52,7 +48,7 @@
           },
           {
             "weight": 65,
-            "duration_sec": 70
+            "duration_sec": 90
           }
         ]
       },
@@ -73,7 +69,7 @@
   },
   {
     "heic_id": "6424",
-    "gym": null,
+    "gym": "BodyTech",
     "date": "250720",
     "pain": [
       {
@@ -83,14 +79,18 @@
     ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
-    "notes": "8000 steps",
+    "notes": null,
     "exercises": {
       "leg_xtnsn": {
         "weight_unit": "lbs",
         "sets": [
           {
             "weight": 80,
-            "duration_sec": 0
+            "duration_sec": 69
+          },
+          {
+            "weight": 90,
+            "duration_sec": 75
           }
         ]
       },
@@ -107,7 +107,7 @@
           }
         ]
       },
-      "oxf_fly": {
+      "fly": {
         "weight_unit": "lbs",
         "sets": [
           {
@@ -124,8 +124,8 @@
   },
   {
     "heic_id": "6424",
-    "gym": null,
-    "date": "250722",
+    "gym": "BodyTech",
+    "date": "250222",
     "pain": [
       {
         "pain_level": null,
@@ -153,7 +153,7 @@
           }
         ]
       },
-      "bosu_ball_lift": {
+      "bosu_leg_lift": {
         "weight_unit": null,
         "sets": [
           {
@@ -169,9 +169,8 @@
       },
       "bulgarian_split_squat": {
         "weight_unit": null,
-        "notes": "right quad pain",
+        "notes": "right quad pull",
         "sets": [
-          {}
         ]
       },
       "pull_down": {
@@ -191,9 +190,8 @@
           }
         ]
       },
-      "crunch_machine": {
-        "weight_unit": null,
-        "notes": "lying position",
+      "lying_ab_crunch": {
+        "weight_unit": "lbs",
         "sets": [
           {
             "weight": 10,
@@ -211,14 +209,14 @@
       },
       "gg": {
         "weight_unit": "lbs",
-        "pain": "R knee",
+        "pain": "R knee pain 5/10 next day",
         "sets": [
           {
             "weight": 130,
             "duration_sec": 90
           },
           {
-            "weight": 180,
+            "weight": 110,
             "duration_sec": 90
           },
           {
@@ -228,12 +226,11 @@
         ]
       },
       "bg": {
-        "weight_unit": null,
-        "notes": "pain 5/10",
+        "weight_unit": "lb",
         "sets": [
           {
-            "weight": 30,
-            "duration_sec": 75
+            "weight": 130,
+            "duration_sec": 78
           },
           {
             "weight": 130,
@@ -249,13 +246,16 @@
         "weight_unit": null,
         "sets": [
           {
+            "weight": 25,
             "duration_sec": 90
           },
           {
+            "weight": 25,
             "duration_sec": 90
           },
           {
-            "duration_sec": 70
+            "weight": 25,
+            "duration_sec": 90
           }
         ]
       }

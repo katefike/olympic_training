@@ -22,11 +22,11 @@
           },
           {
             "weight": 30,
-            "duration_sec": 90
+            "duration_sec": 80
           },
           {
             "weight": 20,
-            "duration_sec": 80
+            "duration_sec": 90
           }
         ]
       },
@@ -48,7 +48,7 @@
         ]
       },
       "bend_w_bar": {
-        "weight_unit": "lbs",
+        "weight_unit": "kgs",
         "sets": [
           {
             "weight": 25,
@@ -77,7 +77,7 @@
       },
       {
         "pain_level": 1,
-        "pain_location": "R glut"
+        "pain_location": "R glute"
       }
     ],
     "cardio_type": null,
@@ -123,11 +123,11 @@
             "duration_sec": 65
           },
           {
-            "weight": 18,
+            "weight": 10,
             "duration_sec": 78
           },
           {
-            "weight": 18,
+            "weight": 10,
             "duration_sec": 74
           }
         ]
@@ -140,7 +140,7 @@
     "date": "250312",
     "pain": [
       {
-        "pain_level": 0.8,
+        "pain_level": 0,
         "pain_location": null
       }
     ],
@@ -152,9 +152,11 @@
         "weight_unit": "lbs",
         "reps_each": 20,
         "sets": [
+          {},
           {
             "weight": 15
-          }
+          },
+          {}
         ]
       },
       "bend_w_bar": {
@@ -206,7 +208,7 @@
       },
       {
         "pain_level": null,
-        "pain_location": "burning lower bp"
+        "pain_location": "burning above knee cap"
       }
     ],
     "cardio_type": null,
@@ -218,7 +220,7 @@
         "sets": [
           {
             "weight": 70,
-            "duration_sec": 90
+            "duration_sec": 75
           },
           {
             "weight": 70,
@@ -226,7 +228,7 @@
           },
           {
             "weight": 75,
-            "duration_sec": 96
+            "duration_sec": 90
           }
         ]
       },
@@ -243,7 +245,7 @@
           },
           {
             "weight": 75,
-            "duration_sec": 40
+            "duration_sec": 90
           }
         ]
       },
@@ -270,11 +272,11 @@
           },
           {
             "weight": 30,
-            "duration_sec": 70
+            "duration_sec": 90
           },
           {
             "weight": 20,
-            "duration_sec": 70
+            "duration_sec": 90
           }
         ]
       }

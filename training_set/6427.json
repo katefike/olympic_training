@@ -1,37 +1,51 @@
 [
   {
     "heic_id": "6427",
-    "gym": null,
-    "date": "240228",
+    "gym": "Tennyson's",
+    "date": "241028",
     "pain": [
       {
         "pain_level": 3,
-        "pain_location": "all left side"
+        "pain_location": "L neck, back, head, ear"
       }
     ],
-    "cardio_type": null,
-    "cardio_duration_minutes": null,
+    "cardio_type": "stair climbers",
+    "cardio_duration_minutes": 15,
     "notes": null,
     "exercises": {
       "side_kick_in": {
         "weight_unit": "lbs",
-        "reps_each": 5,
+        "reps_each": 20,
         "sets": [
-          {},
-          {}
+          {
+            "Weight": 5
+          },
+          {
+            "Weight": 7.5
+          },
+          {
+            "Weight": 10
+          }
         ]
       },
       "side_kick_out": {
         "weight_unit": "lbs",
-        "reps_each": 5,
+        "reps_each": 20,
         "sets": [
-          {},
-          {}
+          {
+            "Weight": 5
+          },
+          {
+            "Weight": 7.5
+          },
+          {
+            "Weight": 10
+          }
         ]
       },
       "side_kick_back": {
         "weight_unit": "lbs",
-        "reps_each": 10,
+        "reps_each": 20,
         "sets": [
           {
             "weight": 10
@@ -48,7 +62,7 @@
         "weight_unit": null,
         "sets": [
           {
-            "duration_sec": 60
+            "duration_sec": 61
           },
           {
             "duration_sec": 61
@@ -62,16 +76,16 @@
   },
   {
     "heic_id": "6427",
-    "gym": null,
-    "date": "240228",
+    "gym": "Tennyson's",
+    "date": "241029",
     "pain": [
       {
         "pain_level": 3,
-        "pain_location": "all left side"
+        "pain_location": "L neck, back, head, ear"
       }
     ],
-    "cardio_type": null,
-    "cardio_duration_minutes": null,
+    "cardio_type": "stair climbers",
+    "cardio_duration_minutes": 15,
     "notes": null,
     "exercises": {
       "torso_rotation": {
@@ -93,13 +107,16 @@
         "weight_unit": "lbs",
         "sets": [
           {
-            "weight": 85
+            "weight": 85,
+            "duration_sec": 90
           },
           {
-            "weight": 85
+            "weight": 85,
+            "duration_sec": 90
           },
           {
-            "weight": 85
+            "weight": 85,
+            "duration_sec": 90
           }
         ]
       },
@@ -107,13 +124,16 @@
         "weight_unit": "lbs",
         "sets": [
           {
-            "weight": 84
+            "weight": 84,
+            "duration_sec": 90
           },
           {
-            "weight": 84
+            "weight": 84,
+            "duration_sec": 90
           },
           {
-            "weight": 84
+            "weight": 84,
+            "duration_sec": 90
           }
         ]
       },
@@ -121,13 +141,16 @@
         "weight_unit": "lbs",
         "sets": [
           {
-            "weight": 180
+            "weight": 180,
+            "duration_sec": 90
           },
           {
-            "weight": 180
+            "weight": 180,
+            "duration_sec": 90
           },
           {
-            "weight": 180
+            "weight": 180,
+            "duration_sec": 90
           }
         ]
       }
@@ -135,12 +158,12 @@
   },
   {
     "heic_id": "6427",
-    "gym": null,
+    "gym": "Tennyson's",
     "date": "241103",
     "pain": [
       {
         "pain_level": 9,
-        "pain_location": "left side"
+        "pain_location": "L neck, back, head, ear"
       }
     ],
     "cardio_type": null,
@@ -150,7 +173,7 @@
   },
   {
     "heic_id": "6427",
-    "gym": null,
+    "gym": "Tennyson's",
     "date": "241107",
     "pain": [
       {
@@ -160,7 +183,7 @@
     ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
-    "notes": null,
+    "notes": "trapz fatigue left early",
     "exercises": {
       "back_xtnsn": {
         "weight_unit": "lbs",
@@ -193,7 +216,7 @@
   },
   {
     "heic_id": "6427",
-    "gym": null,
+    "gym": "Tennyson's",
     "date": "241110",
     "pain": [
       {
@@ -209,13 +232,16 @@
         "weight_unit": "lbs",
         "sets": [
           {
-            "weight": 85
+            "weight": 85,
+            "duration_sec": 90
           },
           {
-            "weight": 85
+            "weight": 85,
+            "duration_sec": 90
           },
           {
-            "weight": 85
+            "weight": 85,
+            "duration_sec": 90
           }
         ]
       },
@@ -223,13 +249,16 @@
         "weight_unit": "lbs",
         "sets": [
           {
-            "weight": 84
+            "weight": 84,
+            "duration_sec": 90
           },
           {
-            "weight": 84
+            "weight": 84,
+            "duration_sec": 90
           },
           {
-            "weight": 84
+            "weight": 84,
+            "duration_sec": 90
           }
         ]
       },
@@ -237,13 +266,16 @@
         "weight_unit": "lbs",
         "sets": [
           {
-            "weight": 60
+            "weight": 60,
+            "duration_sec": 90
           },
           {
-            "weight": 65
+            "weight": 65,
+            "duration_sec": 90
           },
           {
-            "weight": 60
+            "weight": 60,
+            "duration_sec": 70
           }
         ]
       },
@@ -251,13 +283,16 @@
         "weight_unit": "lbs",
         "sets": [
           {
-            "weight": 50
+            "weight": 50,
+            "duration_sec": 90
           },
           {
-            "weight": 55
+            "weight": 55,
+            "duration_sec": 90
           },
           {
-            "weight": 65
+            "weight": 65,
+            "duration_sec": 90
           }
         ]
       }
