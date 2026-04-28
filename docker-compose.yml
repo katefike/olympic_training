@@ -28,6 +28,20 @@ services:
       - ./docker/grafana/provisioning/postgres.yml:/etc/grafana/provisioning/datasources/postgres.yml
       - ./docker/grafana/provisioning/dashboards.yml:/etc/grafana/provisioning/dashboards/dashboards.yml
       - ./docker/grafana/dashboards:/var/lib/grafana/dashboards
+  api:
+    image: python:3.12-slim
+    container_name: workout-api
+    restart: unless-stopped
+    env_file:
+      - .env-example
+    working_dir: /app
+    command: bash -lc "pip install --no-cache-dir -r requirements.txt && uvicorn main:app --host 0.0.0.0 --port 8000 --reload"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./api:/app
+    depends_on:
+      - db
   nginx:
     image: nginx:latest
     container_name: olympic-training-nginx
