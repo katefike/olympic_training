@@ -1,75 +1,60 @@
 # olympic-training
 
-This repo contains my fitness data. Maybe one day it will get me to the olympics.
+Local scaffold for workout analytics with:
 
-## Usage
+- Postgres for normalized workout + standards data
+- Grafana for visualization
+- FastAPI for app/AI integrations
 
-### HEIC → JSON extraction (`__main__.py`)
+Canonical weight is stored in `lbs`.
 
-Notebook photos live in `heics/` (e.g. `IMG_6428.HEIC`). The script reads each `.heic` file, sends it to an OpenAI **vision** model, and writes one JSON file per image under `automated_data/`, using the same overall shape as the hand-curated files in `training_set/` (a JSON array of workout sessions). Filenames use the photo number: `IMG_6428.HEIC` → `automated_data/6428.json`.
+## Quick start
 
-**Prerequisites**
-
-- Python 3
-- A virtualenv at the repo root (`.venv`) is recommended.
-
-**Setup**
+1. Start services:
 
 ```bash
-cd /path/to/olympic_training
+docker compose up -d
+```
+
+2. Load normalized workout data to Postgres:
+
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+pip install -r src_data/workouts/etl/requirements.txt
+python src_data/workouts/etl/load_to_postgres.py
 ```
 
-**OpenAI API**
+3. Open:
 
-- Create an API key at [platform.openai.com](https://platform.openai.com/). Usage is billed per request (separate from a ChatGPT Plus subscription).
-- Export the key before running:
+- Grafana: `http://localhost:3000` (`admin` / `admin`)
+- API docs: `http://localhost:8000/docs`
 
-```bash
-export OPENAI_API_KEY=sk-...
-```
+## Data model
 
-Optional: override the vision model (default is `gpt-4o-mini`):
+Main tables:
 
-```bash
-export OPENAI_VISION_MODEL=gpt-4o
-```
+- `workouts.workout_session`
+- `workouts.pain_entry`
+- `workouts.exercise`
+- `workouts.exercise_alias`
+- `workouts.session_exercise`
+- `workouts.set_entry` (`weight_lbs` canonical, original weight + unit preserved)
+- `workouts.strength_standard`
 
-**Run**
+Views for dashboards:
 
-```bash
-source .venv/bin/activate
-export OPENAI_API_KEY=sk-...
-python __main__.py --limit 1
-```
+- `workouts.v_daily_volume`
+- `workouts.v_session_summary`
 
-**Useful options**
+Schema diagram:
 
-| Flag | Meaning |
-|------|---------|
-| `--heic-from N` / `--heic-to M` | Only process `IMG_<id>.heic` files whose numeric id is between `N` and `M` inclusive (both flags required together). Applied before `--limit`. |
-| `--example-heic-id N` | Load `heics/IMG_<N>.*` and `training_set/<N>.json` as a few-shot reference to help the model match your JSON formatting. |
-| `--limit N` | Process only the first `N` images (good for a cheap test run). |
-| `--model NAME` | Vision model id (overrides `OPENAI_VISION_MODEL` and the default). |
-| `--sleep SECONDS` | Pause between API calls to reduce rate-limit pressure. |
+- `docs/schema.mmd`
 
-Examples:
+## Standards file
 
-```bash
-python3 __main__.py --limit 1
-python3 __main__.py --heic-from 6408 --heic-to 6716
-python3 __main__.py --example-heic-id 6428 --heic-from 6408 --heic-to 6410
-python3 __main__.py --model gpt-4o --sleep 0.5
-```
+Strength standards are loaded from:
 
-If a request fails for one file, the script still writes `automated_data/<id>.json` as an empty array `[]` and prints an error for that file on stderr.
+- `src_data/stregth_standards/standards_29_female.json`
 
-### Data layout
-
-| Path | Role |
-|------|------|
-| `heics/` | Source `.heic` images |
-| `training_set/` | Reference JSON (manually corrected) |
-| `automated_data/` | JSON produced by `__main__.py` |
+You can replace this file with your own data in the same format.

@@ -1,0 +1,74 @@
+erDiagram
+    EXERCISE {
+        bigint id PK
+        text canonical_name UK
+        text movement_pattern
+        text primary_muscle_group
+        timestamptz created_at
+    }
+
+    EXERCISE_ALIAS {
+        bigint id PK
+        text alias_name UK
+        bigint exercise_id FK
+    }
+
+    WORKOUT_SESSION {
+        bigint id PK
+        text source_file
+        text heic_id
+        int session_index
+        date session_date
+        text gym
+        text cardio_type
+        numeric cardio_duration_minutes
+        text notes
+        timestamptz created_at
+    }
+
+    PAIN_ENTRY {
+        bigint id PK
+        bigint workout_session_id FK
+        numeric pain_level
+        text pain_location
+    }
+
+    SESSION_EXERCISE {
+        bigint id PK
+        bigint workout_session_id FK
+        bigint exercise_id FK
+        text raw_exercise_name
+        text notes
+        int reps_total
+        int reps_each
+    }
+
+    SET_ENTRY {
+        bigint id PK
+        bigint session_exercise_id FK
+        int set_index
+        numeric weight_lbs
+        numeric original_weight
+        text original_weight_unit
+        int duration_sec
+    }
+
+    STRENGTH_STANDARD {
+        bigint id PK
+        text source_name
+        text sex
+        int age_years
+        bigint exercise_id FK
+        numeric beginner_lbs
+        numeric novice_lbs
+        numeric intermediate_lbs
+        numeric advanced_lbs
+        numeric elite_lbs
+    }
+
+    EXERCISE ||--o{ EXERCISE_ALIAS : has_aliases
+    WORKOUT_SESSION ||--o{ PAIN_ENTRY : has_pain_entries
+    WORKOUT_SESSION ||--o{ SESSION_EXERCISE : includes
+    EXERCISE ||--o{ SESSION_EXERCISE : performed_as
+    SESSION_EXERCISE ||--o{ SET_ENTRY : has_sets
+    EXERCISE ||--o{ STRENGTH_STANDARD : benchmarked_by
