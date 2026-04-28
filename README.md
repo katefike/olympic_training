@@ -55,6 +55,6 @@ Schema diagram:
 
 Strength standards are loaded from:
 
-- `src_data/stregth_standards/standards_29_female.json`
+- all `.csv` and `.json` files in `src_data/strength_standards/`
 
-You can replace this file with your own data in the same format.
+Example: `src_data/strength_standards/free_weights.csv`
