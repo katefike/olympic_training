@@ -1,0 +1,16 @@
+{
+  "aliases": {
+    "leg_xtsn": "leg_extension",
+    "leg_xtnsn": "leg_extension",
+    "leg_curl_prone": "prone_leg_curl",
+    "ab_crunch": "seated_ab_crunch",
+    "abdominales": "seated_ab_crunch",
+    "back_xtn": "back_extension",
+    "back_xtnsn": "back_extension",
+    "fixed_pulldown": "lat_pulldown",
+    "bend_w_bar": "barbell_row",
+    "barbell_fly": "chest_fly",
+    "gg": "hip_adduction",
+    "bg": "hip_extension"
+  }
+}
