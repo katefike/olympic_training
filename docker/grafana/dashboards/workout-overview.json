@@ -1,0 +1,56 @@
+{
+  "annotations": {
+    "list": []
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": null,
+  "links": [],
+  "panels": [
+    {
+      "datasource": "Olympic Training Postgres",
+      "gridPos": {
+        "h": 9,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom"
+        }
+      },
+      "targets": [
+        {
+          "format": "time_series",
+          "rawSql": "SELECT ws.session_date AS time, SUM(se.weight_lbs) AS total_lbs\nFROM workouts.workout_session ws\nJOIN workouts.session_exercise sx ON sx.workout_session_id = ws.id\nJOIN workouts.set_entry se ON se.session_exercise_id = sx.id\nWHERE ws.session_date IS NOT NULL\nGROUP BY ws.session_date\nORDER BY ws.session_date;",
+          "refId": "A"
+        }
+      ],
+      "title": "Total Volume (lbs) by Day",
+      "type": "timeseries"
+    }
+  ],
+  "refresh": "30s",
+  "schemaVersion": 39,
+  "style": "dark",
+  "tags": [
+    "workouts"
+  ],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-180d",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "Workout Overview",
+  "version": 1,
+  "weekStart": ""
+}
