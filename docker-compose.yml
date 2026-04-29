@@ -2,7 +2,7 @@
 services:
   db:
     image: postgres:14.4
-    container_name: db
+    container_name: olympic-training-db
     restart: always
     env_file:
       - .env-example
@@ -17,7 +17,7 @@ services:
       - db:/var/lib/postgresql/data
   grafana:
     image: grafana/grafana-oss
-    container_name: grafana
+    container_name: olympic-training-grafana
     restart: unless-stopped
     env_file:
       - .env-example
@@ -30,7 +30,7 @@ services:
       - ./docker/grafana/dashboards:/var/lib/grafana/dashboards
   api:
     image: python:3.12-slim
-    container_name: workout-api
+    container_name: olympic-training-api
     restart: unless-stopped
     env_file:
       - .env-example
