@@ -139,8 +139,17 @@ def clear_workout_tables(cur: psycopg.Cursor[Any]) -> None:
 
 def load_workout_files(cur: psycopg.Cursor[Any], training_set_dir: Path, aliases: dict[str, str]) -> None:
     files = sorted(training_set_dir.glob("*.json"))
+    skipped_files = 0
     for file_path in files:
-        sessions = json.loads(file_path.read_text(encoding="utf-8"))
+        try:
+            sessions = json.loads(file_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as exc:
+            skipped_files += 1
+            print(
+                f"Skipping invalid JSON file {file_path.name}: "
+                f"{exc.msg} (line {exc.lineno}, column {exc.colno})"
+            )
+            continue
         if not isinstance(sessions, list):
             continue
         for session_index, session in enumerate(sessions):
@@ -229,6 +238,8 @@ def load_workout_files(cur: psycopg.Cursor[Any], training_set_dir: Path, aliases
                             entry.get("duration_sec"),
                         ),
                     )
+    if skipped_files:
+        print(f"Skipped {skipped_files} invalid training_set file(s).")
 
 
 def _coerce_float(value: Any) -> float | None:
