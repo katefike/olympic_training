@@ -1,0 +1,305 @@
+[
+  {
+    "heic_id": "6431",
+    "gym": "Exercise Warehouse",
+    "date": "240909",
+    "pain": [
+      {
+        "pain_level": 1,
+        "pain_location": "left jaw"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {}
+  },
+  {
+    "heic_id": "6431",
+    "gym": "Exercise Warehouse",
+    "date": "240913",
+    "pain": [
+      {
+        "pain_level": 1,
+        "pain_location": "left trapz"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "seated_curlback": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 75,
+            "duration_sec": 72
+          },
+          {
+            "weight": 60,
+            "duration_sec": 90
+          },
+          {
+            "weight": 65,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "leg_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 80,
+            "duration_sec": 68
+          },
+          {
+            "weight": 70,
+            "duration_sec": 74
+          },
+          {
+            "weight": 70,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bend_w_bar": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 45, "duration_sec": 90},
+          {"weight": 45, "duration_sec": 90},
+          {"weight": 45, "duration_sec": 90}
+        ]
+      },
+      "crunch": {
+        "weight_unit": null,
+        "sets": [
+          {"duration_sec": 73},
+          {"duration_sec": 62},
+          {"duration_sec": 60}
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6431",
+    "gym": "Exercise Warehouse",
+    "date": "240916",
+    "pain": [
+      {
+        "pain_level": 0,
+        "pain_location": null
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "face_pull": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {
+            "weight": 40
+          },
+          {
+            "weight": 50
+          },
+          {
+            "weight": 50
+          }
+        ]
+      },
+      "tricep_pulldown": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 30,
+            "duration_sec": 90
+          },
+          {
+            "weight": 40,
+            "duration_sec": 90
+          },
+          {
+            "weight": 30,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "side_kick_out": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {"weight": 10},
+          {"weight": 10},
+          {"weight": 10}
+        ]
+      },
+      "side_kick_in": {
+        "weight_unit": "lbs",
+        "reps_each": 20,
+        "sets": [
+          {"weight": 30},
+          {"weight": 30},
+          {"weight": 30}
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6431",
+    "gym": "Exercise Warehouse",
+    "date": "240919",
+    "pain": [
+      {
+        "pain_level": 1,
+        "pain_location": "left jaw"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "gg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 110,
+            "duration_sec": 55
+          },
+          {
+              "weight": 110,
+            "duration_sec": 90
+          },
+          {
+            "weight": 115,
+            "duration_sec": 80
+          }
+        ]
+      },
+      "bg": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 70,
+            "duration_sec": 90
+          },
+          {
+            "weight": 75,
+            "duration_sec": 61
+          },
+          {
+            "weight": 75,
+            "duration_sec": 62
+          }
+        ]
+      },
+      "wall_sit": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 45,
+            "duration_sec": 90
+          },
+          {
+            "weight": 45,
+            "duration_sec": 90
+          },
+          {
+            "weight": 45,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "plank": {
+        "weight_unit": null,
+        "sets": [
+          {"duration_sec": 90},
+          {"duration_sec": 90},
+          {"duration_sec": 90}
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6431",
+    "gym": "Exercise Warehouse",
+    "date": "240921",
+    "pain": [
+      {
+        "pain_level": 1,
+        "pain_location": "left shoulder"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "leg_xtn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 80,
+            "duration_sec": 75 
+          },
+          {
+            "weight": 80,
+            "duration_sec": 90
+          },
+          {
+            "weight": 90,
+            "duration_sec": 80
+          }
+        ]
+      },
+      "leg_curl_prone": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 25,
+            "duration_sec": 75  
+          },
+          {
+            "weight": 25,
+            "duration_sec": 77
+          },
+          {
+            "weight": 25,
+            "duration_sec": 63
+          }
+        ]
+      },
+      "crunch": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "weight": 40,
+            "duration_sec": 70
+          },
+          {
+            "weight": 40,
+            "duration_sec": 90
+          },
+          {
+            "weight": 50,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "bosu_butterfly": {
+        "weight_unit": null,
+        "sets": [
+          {
+            "duration_sec": 55
+          },
+          {
+            "duration_sec": 65
+          },
+          {
+            "duration_sec": 68
+          }
+        ]
+      }
+    }
+  }
+]
