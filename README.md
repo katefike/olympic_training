@@ -19,10 +19,7 @@ docker compose up -d
 2. Load normalized workout data to Postgres:
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r src_data/workouts/etl/requirements.txt
-python src_data/workouts/etl/load_to_postgres.py
+bash scripts/local-dev-setup.sh
 ```
 
 3. Open:
