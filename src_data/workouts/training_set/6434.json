@@ -1,8 +1,8 @@
 [
   {
     "heic_id": "6434",
-    "gym": null,
-    "date": "240605",
+    "gym": "Exercise Warehouse",
+    "date": "240805",
     "pain": [
       {
         "pain_level": 2,
@@ -13,24 +13,24 @@
     "cardio_duration_minutes": null,
     "notes": null,
     "exercises": {
-      "leg_xtnsn": {
+      "single_leg_xtnsn": {
         "weight_unit": "lbs",
         "sets": [
           {
             "weight": 25,
-            "duration_sec": 60
+            "duration_sec": 80
           },
           {
             "weight": 25,
-            "duration_sec": 60
+            "duration_sec": 80
           },
           {
             "weight": 25,
-            "duration_sec": 66
+            "duration_sec": 90
           }
         ]
       },
-      "leg_curl_plane": {
+      "single_leg_curl_plane": {
         "weight_unit": "lbs",
         "sets": [
           {
@@ -39,7 +39,7 @@
           },
           {
             "weight": 25,
-            "duration_sec": 61
+            "duration_sec": 68
           },
           {
             "weight": 25,
@@ -49,30 +49,32 @@
       },
       "side_kick_out": {
         "weight_unit": null,
-        "reps_each": 10,
+        "reps_each": 20,
         "sets": [
-          {},
-          {}
+          {"weight": 10},
+          {"weight": 10},
+          {"weight": 20}
         ]
       },
       "side_kick_in": {
         "weight_unit": null,
         "reps_each": 20,
         "sets": [
-          {},
-          {}
+          {"weight": 30},
+          {"weight": 20},
+          {"weight": 20}
         ]
       }
     }
   },
   {
     "heic_id": "6434",
-    "gym": null,
-    "date": "240608",
+    "gym": "Exercise Warehouse",
+    "date": "240808",
     "pain": [
       {
         "pain_level": 5,
-        "pain_location": "TMD"
+        "pain_location": "TMJ"
       }
     ],
     "cardio_type": null,
@@ -83,13 +85,12 @@
         "weight_unit": "lbs",
         "sets": [
           {
-            "weight": 110
+            "weight": 110,
+            "duration_sec": 65 
           },
           {
-            "weight": 105
-          },
-          {
-            "weight": 100
+            "weight": 100,
+            "duration_sec": 90
           }
         ]
       },
@@ -97,13 +98,12 @@
         "weight_unit": "lbs",
         "sets": [
           {
-            "weight": 75
+            "weight": 75,
+            "duration_sec": 67
           },
           {
-            "weight": 70
-          },
-          {
-            "weight": 70
+            "weight": 70,
+            "duration_sec": 66
           }
         ]
       },
@@ -111,10 +111,23 @@
         "weight_unit": "lbs",
         "sets": [
           {
-            "weight": 25
+            "weight": 25,
+            "duration_sec": 90
           },
           {
-            "weight": 25
+            "weight": 25,
+            "duration_sec": 90
+          }
+        ]
+      },
+      "boat": {
+        "weight_unit": "lbs",
+        "sets": [
+          {
+            "duration_sec": 68
+          },
+          {
+            "duration_sec": 70
           }
         ]
       }
@@ -122,8 +135,8 @@
   },
   {
     "heic_id": "6434",
-    "gym": null,
-    "date": "240910",
+    "gym": "Exercise Warehouse",
+    "date": "240810",
     "pain": [
       {
         "pain_level": 0,
@@ -147,36 +160,41 @@
           },
           {
             "weight": 75,
-            "duration_sec": 77
+            "duration_sec": 79
           }
         ]
       },
-      "dumbbell_bicep_curl": {
+      "leg_xtnsn": {
         "weight_unit": "lbs",
-        "reps_total": 20,
         "sets": [
           {
-            "weight": 5
+            "weight": 70,
+            "duration_sec": 85
           },
           {
-            "weight": 5
+            "weight": 70,
+            "duration_sec": 90
           },
           {
-            "weight": 5
+            "weight": 75,
+            "duration_sec": 79
           }
         ]
       },
-      "lunges_tricep_xtnsn": {
+      "tricep_xtnsn": {
         "weight_unit": "lbs",
         "sets": [
           {
-            "weight": 30
+            "weight": 30,
+            "duration_sec": 90
           },
           {
-            "weight": 30
+            "weight": 30,
+            "duration_sec": 90
           },
           {
-            "weight": 30
+            "weight": 30,
+            "duration_sec": 80
           }
         ]
       }
@@ -184,30 +202,32 @@
   },
   {
     "heic_id": "6434",
-    "gym": null,
+    "gym": "Exercise Warehouse",
     "date": "240815",
     "pain": [
       {
         "pain_level": 2,
-        "pain_location": "mild TMD"
+        "pain_location": "TMJ"
       }
     ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
-    "notes": "Prednisone",
+    "notes": "prednisone",
     "exercises": {
-      "calf_rise": {
+      "calf_raise": {
         "weight_unit": "lbs",
-        "reps_total": 200,
         "sets": [
           {
-            "weight": 70
+            "weight": 200,
+            "duration_sec": 60
           },
           {
-            "weight": 70
+            "weight": 200,
+            "duration_sec": 72
           },
           {
-            "weight": 70
+            "weight": 200,
+            "duration_sec": 75
           }
         ]
       },
@@ -216,6 +236,7 @@
         "reps_total": 40,
         "sets": [
           {},
+          {},
           {}
         ]
       },
@@ -223,7 +244,7 @@
         "weight_unit": null,
         "sets": [
           {
-            "duration_sec": 63
+            "duration_sec": 65
           },
           {
             "duration_sec": 55
@@ -234,16 +255,19 @@
         ]
       },
       "bridge": {
-        "weight_unit": null,
+        "weight_unit": "lbs",
         "sets": [
           {
-            "duration_sec": 12
+            "weight": 12,
+            "duration_sec": 90
           },
           {
-            "duration_sec": 30
+            "weight": 20,
+            "duration_sec": 90
           },
           {
-            "duration_sec": 36
+            "weight": 30,
+            "duration_sec": 90
           }
         ]
       }
