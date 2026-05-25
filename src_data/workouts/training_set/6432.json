@@ -1,8 +1,8 @@
 [
   {
     "heic_id": "6432",
-    "gym": null,
-    "date": "240802",
+    "gym": "Exercise Warehouse",
+    "date": "240826",
     "pain": [
       {
         "pain_level": 1,
@@ -21,7 +21,7 @@
             "duration_sec": 90
           },
           {
-            "weight": 100,
+            "weight": 120,
             "duration_sec": 90
           },
           {
@@ -35,6 +35,7 @@
         "reps_total": 40,
         "sets": [
           {},
+          {},
           {}
         ]
       },
@@ -42,7 +43,7 @@
         "weight_unit": null,
         "sets": [
           {
-            "duration_sec": 55
+            "duration_sec": 58
           },
           {
             "duration_sec": 60
@@ -52,9 +53,9 @@
           }
         ]
       },
-      "handover_hand_lbr": {
+      "bend_w_bar": {
         "weight_unit": "lbs",
-        "reps_total": 60,
+        "reps_total": 20,
         "sets": [
           {
             "weight": 35
@@ -71,8 +72,8 @@
   },
   {
     "heic_id": "6432",
-    "gym": null,
-    "date": "240803",
+    "gym": "Exercise Warehouse",
+    "date": "240903",
     "pain": [
       {
         "pain_level": 2,
@@ -92,7 +93,11 @@
           },
           {
             "weight": 180,
-            "duration_sec": 78
+            "duration_sec": 90
+          },
+          {
+            "weight": 180,
+            "duration_sec": 90
           }
         ]
       },
@@ -115,6 +120,7 @@
         "weight_unit": "lbs",
         "reps_each": 10,
         "sets": [
+          {"weight": 10},
           {},
           {
             "weight": 10
@@ -134,6 +140,9 @@
           },
           {
             "weight": 20
+          },
+          {
+            "weight": 20
           }
         ]
       }
@@ -141,8 +150,8 @@
   },
   {
     "heic_id": "6432",
-    "gym": null,
-    "date": "240904",
+    "gym": "Exercise Warehouse",
+    "date": "240906",
     "pain": [
       {
         "pain_level": 0.5,
@@ -155,16 +164,18 @@
     "exercises": {
       "gg": {
         "weight_unit": "lbs",
-        "reps_total": 64,
         "sets": [
           {
-            "weight": 70
+            "weight": 70,
+            "duration_sec": 64
           },
           {
-            "weight": 70
+            "weight": 70,
+            "duration_sec": 90
           },
           {
-            "weight": 70
+            "weight": 70,
+            "duration_sec": 67
           }
         ]
       },
@@ -221,7 +232,7 @@
   },
   {
     "heic_id": "6432",
-    "gym": null,
+    "gym": "Exercise Warehouse",
     "date": "240908",
     "pain": [
       {
@@ -241,7 +252,7 @@
           {}
         ]
       },
-      "flying_flows": {
+      "flying_locus": {
         "weight_unit": null,
         "reps_total": 20,
         "sets": [
@@ -253,6 +264,7 @@
         "weight_unit": null,
         "reps_total": 10,
         "sets": [
+          {},
           {}
         ]
       },
@@ -260,6 +272,7 @@
         "weight_unit": null,
         "reps_total": 20,
         "sets": [
+          {},
           {}
         ]
       }
