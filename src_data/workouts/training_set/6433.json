@@ -1,7 +1,7 @@
 [
   {
     "heic_id": "6433",
-    "gym": null,
+    "gym": "Exercise Warehouse",
     "date": "240817",
     "pain": [
       {
@@ -11,27 +11,27 @@
     ],
     "cardio_type": null,
     "cardio_duration_minutes": null,
-    "notes": "Step deg",
+    "notes": "steroids",
     "exercises": {
       "leg_xtnsn": {
         "weight_unit": "lbs",
         "sets": [
           {
             "weight": 70,
-            "duration_sec": 84
+            "duration_sec": 81
           },
           {
             "weight": 70,
-            "duration_sec": 105
+            "duration_sec": 90
           },
           {
             "weight": 80,
-            "duration_sec": 91
+            "duration_sec": 71
           }
         ]
       },
       "leg_curl_prone": {
-        "weight_unit": "lbs",
+        "weight_unit": "kg",
         "sets": [
           {
             "weight": 25,
@@ -49,10 +49,11 @@
       },
       "side_kick_out": {
         "weight_unit": "lbs",
-        "reps_each": 10,
+        "reps_each": 20,
         "sets": [
-          {},
-          {},
+          {"weight": 10},
+          {"weight": 10},
+          {"weight": 10},
           {}
         ]
       },
@@ -60,16 +61,16 @@
         "weight_unit": "lbs",
         "reps_each": 20,
         "sets": [
-          {},
-          {},
-          {}
+          {"weight": 20},
+          {"weight": 20},
+          {"weight": 20}
         ]
       }
     }
   },
   {
     "heic_id": "6433",
-    "gym": null,
+    "gym": "Exercise Warehouse",
     "date": "240819",
     "pain": [
       {
@@ -85,7 +86,7 @@
         "weight_unit": "lbs",
         "sets": [
           {
-            "weight": 102,
+            "weight": 100,
             "duration_sec": 62
           },
           {
@@ -103,7 +104,7 @@
         "sets": [
           {
             "weight": 70,
-            "duration_sec": 78
+            "duration_sec": 88
           },
           {
             "weight": 70,
@@ -116,15 +117,72 @@
         ]
       },
       "wall_sit": {
-        "weight_unit": null,
+        "weight_unit": "lbs",
         "sets": [
           {
-            "duration_sec": 35
+            "weight": 35,
+            "duration_sec": 90
           },
           {
-            "duration_sec": 45
+            "weight": 45,
+            "duration_sec": 90
           },
-          {}
+          {"weight": 45, "duration_sec": 72}
+        ]
+      },
+      "boat": {
+        "weight_unit": null,
+        "sets": [
+          {"duration_sec": 67},
+          {"duration_sec": 65},
+          {"duration_sec": 63}
+        ]
+      }
+    }
+  },
+  {
+    "heic_id": "6433",
+    "gym": "Exercise Warehouse",
+    "date": "240822",
+    "pain": [
+      {
+        "pain_level": 1,
+        "pain_location": "left scapula"
+      }
+    ],
+    "cardio_type": null,
+    "cardio_duration_minutes": null,
+    "notes": null,
+    "exercises": {
+      "seated_curlback": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 75, "duration_sec": 90},
+          {"weight": 50, "duration_sec": 90},
+          {"weight": 60, "duration_sec": 90}
+        ]
+      },
+      "leg_xtnsn": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 70, "duration_sec": 90},
+          {"weight": 80, "duration_sec": 73},
+          {"weight": 80, "duration_sec": 68}
+        ]
+      },
+      "bend_w_bar": {
+        "weight_unit": "lbs",
+        "sets": [
+          {"weight": 45, "duration_sec": 90},
+          {"weight": 45, "duration_sec": 90},
+          {"weight": 45, "duration_sec": 90}
+        ]
+      },
+      "crunch": {
+        "weight_unit": null,
+        "sets": [
+          {"duration_sec": 63},
+          {"duration_sec": 58}
         ]
       }
     }
