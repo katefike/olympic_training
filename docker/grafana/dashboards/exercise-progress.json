@@ -1,0 +1,80 @@
+{
+  "annotations": { "list": [] },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": null,
+  "links": [],
+  "panels": [
+    {
+      "datasource": "Olympic Training Postgres",
+      "gridPos": { "h": 9, "w": 24, "x": 0, "y": 0 },
+      "id": 1,
+      "options": {
+        "legend": { "calcs": [], "displayMode": "list", "placement": "bottom" }
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "masslb"
+        }
+      },
+      "targets": [
+        {
+          "format": "time_series",
+          "rawSql": "SELECT m.session_date AS time, m.max_weight_lbs\nFROM workouts.v_session_exercise_metrics m\nJOIN workouts.exercise e ON e.canonical_name = m.canonical_name\nWHERE e.include_in_reports\n  AND m.canonical_name = '$exercise'\n  AND m.max_weight_lbs IS NOT NULL\nORDER BY m.session_date;",
+          "refId": "A"
+        }
+      ],
+      "title": "Max weight (lbs) — $exercise",
+      "type": "timeseries"
+    },
+    {
+      "datasource": "Olympic Training Postgres",
+      "gridPos": { "h": 9, "w": 24, "x": 0, "y": 9 },
+      "id": 2,
+      "options": {
+        "legend": { "calcs": [], "displayMode": "list", "placement": "bottom" }
+      },
+      "targets": [
+        {
+          "format": "time_series",
+          "rawSql": "SELECT m.session_date AS time, m.progress_score\nFROM workouts.v_session_exercise_metrics m\nJOIN workouts.exercise e ON e.canonical_name = m.canonical_name\nWHERE e.include_in_reports\n  AND m.canonical_name = '$exercise'\n  AND m.progress_score IS NOT NULL\n  AND m.progress_score > 0\nORDER BY m.session_date;",
+          "refId": "A"
+        }
+      ],
+      "title": "Progress score — $exercise",
+      "type": "timeseries"
+    }
+  ],
+  "refresh": "30s",
+  "schemaVersion": 39,
+  "style": "dark",
+  "tags": ["workouts", "exercise"],
+  "templating": {
+    "list": [
+      {
+        "current": {},
+        "datasource": "Olympic Training Postgres",
+        "definition": "SELECT canonical_name AS __text, canonical_name AS __value FROM workouts.v_reportable_exercises ORDER BY 1",
+        "hide": 0,
+        "includeAll": false,
+        "label": "Exercise",
+        "multi": false,
+        "name": "exercise",
+        "options": [],
+        "query": "SELECT canonical_name AS __text, canonical_name AS __value FROM workouts.v_reportable_exercises ORDER BY 1",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 1,
+        "type": "query"
+      }
+    ]
+  },
+  "time": { "from": "now-180d", "to": "now" },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "Exercise Progress",
+  "version": 1,
+  "weekStart": ""
+}

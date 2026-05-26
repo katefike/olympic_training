@@ -27,7 +27,7 @@
       "targets": [
         {
           "format": "time_series",
-          "rawSql": "SELECT ws.session_date AS time, SUM(se.weight_lbs) AS total_lbs\nFROM workouts.workout_session ws\nJOIN workouts.session_exercise sx ON sx.workout_session_id = ws.id\nJOIN workouts.set_entry se ON se.session_exercise_id = sx.id\nWHERE ws.session_date IS NOT NULL\nGROUP BY ws.session_date\nORDER BY ws.session_date;",
+          "rawSql": "SELECT session_date AS time, total_weight_lbs AS total_lbs\nFROM workouts.v_session_summary\nWHERE session_date IS NOT NULL\nORDER BY session_date;",
           "refId": "A"
         }
       ],
