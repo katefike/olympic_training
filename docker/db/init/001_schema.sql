@@ -5,6 +5,8 @@ CREATE TABLE IF NOT EXISTS workouts.exercise (
   canonical_name TEXT NOT NULL UNIQUE,
   movement_pattern TEXT,
   primary_muscle_group TEXT,
+  include_in_reports BOOLEAN NOT NULL DEFAULT FALSE,
+  progress_metric TEXT CHECK (progress_metric IN ('duration', 'reps')),
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
@@ -95,3 +97,50 @@ FROM workouts.workout_session ws
 LEFT JOIN workouts.session_exercise sx ON sx.workout_session_id = ws.id
 LEFT JOIN workouts.set_entry se ON se.session_exercise_id = sx.id
 GROUP BY ws.id;
+
+CREATE OR REPLACE VIEW workouts.v_session_exercise_metrics AS
+WITH set_metrics AS (
+  SELECT
+    sx.id AS session_exercise_id,
+    sx.workout_session_id,
+    sx.exercise_id,
+    sx.reps_total,
+    sx.reps_each,
+    COUNT(se.id) AS set_count,
+    MAX(se.weight_lbs) AS max_weight_lbs,
+    MAX(se.duration_sec) AS max_duration_sec,
+    SUM(COALESCE(se.weight_lbs, 0) * COALESCE(se.duration_sec, 0)) AS progress_score_duration,
+    SUM(
+      COALESCE(se.weight_lbs, 0)
+      * COALESCE(sx.reps_each, sx.reps_total, 0)
+    ) AS progress_score_reps
+  FROM workouts.session_exercise sx
+  JOIN workouts.set_entry se ON se.session_exercise_id = sx.id
+  GROUP BY sx.id
+)
+SELECT
+  ws.session_date,
+  e.canonical_name,
+  e.progress_metric,
+  sm.set_count,
+  sm.max_weight_lbs,
+  sm.max_duration_sec,
+  sm.reps_total,
+  sm.reps_each,
+  sm.progress_score_duration,
+  sm.progress_score_reps,
+  CASE e.progress_metric
+    WHEN 'duration' THEN sm.progress_score_duration
+    WHEN 'reps' THEN sm.progress_score_reps
+    ELSE NULL
+  END AS progress_score
+FROM set_metrics sm
+JOIN workouts.workout_session ws ON ws.id = sm.workout_session_id
+JOIN workouts.exercise e ON e.id = sm.exercise_id
+WHERE ws.session_date IS NOT NULL;
+
+CREATE OR REPLACE VIEW workouts.v_reportable_exercises AS
+SELECT canonical_name, progress_metric
+FROM workouts.exercise
+WHERE include_in_reports
+ORDER BY canonical_name;
