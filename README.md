@@ -20,11 +20,12 @@ Postgres init runs [`docker/db/init/001_schema.sql`](docker/db/init/001_schema.s
 
 2. Open:
 
-- Grafana: `http://localhost:3000` (`admin` / `admin`)
+- Grafana: `http://localhost:3000` (username:`admin` / password:`admin`)
   - **Exercise Progress** — allowlisted exercises; max weight chart, then progress score
   - **Exercise Explorer** — all exercises + debug table
   - **Workout Overview** — daily total volume
 - API docs: `http://localhost:8000/docs`
+- psql: `docker exec -it olympic-training-db psql -U postgres -d olympic_training`
 
 ## Refresh data from JSON
 
