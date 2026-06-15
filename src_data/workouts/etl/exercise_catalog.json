@@ -74,7 +74,7 @@
     {
       "canonical_name": "tilt_seat_calf",
       "aliases": [],
-      "include_in_reports": true,
+      "include_in_reports": false,
       "progress_metric": "duration"
     },
     {
@@ -82,7 +82,7 @@
       "aliases": [
         "calf_raise"
       ],
-      "include_in_reports": true,
+      "include_in_reports": false,
       "progress_metric": "duration"
     },
     {
@@ -191,7 +191,7 @@
         "lying_ab_crunch",
         "abdominal_crunch_lying"
       ],
-      "include_in_reports": true,
+      "include_in_reports": false,
       "progress_metric": "duration"
     },
     {
@@ -200,7 +200,7 @@
         "abdominal_bar",
         "abdominal_push"
       ],
-      "include_in_reports": true,
+      "include_in_reports": false,
       "progress_metric": "duration"
     },
     {
@@ -292,7 +292,7 @@
         "dumbbell_fly",
         "standing_fly"
       ],
-      "include_in_reports": false,
+      "include_in_reports": true,
       "progress_metric": "duration"
     },
     {
@@ -353,7 +353,7 @@
     {
       "canonical_name": "delt_fly_machine",
       "aliases": [],
-      "include_in_reports": false,
+      "include_in_reports": true,
       "progress_metric": "reps"
     },
     {
