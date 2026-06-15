@@ -17,7 +17,7 @@
     "cardio_duration_minutes": null,
     "notes": null,
     "exercises": {
-      "wall sit": {
+      "wallsit": {
         "sets": [
           {
             "duration_sec": 90
@@ -148,7 +148,7 @@
           }
         ]
       },
-      "plank_leg_curl": {
+      "leg_curl": {
         "weight_unit": "lbs",
         "sets": [
           {

@@ -73,7 +73,7 @@
   },
   "time": { "from": "now-180d", "to": "now" },
   "timepicker": {},
-  "timezone": "browser",
+  "timezone": "America/New_York",
   "title": "Exercise Progress",
   "version": 1,
   "weekStart": ""

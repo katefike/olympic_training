@@ -13,13 +13,19 @@
     "cardio_duration_minutes": 30,
     "notes": null,
     "exercises": {
-      "seated_reverse_fly": {
+      "delt_fly_machine": {
         "weight_unit": "lbs",
         "reps_each": 20,
         "sets": [
-          {"weight": 20},
-          {"weight": 20},
-          {"weight": 20}
+          {
+            "weight": 20
+          },
+          {
+            "weight": 20
+          },
+          {
+            "weight": 20
+          }
         ]
       },
       "prone_leg_curl": {
@@ -59,9 +65,15 @@
       "boat_w_band": {
         "weight_unit": null,
         "sets": [
-          {"duration_sec": 90},
-          {"duration_sec": 90},
-          {"duration_sec": 90}
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          }
         ]
       }
     }
@@ -243,9 +255,15 @@
       "bosu_leg_lift": {
         "weight_unit": null,
         "sets": [
-          {"duration_sec": 66},
-          {"duration_sec": 59},
-          {"duration_sec": 66}
+          {
+            "duration_sec": 66
+          },
+          {
+            "duration_sec": 59
+          },
+          {
+            "duration_sec": 66
+          }
         ]
       },
       "superman": {

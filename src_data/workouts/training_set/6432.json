@@ -213,7 +213,7 @@
           }
         ]
       },
-      "curl": {
+      "bicep_curl": {
         "weight_unit": "lbs",
         "reps_total": 20,
         "sets": [

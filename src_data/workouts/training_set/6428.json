@@ -48,7 +48,7 @@
           }
         ]
       },
-      "back_extnsn": {
+      "back_extension": {
         "weight_unit": "lbs",
         "sets": [
           {
@@ -141,7 +141,7 @@
           }
         ]
       },
-      "rear_delt": {
+      "delt_fly_machine": {
         "weight_unit": "lbs",
         "sets": [
           {

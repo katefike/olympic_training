@@ -2,7 +2,7 @@
   {
     "heic_id": "6424",
     "gym": "BodyTech",
-    "date": "250718",
+    "date": "250218",
     "pain": [
       {
         "pain_level": 0,
@@ -39,7 +39,7 @@
           }
         ]
       },
-      "back_xtnsn": {
+      "back_extension": {
         "weight_unit": "lbs",
         "sets": [
           {
@@ -70,7 +70,7 @@
   {
     "heic_id": "6424",
     "gym": "BodyTech",
-    "date": "250720",
+    "date": "250220",
     "pain": [
       {
         "pain_level": 0,
@@ -170,8 +170,7 @@
       "bulgarian_split_squat": {
         "weight_unit": null,
         "notes": "right quad pull",
-        "sets": [
-        ]
+        "sets": []
       },
       "pull_down": {
         "weight_unit": "lbs",
@@ -242,7 +241,7 @@
           }
         ]
       },
-      "superman_next": {
+      "superman": {
         "weight_unit": null,
         "sets": [
           {

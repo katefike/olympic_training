@@ -13,5 +13,6 @@ datasources:
       sslmode: disable
       postgresVersion: 1400
       timescaledb: false
+      timezone: America/New_York
     isDefault: true
     editable: true

@@ -51,7 +51,7 @@
           }
         ]
       },
-      "back_xtnsn": {
+      "back_extension": {
         "weight_unit": "lbs",
         "sets": [
           {
@@ -176,13 +176,19 @@
           }
         ]
       },
-      "seated_reverse_fly": {
+      "delt_fly_machine": {
         "weight_unit": "lbs",
         "reps_each": 20,
         "sets": [
-          {"weight": 15},
-          {"weight": 15}, 
-          {"weight": 15}
+          {
+            "weight": 15
+          },
+          {
+            "weight": 15
+          },
+          {
+            "weight": 15
+          }
         ]
       },
       "abdominal_push": {
@@ -205,9 +211,15 @@
       "bosu_leg_lift": {
         "weight_unit": null,
         "sets": [
-          {"duration_sec": 60},
-          {"duration_sec": 50},
-          {"duration_sec": 50}
+          {
+            "duration_sec": 60
+          },
+          {
+            "duration_sec": 50
+          },
+          {
+            "duration_sec": 50
+          }
         ]
       }
     }

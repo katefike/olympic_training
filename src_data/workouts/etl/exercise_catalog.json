@@ -2,55 +2,105 @@
   "exercises": [
     {
       "canonical_name": "leg_extension",
-      "aliases": ["leg_xtnsn", "leg_xtn", "leg_xtsn", "single_leg_xtnsn"],
+      "aliases": [
+        "leg_xtnsn",
+        "leg_xtn",
+        "leg_xtsn"
+      ],
       "include_in_reports": true,
       "progress_metric": "duration"
     },
     {
+      "canonical_name": "single_leg_extension",
+      "aliases": [
+        "single_leg_xtnsn"
+      ],
+      "include_in_reports": false,
+      "progress_metric": "duration"
+    },
+    {
       "canonical_name": "prone_leg_curl",
-      "aliases": ["leg_curl_prone"],
+      "aliases": [
+        "leg_curl_prone"
+      ],
       "include_in_reports": true,
       "progress_metric": "duration"
     },
     {
       "canonical_name": "leg_press",
-      "aliases": ["leg_press_narrow"],
+      "aliases": [],
       "include_in_reports": true,
       "progress_metric": "duration"
     },
     {
       "canonical_name": "hip_adduction",
-      "aliases": ["gg"],
+      "aliases": [
+        "gg"
+      ],
       "include_in_reports": true,
       "progress_metric": "duration"
     },
     {
-      "canonical_name": "hip_extension",
-      "aliases": ["bg"],
+      "canonical_name": "hip_abduction",
+      "aliases": [
+        "bg"
+      ],
       "include_in_reports": true,
       "progress_metric": "duration"
     },
     {
       "canonical_name": "back_extension",
-      "aliases": ["back_xtnsn", "back_xtn", "back_xtsn", "back_xtns", "back_extnsn", "back_extnn_no_hands"],
+      "aliases": [
+        "back_xtnsn",
+        "back_xtn",
+        "back_xtsn",
+        "back_xtns",
+        "back_extnsn"
+      ],
       "include_in_reports": true,
       "progress_metric": "duration"
     },
     {
-      "canonical_name": "calf_raise",
-      "aliases": ["calf_xtn", "calf_xtnsn", "calf_xtsn", "calf_press", "tilt_seat_calf"],
+      "canonical_name": "seated_calf_extension",
+      "aliases": [
+        "calf_xtn",
+        "calf_xtnsn",
+        "calf_xtsn",
+        "calf_press"
+      ],
       "include_in_reports": true,
       "progress_metric": "duration"
     },
     {
-      "canonical_name": "barbell_row",
-      "aliases": ["bend_w_bar", "band_w_bar"],
+      "canonical_name": "tilt_seat_calf",
+      "aliases": [],
+      "include_in_reports": false,
+      "progress_metric": "duration"
+    },
+    {
+      "canonical_name": "standing_calf_raise",
+      "aliases": [
+        "calf_raise"
+      ],
+      "include_in_reports": false,
+      "progress_metric": "duration"
+    },
+    {
+      "canonical_name": "barbell_deadlift",
+      "aliases": [
+        "bend_w_bar"
+      ],
       "include_in_reports": true,
       "progress_metric": "duration"
     },
     {
       "canonical_name": "lat_pulldown",
-      "aliases": ["lat_pull_down", "fixed_pulldown", "pulldown", "pull_down"],
+      "aliases": [
+        "lat_pull_down",
+        "fixed_pulldown",
+        "pulldown",
+        "pull_down"
+      ],
       "include_in_reports": true,
       "progress_metric": "duration"
     },
@@ -68,13 +118,22 @@
     },
     {
       "canonical_name": "tricep_pulldown",
-      "aliases": ["tricep_xtnsn", "tricep_xtn", "tricep_xtns", "tricep_pull_down", "overhead_tricep_xtn"],
+      "aliases": [
+        "tricep_xtnsn",
+        "tricep_xtn",
+        "tricep_xtns",
+        "tricep_pull_down",
+        "tricep_pull",
+        "tricep_pulldown"
+      ],
       "include_in_reports": true,
       "progress_metric": "duration"
     },
     {
-      "canonical_name": "bulgarian_split_squat",
-      "aliases": [],
+      "canonical_name": "bulgarian",
+      "aliases": [
+        "bulgarian_split_squat"
+      ],
       "include_in_reports": true,
       "progress_metric": "reps"
     },
@@ -86,87 +145,106 @@
     },
     {
       "canonical_name": "side_kick_out",
-      "aliases": ["side_kicks_out"],
-      "include_in_reports": true,
-      "progress_metric": "reps"
-    },
-    {
-      "canonical_name": "side_kick_in",
-      "aliases": ["side_kicks_in"],
-      "include_in_reports": true,
-      "progress_metric": "reps"
-    },
-    {
-      "canonical_name": "side_kick_back",
-      "aliases": ["side_kicks_back"],
+      "aliases": [
+        "side_kicks_out"
+      ],
       "include_in_reports": false,
       "progress_metric": "reps"
     },
     {
-      "canonical_name": "seated_ab_crunch",
+      "canonical_name": "side_kick_in",
       "aliases": [
+        "side_kicks_in"
+      ],
+      "include_in_reports": false,
+      "progress_metric": "reps"
+    },
+    {
+      "canonical_name": "side_kick_back",
+      "aliases": [
+        "side_kicks_back",
+        "kick_back"
+      ],
+      "include_in_reports": false,
+      "progress_metric": "reps"
+    },
+    {
+      "canonical_name": "seated_crunch",
+      "aliases": [
+        "seated_ab_crunch",
         "ab_crunch",
         "abdominales",
         "abdominals",
         "abdominal",
         "abdominal_sitting",
-        "ab_crunch_lying",
         "ab_crunch_seated",
-        "lying_ab_crunch",
         "seated_crunch",
+        "abdominal_crunch_seated"
+      ],
+      "include_in_reports": true,
+      "progress_metric": "duration"
+    },
+    {
+      "canonical_name": "lying_crunch",
+      "aliases": [
+        "ab_crunch_lying",
+        "lying_ab_crunch",
+        "abdominal_crunch_lying"
+      ],
+      "include_in_reports": false,
+      "progress_metric": "duration"
+    },
+    {
+      "canonical_name": "abdominal push",
+      "aliases": [
         "abdominal_bar",
-        "abdominal_push",
-        "abdominal_pushdowns",
-        "abdominal_crunch_seated",
-        "abdominal_crunch_lying",
-        "elevate_core_basic_crunch",
-        "elevate_core_oblique_crunch",
-        "oblique_crunch_machine"
+        "abdominal_push"
       ],
       "include_in_reports": false,
       "progress_metric": "duration"
     },
     {
       "canonical_name": "wall_sit",
-      "aliases": ["wall sit", "wallsit"],
+      "aliases": [
+        "wallsit"
+      ],
       "include_in_reports": false,
       "progress_metric": "duration"
     },
     {
       "canonical_name": "superman",
-      "aliases": ["superman_next"],
-      "include_in_reports": false,
+      "aliases": [],
+      "include_in_reports": true,
       "progress_metric": "duration"
     },
     {
-      "canonical_name": "seated_reverse_fly",
-      "aliases": [],
-      "include_in_reports": false,
-      "progress_metric": "reps"
+      "canonical_name": "bosu_air_walk",
+      "aliases": [
+        "bosu_leg_lift",
+        "bosu_leglift"
+      ],
+      "include_in_reports": true,
+      "progress_metric": "duration"
     },
     {
-      "canonical_name": "bosu_leg_lift",
-      "aliases": ["bosu_leglift", "bosu_leg_hold"],
-      "include_in_reports": false,
+      "canonical_name": "bosu_leg_hold",
+      "aliases": [],
+      "include_in_reports": true,
       "progress_metric": "duration"
     },
     {
       "canonical_name": "plank",
-      "aliases": ["plank_leg_curl"],
-      "include_in_reports": false,
+      "aliases": [],
+      "include_in_reports": true,
       "progress_metric": "duration"
     },
     {
       "canonical_name": "boat",
-      "aliases": ["boat_w_band"],
+      "aliases": [
+        "boat_w_band"
+      ],
       "include_in_reports": false,
       "progress_metric": "duration"
-    },
-    {
-      "canonical_name": "kick_back",
-      "aliases": [],
-      "include_in_reports": false,
-      "progress_metric": "reps"
     },
     {
       "canonical_name": "kickback_machine",
@@ -175,21 +253,46 @@
       "progress_metric": "reps"
     },
     {
-      "canonical_name": "tricep_pull",
+      "canonical_name": "seated_leg_curl",
+      "aliases": [
+        "seated_curlback",
+        "seated_curl_back",
+        "leg_curlback",
+        "seated_curl"
+      ],
+      "include_in_reports": false,
+      "progress_metric": "duration"
+    },
+    {
+      "canonical_name": "chest_fly_machine",
+      "aliases": [
+        "chest_fly",
+        "fly_machine"
+      ],
+      "include_in_reports": true,
+      "progress_metric": "duration"
+    },
+    {
+      "canonical_name": "dumbell_fly_pulses",
+      "aliases": [],
+      "include_in_reports": true,
+      "progress_metric": "duration"
+    },
+    {
+      "canonical_name": "dummbell_chest_fly",
       "aliases": [],
       "include_in_reports": false,
       "progress_metric": "duration"
     },
     {
-      "canonical_name": "seated_curl",
-      "aliases": ["seated_curlback", "seated_curl_back", "leg_curlback", "seated_leg_curl"],
-      "include_in_reports": false,
-      "progress_metric": "duration"
-    },
-    {
-      "canonical_name": "chest_fly",
-      "aliases": ["barbell_fly", "fly", "dumbbell_fly", "fly_machine", "standing_fly"],
-      "include_in_reports": false,
+      "canonical_name": "dummbell_delt_fly",
+      "aliases": [
+        "barbell_fly",
+        "fly",
+        "dumbbell_fly",
+        "standing_fly"
+      ],
+      "include_in_reports": true,
       "progress_metric": "duration"
     },
     {
@@ -199,14 +302,20 @@
       "progress_metric": "duration"
     },
     {
-      "canonical_name": "mts_row",
-      "aliases": ["seated_row", "mts_remo_alto"],
+      "canonical_name": "row",
+      "aliases": [
+        "seated_row",
+        "mts_row",
+        "mts_remo_alto"
+      ],
       "include_in_reports": false,
       "progress_metric": "duration"
     },
     {
       "canonical_name": "lunges",
-      "aliases": ["lunge"],
+      "aliases": [
+        "lunge"
+      ],
       "include_in_reports": false,
       "progress_metric": "reps"
     },
@@ -217,14 +326,15 @@
         "hip_thrust_machine",
         "hip_thrust_nautilus",
         "hipthrust_machine",
-        "barbell_hip_thrust"
+        "barbell_hip_thrust",
+        "glute_trainer"
       ],
       "include_in_reports": false,
       "progress_metric": "duration"
     },
     {
-      "canonical_name": "pushup",
-      "aliases": ["dolphin_pushups"],
+      "canonical_name": "dolphin_pushup",
+      "aliases": [],
       "include_in_reports": false,
       "progress_metric": "reps"
     },
@@ -243,12 +353,17 @@
     {
       "canonical_name": "delt_fly_machine",
       "aliases": [],
-      "include_in_reports": false,
+      "include_in_reports": true,
       "progress_metric": "reps"
     },
     {
       "canonical_name": "kick_front",
-      "aliases": ["kick_front_kick", "kick_front_march", "front_kick_march"],
+      "aliases": [
+        "march",
+        "kick_front_kick",
+        "kick_front_march",
+        "front_kick_march"
+      ],
       "include_in_reports": false,
       "progress_metric": "reps"
     },
@@ -264,13 +379,15 @@
       "progress_metric": "duration"
     },
     {
-      "canonical_name": "bosu_air_walk",
-      "aliases": [],
+      "canonical_name": "assisted_pullup",
+      "aliases": [
+        "assisted_pullup"
+      ],
       "include_in_reports": false,
       "progress_metric": "duration"
     },
     {
-      "canonical_name": "bosu_butterfly",
+      "canonical_name": "assisted_dip",
       "aliases": [],
       "include_in_reports": false,
       "progress_metric": "duration"
@@ -288,20 +405,10 @@
       "progress_metric": "duration"
     },
     {
-      "canonical_name": "glute_trainer",
-      "aliases": [],
-      "include_in_reports": false,
-      "progress_metric": "duration"
-    },
-    {
-      "canonical_name": "rear_delt",
-      "aliases": [],
-      "include_in_reports": false,
-      "progress_metric": "duration"
-    },
-    {
-      "canonical_name": "pullover",
-      "aliases": [],
+      "canonical_name": "dumbbell_pullover",
+      "aliases": [
+        "pullover"
+      ],
       "include_in_reports": false,
       "progress_metric": "duration"
     },
@@ -319,12 +426,6 @@
     },
     {
       "canonical_name": "torso_rotation",
-      "aliases": [],
-      "include_in_reports": false,
-      "progress_metric": "reps"
-    },
-    {
-      "canonical_name": "march",
       "aliases": [],
       "include_in_reports": false,
       "progress_metric": "reps"
@@ -348,8 +449,8 @@
       "progress_metric": "reps"
     },
     {
-      "canonical_name": "curl",
-      "aliases": ["bicep_curl", "tricep_curl"],
+      "canonical_name": "bicep_curl",
+      "aliases": [],
       "include_in_reports": false,
       "progress_metric": "reps"
     },
@@ -367,13 +468,16 @@
     },
     {
       "canonical_name": "single_leg_curl",
-      "aliases": ["single_leg_curl_plane"],
+      "aliases": [],
       "include_in_reports": false,
       "progress_metric": "duration"
     },
     {
-      "canonical_name": "tricep_press",
-      "aliases": [],
+      "canonical_name": "dumbbell_tricep_press",
+      "aliases": [
+        "tricep_curl",
+        "tricep_press"
+      ],
       "include_in_reports": false,
       "progress_metric": "reps"
     }

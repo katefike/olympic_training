@@ -30,7 +30,7 @@
           }
         ]
       },
-      "single_leg_curl_plane": {
+      "single_leg_curl": {
         "weight_unit": "lbs",
         "sets": [
           {
@@ -51,18 +51,30 @@
         "weight_unit": null,
         "reps_each": 20,
         "sets": [
-          {"weight": 10},
-          {"weight": 10},
-          {"weight": 20}
+          {
+            "weight": 10
+          },
+          {
+            "weight": 10
+          },
+          {
+            "weight": 20
+          }
         ]
       },
       "side_kick_in": {
         "weight_unit": null,
         "reps_each": 20,
         "sets": [
-          {"weight": 30},
-          {"weight": 20},
-          {"weight": 20}
+          {
+            "weight": 30
+          },
+          {
+            "weight": 20
+          },
+          {
+            "weight": 20
+          }
         ]
       }
     }
@@ -86,7 +98,7 @@
         "sets": [
           {
             "weight": 110,
-            "duration_sec": 65 
+            "duration_sec": 65
           },
           {
             "weight": 100,
