@@ -13,7 +13,7 @@
     "cardio_duration_minutes": null,
     "notes": null,
     "exercises": {
-      "calf_press": {
+      "calf_extension": {
         "weight_unit": "lbs",
         "sets": [
           {

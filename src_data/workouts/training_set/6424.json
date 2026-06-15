@@ -39,7 +39,7 @@
           }
         ]
       },
-      "back_xtnsn": {
+      "back_extension": {
         "weight_unit": "lbs",
         "sets": [
           {
@@ -170,8 +170,7 @@
       "bulgarian_split_squat": {
         "weight_unit": null,
         "notes": "right quad pull",
-        "sets": [
-        ]
+        "sets": []
       },
       "pull_down": {
         "weight_unit": "lbs",
@@ -242,7 +241,7 @@
           }
         ]
       },
-      "superman_next": {
+      "superman": {
         "weight_unit": null,
         "sets": [
           {

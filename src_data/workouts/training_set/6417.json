@@ -31,7 +31,7 @@
           }
         ]
       },
-      "calf_press": {
+      "calf_extension": {
         "weight_unit": "lbs",
         "sets": [
           {
@@ -69,8 +69,12 @@
       "bosu_leg_lift": {
         "weight_unit": null,
         "sets": [
-          {"duration_sec": 64},
-          {"duration_sec": 67},
+          {
+            "duration_sec": 64
+          },
+          {
+            "duration_sec": 67
+          },
           {
             "duration_sec": 61
           }
@@ -95,9 +99,15 @@
       "wallsit": {
         "weight_unit": null,
         "sets": [
-          {"duration_sec": 90},
-          {"duration_sec": 90},
-          {"duration_sec": 90}
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          },
+          {
+            "duration_sec": 90
+          }
         ]
       },
       "tricep_pull_down": {

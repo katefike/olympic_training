@@ -167,7 +167,7 @@
     "cardio_duration_minutes": 15,
     "notes": null,
     "exercises": {
-      "calf_xtn": {
+      "calf_extension": {
         "weight_unit": "lbs",
         "sets": [
           {
@@ -245,7 +245,7 @@
     "cardio_duration_minutes": null,
     "notes": null,
     "exercises": {
-      "seated_reverse_fly": {
+      "delt_fly_machine": {
         "weight_unit": "lbs",
         "sets": [
           {

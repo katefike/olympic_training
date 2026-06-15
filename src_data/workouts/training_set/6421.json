@@ -30,7 +30,7 @@
           }
         ]
       },
-      "calf_press": {
+      "calf_extension": {
         "weight_unit": "lbs",
         "sets": [
           {
@@ -210,7 +210,7 @@
           }
         ]
       },
-      "back_xtn": {
+      "back_extension": {
         "weight_unit": "lbs",
         "sets": [
           {

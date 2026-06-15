@@ -103,7 +103,7 @@
           }
         ]
       },
-      "back_xtnsn": {
+      "back_extension": {
         "weight_unit": "lbs",
         "sets": [
           {
@@ -185,7 +185,7 @@
     "cardio_duration_minutes": null,
     "notes": "trapz fatigue left early",
     "exercises": {
-      "back_xtnsn": {
+      "back_extension": {
         "weight_unit": "lbs",
         "sets": [
           {
@@ -228,7 +228,7 @@
     "cardio_duration_minutes": null,
     "notes": null,
     "exercises": {
-      "back_xtnsn": {
+      "back_extension": {
         "weight_unit": "lbs",
         "sets": [
           {
