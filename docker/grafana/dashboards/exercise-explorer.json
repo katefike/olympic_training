@@ -84,7 +84,7 @@
   },
   "time": { "from": "now-180d", "to": "now" },
   "timepicker": {},
-  "timezone": "browser",
+  "timezone": "America/New_York",
   "title": "Exercise Explorer",
   "version": 1,
   "weekStart": ""

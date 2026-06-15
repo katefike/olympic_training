@@ -68,6 +68,8 @@ Kick directions (`side_kick_out`, `side_kick_in`, `side_kick_back`, etc.) stay *
 
 ## Data model
 
+Timestamps (`created_at`) use **US Eastern** (`America/New_York`, EST/EDT). Workout days are stored as plain `DATE` values from the JSON `date` field (no timezone).
+
 Main tables:
 
 - `workouts.workout_session`

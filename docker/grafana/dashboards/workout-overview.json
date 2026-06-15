@@ -49,7 +49,7 @@
     "to": "now"
   },
   "timepicker": {},
-  "timezone": "browser",
+  "timezone": "America/New_York",
   "title": "Workout Overview",
   "version": 1,
   "weekStart": ""

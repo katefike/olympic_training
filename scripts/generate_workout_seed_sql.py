@@ -5,7 +5,8 @@ from __future__ import annotations
 
 import json
 import sys
-from datetime import UTC, date, datetime
+from datetime import date, datetime
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -17,6 +18,7 @@ from catalog import ExerciseCatalog, load_catalog, normalize_unit, to_lbs  # noq
 OUT = ROOT / "docker" / "db" / "init" / "002_workout_seed.sql"
 TRAINING_SET = ROOT / "src_data" / "workouts" / "training_set"
 CATALOG_FILE = ETL_DIR / "exercise_catalog.json"
+EASTERN = ZoneInfo("America/New_York")
 
 
 def sql_literal(value) -> str:
@@ -50,7 +52,7 @@ def main() -> None:
         "-- Generated workout seed data. Re-run after JSON or catalog changes:",
         "--   python scripts/generate_workout_seed_sql.py",
         "-- or (with Postgres): bash scripts/local-dev-setup.sh && bash scripts/dump-db-seed.sh",
-        f"-- Generated: {datetime.now(UTC).strftime('%Y-%m-%dT%H:%M:%SZ')}",
+        f"-- Generated: {datetime.now(EASTERN).isoformat(timespec='seconds')}",
         "",
         "SET client_encoding = 'UTF8';",
         "",
