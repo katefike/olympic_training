@@ -389,7 +389,7 @@
     },
     {
       "canonical_name": "assisted_dip",
-      [],
+      "aliases": [],
       "include_in_reports": false,
       "progress_metric": "duration"
     },
