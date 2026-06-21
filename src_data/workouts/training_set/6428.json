@@ -15,7 +15,7 @@
     "exercises": {
       "gg": {
         "weight_unit": "lbs",
-        "notes": "crotch pain",
+        "notes": null,
         "sets": [
           {
             "weight": 190,
