@@ -14,10 +14,10 @@
     "notes": null,
     "exercises": {
       "tricep_pulldown": {
-        "weight_unit": "kg",
+        "weight_unit": "lbs",
         "sets": [
           {
-            "weight": 10,
+            "weight": 22,
             "duration_sec": 60
           },
           {
