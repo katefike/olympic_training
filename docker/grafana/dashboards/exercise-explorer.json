@@ -35,7 +35,7 @@
       "targets": [
         {
           "format": "time_series",
-          "rawSql": "SELECT session_date AS time, session_volume\nFROM workouts.v_session_exercise_metrics\nWHERE canonical_name = '$exercise'\n  AND progress_metric = 'duration'\n  AND session_volume IS NOT NULL\n  AND session_volume > 0\nORDER BY session_date;",
+          "rawSql": "SELECT session_date AS time, session_volume\nFROM workouts.v_session_exercise_metrics\nWHERE canonical_name = '$exercise'\n  AND session_metric = 'duration'\n  AND session_volume IS NOT NULL\n  AND session_volume > 0\nORDER BY session_date;",
           "refId": "A"
         }
       ],
@@ -49,7 +49,7 @@
       "targets": [
         {
           "format": "time_series",
-          "rawSql": "SELECT session_date AS time, progress_score\nFROM workouts.v_session_exercise_metrics\nWHERE canonical_name = '$exercise'\n  AND progress_metric = 'reps'\n  AND progress_score IS NOT NULL\n  AND progress_score > 0\nORDER BY session_date;",
+          "rawSql": "SELECT session_date AS time, progress_score\nFROM workouts.v_session_exercise_metrics\nWHERE canonical_name = '$exercise'\n  AND session_metric = 'reps'\n  AND progress_score IS NOT NULL\n  AND progress_score > 0\nORDER BY session_date;",
           "refId": "A"
         }
       ],
@@ -63,7 +63,7 @@
       "targets": [
         {
           "format": "table",
-          "rawSql": "SELECT session_date, max_weight_lbs, session_volume, progress_score_duration, progress_score_reps, progress_score, progress_metric\nFROM workouts.v_session_exercise_metrics\nWHERE canonical_name = '$exercise'\nORDER BY session_date DESC\nLIMIT 30;",
+          "rawSql": "SELECT session_date, session_metric, max_weight_lbs, session_volume, progress_score_duration, progress_score_reps, progress_score, catalog_progress_metric\nFROM workouts.v_session_exercise_metrics\nWHERE canonical_name = '$exercise'\nORDER BY session_date DESC\nLIMIT 30;",
           "refId": "A"
         }
       ],

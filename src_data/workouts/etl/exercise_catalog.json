@@ -91,7 +91,11 @@
         "bend_w_bar"
       ],
       "include_in_reports": true,
-      "progress_metric": "duration"
+      "progress_metric": "duration",
+      "progress_metrics": [
+        "duration",
+        "reps"
+      ]
     },
     {
       "canonical_name": "lat_pulldown",

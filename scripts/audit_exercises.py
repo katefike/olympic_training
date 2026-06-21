@@ -117,7 +117,15 @@ def main() -> None:
                 print(f"  {count:3d}  {raw}")
 
     mixed_canonicals = [
-        c for c, s in by_canonical.items() if s["dur_sessions"] and s["rep_sessions"]
+        c
+        for c, s in by_canonical.items()
+        if s["dur_sessions"] and s["rep_sessions"]
+        and not (
+            catalog
+            and (entry := catalog.entry_for(c))
+            and entry.tracks_metric("duration")
+            and entry.tracks_metric("reps")
+        )
     ]
     if mixed_canonicals:
         print("\nMixed-mode canonicals (duration and rep sessions):")

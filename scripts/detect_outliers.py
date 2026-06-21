@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ETL_DIR = ROOT / "src_data" / "workouts" / "etl"
 sys.path.insert(0, str(ETL_DIR))
 
-from catalog import ExerciseCatalog, load_catalog, normalize_unit, to_lbs  # noqa: E402
+from catalog import ExerciseCatalog, infer_session_metric, load_catalog, normalize_unit, to_lbs  # noqa: E402
 
 
 @dataclass
@@ -32,6 +32,7 @@ class SessionRecord:
     max_duration_sec: int | None
     progress_score: float
     progress_metric: str
+    session_metric: str | None
     sets: list[dict[str, Any]]
     reps_each: int | None
     reps_total: int | None
@@ -125,8 +126,10 @@ def collect_records(
                     if reps_val and weight_lbs:
                         score_reps += weight_lbs * reps_val
 
-                metric = entry.progress_metric or "duration"
-                progress_score = score_duration if metric == "duration" else score_reps
+                metric = infer_session_metric(details) or entry.progress_metric or "duration"
+                progress_score = (
+                    score_duration if metric == "duration" else score_reps
+                )
 
                 by_exercise[canonical].append(
                     SessionRecord(
@@ -141,7 +144,8 @@ def collect_records(
                         max_weight_lbs=max_weight,
                         max_duration_sec=max_duration,
                         progress_score=progress_score,
-                        progress_metric=metric,
+                        progress_metric=entry.progress_metric or metric,
+                        session_metric=metric,
                         sets=sets_norm,
                         reps_each=int(reps_each) if reps_each is not None else None,
                         reps_total=int(reps_total) if reps_total is not None else None,
@@ -166,44 +170,42 @@ def format_sets(record: SessionRecord) -> str:
     return ", ".join(parts)
 
 
-def print_exercise_report(records: list[SessionRecord], min_sessions: int) -> None:
-    if not records:
-        print("  (no sessions)")
+def _report_mode(records: list[SessionRecord], mode: str) -> None:
+    subset = [r for r in records if r.session_metric == mode]
+    if not subset:
         return
 
-    canonical = records[0].canonical
-    metric = records[0].progress_metric
-    weights = [r.max_weight_lbs for r in records]
-    scores = [r.progress_score for r in records]
-    durations = [r.max_duration_sec for r in records if r.max_duration_sec is not None]
+    weights = [r.max_weight_lbs for r in subset]
+    scores = [r.progress_score for r in subset]
+    durations = [r.max_duration_sec for r in subset if r.max_duration_sec is not None]
 
     w_lo, w_hi = iqr_outliers(weights)
     s_lo, s_hi = iqr_outliers(scores)
     d_lo, d_hi = (iqr_outliers([float(d) for d in durations]) if durations else (0.0, 0.0))
 
+    print(f"  mode={mode} sessions={len(subset)}")
     print(
-        f"  sessions={len(records)}  metric={metric}  "
-        f"weight lbs: median={statistics.median(weights):.1f} range=[{min(weights):.1f}, {max(weights):.1f}]  "
-        f"IQR fence=[{w_lo:.1f}, {w_hi:.1f}]"
+        f"    weight lbs: median={statistics.median(weights):.1f} "
+        f"range=[{min(weights):.1f}, {max(weights):.1f}]  IQR fence=[{w_lo:.1f}, {w_hi:.1f}]"
     )
-    if metric == "duration":
+    if mode == "duration":
         print(
-            f"  volume (weight×sec): median={statistics.median(scores):.0f} "
+            f"    volume (weight×sec): median={statistics.median(scores):.0f} "
             f"range=[{min(scores):.0f}, {max(scores):.0f}]  IQR fence=[{s_lo:.0f}, {s_hi:.0f}]"
         )
         if durations:
             print(
-                f"  max set duration: median={statistics.median(durations):.0f}s "
+                f"    max set duration: median={statistics.median(durations):.0f}s "
                 f"range=[{min(durations)}, {max(durations)}]  IQR fence=[{d_lo:.0f}, {d_hi:.0f}]"
             )
     else:
         print(
-            f"  progress score (weight×reps): median={statistics.median(scores):.0f} "
+            f"    progress score (weight×reps): median={statistics.median(scores):.0f} "
             f"range=[{min(scores):.0f}, {max(scores):.0f}]  IQR fence=[{s_lo:.0f}, {s_hi:.0f}]"
         )
 
-    flagged: list[tuple[str, SessionRecord, list[str]]] = []
-    for record in records:
+    flagged: list[tuple[SessionRecord, list[str]]] = []
+    for record in subset:
         reasons: list[str] = []
         if record.max_weight_lbs < w_lo or record.max_weight_lbs > w_hi:
             reasons.append(f"max weight {record.max_weight_lbs:.1f} lbs outside [{w_lo:.1f}, {w_hi:.1f}]")
@@ -211,7 +213,7 @@ def print_exercise_report(records: list[SessionRecord], min_sessions: int) -> No
             reasons.append(f"progress score {record.progress_score:.0f} outside [{s_lo:.0f}, {s_hi:.0f}]")
         if (
             record.max_duration_sec is not None
-            and metric == "duration"
+            and mode == "duration"
             and durations
             and (record.max_duration_sec < d_lo or record.max_duration_sec > d_hi)
         ):
@@ -219,22 +221,37 @@ def print_exercise_report(records: list[SessionRecord], min_sessions: int) -> No
                 f"max duration {record.max_duration_sec}s outside [{d_lo:.0f}, {d_hi:.0f}]"
             )
         if reasons:
-            flagged.append(("OUTLIER", record, reasons))
+            flagged.append((record, reasons))
 
     if not flagged:
-        print("  No outliers detected.")
+        print("    No outliers detected.")
         return
 
-    print(f"  Outliers ({len(flagged)}):")
-    for _, record, reasons in sorted(flagged, key=lambda x: (-x[1].max_weight_lbs, x[1].session_date or "")):
+    print(f"    Outliers ({len(flagged)}):")
+    for record, reasons in sorted(flagged, key=lambda x: (-x[0].max_weight_lbs, x[0].session_date or "")):
         gym = record.gym or "(gym unknown)"
         path = f"src_data/workouts/training_set/{record.source_file}"
         print(
-            f"    - {record.session_date or 'no date'} | gym={gym} | "
+            f"      - {record.session_date or 'no date'} | gym={gym} | "
             f"{path} session[{record.session_index}] heic={record.heic_id} raw={record.raw_name!r}"
         )
-        print(f"      {'; '.join(reasons)}")
-        print(f"      sets: {format_sets(record)}")
+        print(f"        {'; '.join(reasons)}")
+        print(f"        sets: {format_sets(record)}")
+
+
+def print_exercise_report(records: list[SessionRecord], min_sessions: int) -> None:
+    if not records:
+        print("  (no sessions)")
+        return
+
+    modes = sorted({r.session_metric for r in records if r.session_metric})
+    if not modes:
+        print("  (no inferable session metric)")
+        return
+
+    print(f"  total sessions={len(records)}")
+    for mode in modes:
+        _report_mode(records, mode)
 
 
 def main() -> None:
