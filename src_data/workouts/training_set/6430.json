@@ -68,7 +68,7 @@
   {
     "heic_id": "6430",
     "gym": "Exercise Warehouse",
-    "date": "240926",
+    "date": 240926,
     "pain": [
       {
         "pain_level": null,
@@ -126,7 +126,7 @@
   {
     "heic_id": "6430",
     "gym": "Exercise Warehouse",
-    "date": "240929",
+    "date": 240929,
     "pain": [
       {
         "pain_level": null,
@@ -203,7 +203,7 @@
   {
     "heic_id": "6430",
     "gym": "Exercise Warehouse",
-    "date": "241001",
+    "date": 241001,
     "pain": [
       {
         "pain_level": 0,
@@ -281,7 +281,7 @@
   {
     "heic_id": "6430",
     "gym": "Exercise Warehouse",
-    "date": "241003",
+    "date": 241003,
     "pain": [
       {
         "pain_level": null,
@@ -296,7 +296,7 @@
         "notes": "crotch pain",
         "sets": [
           {
-            "weight": 190,
+            "weight": 140,
             "duration_sec": 90
           },
           {
