@@ -21,7 +21,7 @@ Postgres init runs [`docker/db/init/001_schema.sql`](docker/db/init/001_schema.s
 2. Open:
 
 - Grafana: `http://localhost:3000` (username:`admin` / password:`admin`)
-  - **Exercise Progress** — allowlisted exercises; max weight chart, then progress score
+  - **Exercise Progress** — allowlisted exercises; max weight chart, then volume (TUL × weight) for duration exercises or progress score for rep-based exercises
   - **Exercise Explorer** — all exercises + debug table
   - **Workout Overview** — daily total volume
 - API docs: `http://localhost:8000/docs`
@@ -63,7 +63,7 @@ python3 scripts/generate_workout_seed_sql.py
 
 - **aliases** — raw JSON keys → canonical names (replaces `exercise_aliases.json`)
 - **include_in_reports** — Grafana Exercise Progress allowlist
-- **progress_metric** — `duration` (Σ weight×seconds) or `reps` (Σ weight×reps) for the progress score chart
+- **progress_metric** — `duration` (Σ weight×seconds, shown as volume/TUL in reports) or `reps` (Σ weight×reps) for the progress score chart
 
 Kick directions (`side_kick_out`, `side_kick_in`, `side_kick_back`, etc.) stay **separate** canonicals; only spelling variants alias together.
 
@@ -83,7 +83,7 @@ Main tables:
 
 Views for dashboards:
 
-- `workouts.v_session_exercise_metrics` — per session/exercise: `max_weight_lbs`, `progress_score`, etc.
+- `workouts.v_session_exercise_metrics` — per session/exercise: `max_weight_lbs`, `session_volume` (TUL × weight for duration exercises), `progress_score`, etc.
 - `workouts.v_reportable_exercises` — allowlist for Grafana
 - `workouts.v_daily_volume`
 - `workouts.v_session_summary`

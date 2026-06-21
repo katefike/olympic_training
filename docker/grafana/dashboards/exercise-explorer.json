@@ -35,21 +35,35 @@
       "targets": [
         {
           "format": "time_series",
-          "rawSql": "SELECT session_date AS time, progress_score\nFROM workouts.v_session_exercise_metrics\nWHERE canonical_name = '$exercise'\n  AND progress_score IS NOT NULL\n  AND progress_score > 0\nORDER BY session_date;",
+          "rawSql": "SELECT session_date AS time, session_volume\nFROM workouts.v_session_exercise_metrics\nWHERE canonical_name = '$exercise'\n  AND progress_metric = 'duration'\n  AND session_volume IS NOT NULL\n  AND session_volume > 0\nORDER BY session_date;",
           "refId": "A"
         }
       ],
-      "title": "Progress score — $exercise",
+      "title": "Volume (TUL × weight, lbs·sec) — $exercise",
       "type": "timeseries"
     },
     {
       "datasource": "Olympic Training Postgres",
-      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 18 },
+      "gridPos": { "h": 9, "w": 24, "x": 0, "y": 18 },
+      "id": 4,
+      "targets": [
+        {
+          "format": "time_series",
+          "rawSql": "SELECT session_date AS time, progress_score\nFROM workouts.v_session_exercise_metrics\nWHERE canonical_name = '$exercise'\n  AND progress_metric = 'reps'\n  AND progress_score IS NOT NULL\n  AND progress_score > 0\nORDER BY session_date;",
+          "refId": "A"
+        }
+      ],
+      "title": "Progress score (weight × reps) — $exercise",
+      "type": "timeseries"
+    },
+    {
+      "datasource": "Olympic Training Postgres",
+      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 27 },
       "id": 3,
       "targets": [
         {
           "format": "table",
-          "rawSql": "SELECT session_date, max_weight_lbs, progress_score_duration, progress_score_reps, progress_score, progress_metric\nFROM workouts.v_session_exercise_metrics\nWHERE canonical_name = '$exercise'\nORDER BY session_date DESC\nLIMIT 30;",
+          "rawSql": "SELECT session_date, max_weight_lbs, session_volume, progress_score_duration, progress_score_reps, progress_score, progress_metric\nFROM workouts.v_session_exercise_metrics\nWHERE canonical_name = '$exercise'\nORDER BY session_date DESC\nLIMIT 30;",
           "refId": "A"
         }
       ],

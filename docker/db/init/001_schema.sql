@@ -131,6 +131,10 @@ SELECT
   sm.progress_score_reps,
   CASE e.progress_metric
     WHEN 'duration' THEN sm.progress_score_duration
+    ELSE NULL
+  END AS session_volume,
+  CASE e.progress_metric
+    WHEN 'duration' THEN sm.progress_score_duration
     WHEN 'reps' THEN sm.progress_score_reps
     ELSE NULL
   END AS progress_score
