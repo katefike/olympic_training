@@ -24,7 +24,11 @@
         "leg_curl_prone"
       ],
       "include_in_reports": true,
-      "progress_metric": "duration"
+      "progress_metric": "duration",
+      "progress_metrics": [
+        "duration",
+        "reps"
+      ]
     },
     {
       "canonical_name": "leg_press",
@@ -58,7 +62,11 @@
         "back_extnsn"
       ],
       "include_in_reports": true,
-      "progress_metric": "duration"
+      "progress_metric": "duration",
+      "progress_metrics": [
+        "duration",
+        "reps"
+      ]
     },
     {
       "canonical_name": "seated_calf_extension",
@@ -91,7 +99,11 @@
         "bend_w_bar"
       ],
       "include_in_reports": true,
-      "progress_metric": "duration"
+      "progress_metric": "duration",
+      "progress_metrics": [
+        "duration",
+        "reps"
+      ]
     },
     {
       "canonical_name": "lat_pulldown",
@@ -102,7 +114,11 @@
         "pull_down"
       ],
       "include_in_reports": true,
-      "progress_metric": "duration"
+      "progress_metric": "duration",
+      "progress_metrics": [
+        "duration",
+        "reps"
+      ]
     },
     {
       "canonical_name": "chest_press",
@@ -127,7 +143,11 @@
         "tricep_pulldown"
       ],
       "include_in_reports": true,
-      "progress_metric": "duration"
+      "progress_metric": "duration",
+      "progress_metrics": [
+        "duration",
+        "reps"
+      ]
     },
     {
       "canonical_name": "bulgarian",
@@ -135,7 +155,11 @@
         "bulgarian_split_squat"
       ],
       "include_in_reports": true,
-      "progress_metric": "reps"
+      "progress_metric": "reps",
+      "progress_metrics": [
+        "duration",
+        "reps"
+      ]
     },
     {
       "canonical_name": "goblet_squat",
@@ -182,7 +206,11 @@
         "abdominal_crunch_seated"
       ],
       "include_in_reports": true,
-      "progress_metric": "duration"
+      "progress_metric": "duration",
+      "progress_metrics": [
+        "duration",
+        "reps"
+      ]
     },
     {
       "canonical_name": "lying_crunch",
@@ -293,7 +321,11 @@
         "standing_fly"
       ],
       "include_in_reports": true,
-      "progress_metric": "duration"
+      "progress_metric": "duration",
+      "progress_metrics": [
+        "duration",
+        "reps"
+      ]
     },
     {
       "canonical_name": "crunch",
@@ -354,7 +386,11 @@
       "canonical_name": "delt_fly_machine",
       "aliases": [],
       "include_in_reports": true,
-      "progress_metric": "reps"
+      "progress_metric": "reps",
+      "progress_metrics": [
+        "duration",
+        "reps"
+      ]
     },
     {
       "canonical_name": "kick_front",

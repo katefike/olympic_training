@@ -96,7 +96,7 @@
             "duration_sec": 50
           },
           {
-            "weight": 75,
+            "weight": 15,
             "duration_sec": 60
           }
         ]
@@ -155,8 +155,7 @@
           {},
           {
             "weight": 15
-          },
-          {}
+          }
         ]
       },
       "bend_w_bar": {

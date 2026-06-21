@@ -37,7 +37,7 @@ When you change `src_data/workouts/training_set/` or [`src_data/workouts/etl/exe
 python3 scripts/audit_exercises.py
 ```
 
-2. Edit the catalog (aliases, `include_in_reports`, `progress_metric`: `duration` or `reps`).
+2. Edit the catalog (aliases, `include_in_reports`, `progress_metric`: `duration` or `reps`, optional `progress_metrics` when both apply).
 
 3. Load into a running Postgres:
 
@@ -63,7 +63,8 @@ python3 scripts/generate_workout_seed_sql.py
 
 - **aliases** — raw JSON keys → canonical names (replaces `exercise_aliases.json`)
 - **include_in_reports** — Grafana Exercise Progress allowlist
-- **progress_metric** — `duration` (Σ weight×seconds, shown as volume/TUL in reports) or `reps` (Σ weight×reps) for the progress score chart
+- **progress_metric** — primary metric label (`duration` or `reps`); defaults `progress_metrics` when that list is omitted
+- **progress_metrics** — optional list when an exercise is logged both ways (e.g. `barbell_deadlift` as TUL and as reps). Grafana charts filter by **session** metric inferred from the JSON (`duration_sec` vs `reps_each`/`reps_total`), so each mode gets its own progress panel.
 
 Kick directions (`side_kick_out`, `side_kick_in`, `side_kick_back`, etc.) stay **separate** canonicals; only spelling variants alias together.
 
@@ -83,7 +84,7 @@ Main tables:
 
 Views for dashboards:
 
-- `workouts.v_session_exercise_metrics` — per session/exercise: `max_weight_lbs`, `session_volume` (TUL × weight for duration exercises), `progress_score`, etc.
+- `workouts.v_session_exercise_metrics` — per session/exercise: `session_metric` (`duration` or `reps`, inferred from data), `max_weight_lbs`, `session_volume` (duration sessions), `progress_score` (active metric for that session), etc.
 - `workouts.v_reportable_exercises` — allowlist for Grafana
 - `workouts.v_daily_volume`
 - `workouts.v_session_summary`

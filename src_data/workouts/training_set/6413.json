@@ -2,7 +2,7 @@
   {
     "heic_id": "6413",
     "gym": null,
-    "date": "250929",
+    "date": "250926",
     "pain": [
       {
         "pain_level": "0.5",
@@ -21,9 +21,9 @@
         "weight_unit": "lbs",
         "reps_total": 20,
         "sets": [
-          {},
-          {},
-          {}
+          {"weight": 15},
+          {"weight": 20},
+          {"weight": 20}
         ]
       },
       "wall_sit": {

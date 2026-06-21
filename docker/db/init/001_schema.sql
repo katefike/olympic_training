@@ -110,6 +110,7 @@ WITH set_metrics AS (
     COUNT(se.id) AS set_count,
     MAX(se.weight_lbs) AS max_weight_lbs,
     MAX(se.duration_sec) AS max_duration_sec,
+    BOOL_OR(se.duration_sec IS NOT NULL AND se.duration_sec > 0) AS has_duration,
     SUM(COALESCE(se.weight_lbs, 0) * COALESCE(se.duration_sec, 0)) AS progress_score_duration,
     SUM(
       COALESCE(se.weight_lbs, 0)
@@ -118,30 +119,41 @@ WITH set_metrics AS (
   FROM workouts.session_exercise sx
   JOIN workouts.set_entry se ON se.session_exercise_id = sx.id
   GROUP BY sx.id
+),
+classified AS (
+  SELECT
+    sm.*,
+    CASE
+      WHEN sm.has_duration THEN 'duration'
+      WHEN COALESCE(sm.reps_each, sm.reps_total, 0) > 0 THEN 'reps'
+      ELSE NULL
+    END AS session_metric
+  FROM set_metrics sm
 )
 SELECT
   ws.session_date,
   e.canonical_name,
-  e.progress_metric,
-  sm.set_count,
-  sm.max_weight_lbs,
-  sm.max_duration_sec,
-  sm.reps_total,
-  sm.reps_each,
-  sm.progress_score_duration,
-  sm.progress_score_reps,
-  CASE e.progress_metric
-    WHEN 'duration' THEN sm.progress_score_duration
+  e.progress_metric AS catalog_progress_metric,
+  c.session_metric,
+  c.set_count,
+  c.max_weight_lbs,
+  c.max_duration_sec,
+  c.reps_total,
+  c.reps_each,
+  c.progress_score_duration,
+  c.progress_score_reps,
+  CASE
+    WHEN c.session_metric = 'duration' THEN c.progress_score_duration
     ELSE NULL
   END AS session_volume,
-  CASE e.progress_metric
-    WHEN 'duration' THEN sm.progress_score_duration
-    WHEN 'reps' THEN sm.progress_score_reps
+  CASE
+    WHEN c.session_metric = 'duration' THEN c.progress_score_duration
+    WHEN c.session_metric = 'reps' THEN c.progress_score_reps
     ELSE NULL
   END AS progress_score
-FROM set_metrics sm
-JOIN workouts.workout_session ws ON ws.id = sm.workout_session_id
-JOIN workouts.exercise e ON e.id = sm.exercise_id
+FROM classified c
+JOIN workouts.workout_session ws ON ws.id = c.workout_session_id
+JOIN workouts.exercise e ON e.id = c.exercise_id
 WHERE ws.session_date IS NOT NULL;
 
 CREATE OR REPLACE VIEW workouts.v_reportable_exercises AS

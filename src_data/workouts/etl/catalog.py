@@ -16,6 +16,10 @@ class ExerciseCatalogEntry:
     aliases: tuple[str, ...]
     include_in_reports: bool
     progress_metric: str | None
+    progress_metrics: tuple[str, ...]
+
+    def tracks_metric(self, metric: str) -> bool:
+        return metric in self.progress_metrics
 
 
 @dataclass(frozen=True)
@@ -57,11 +61,28 @@ def load_catalog(path: Path) -> ExerciseCatalog:
         aliases: list[str] = []
         if isinstance(aliases_raw, list):
             aliases = [str(a).strip().lower() for a in aliases_raw if str(a).strip()]
+        metrics_raw = item.get("progress_metrics")
+        progress_metrics: tuple[str, ...]
+        if metrics_raw is None:
+            progress_metrics = (metric,) if metric else ()
+        else:
+            if not isinstance(metrics_raw, list):
+                raise ValueError(f"Invalid progress_metrics for {canonical}: must be a list")
+            parsed = [str(m).strip().lower() for m in metrics_raw if str(m).strip()]
+            for m in parsed:
+                if m not in ("duration", "reps"):
+                    raise ValueError(f"Invalid progress_metrics value for {canonical}: {m}")
+            progress_metrics = tuple(dict.fromkeys(parsed))
+            if metric and metric not in progress_metrics:
+                raise ValueError(
+                    f"progress_metric {metric!r} must appear in progress_metrics for {canonical}"
+                )
         entry = ExerciseCatalogEntry(
             canonical_name=canonical,
             aliases=tuple(aliases),
             include_in_reports=bool(item.get("include_in_reports", False)),
             progress_metric=metric,
+            progress_metrics=progress_metrics,
         )
         entries.append(entry)
         by_canonical[canonical] = entry
@@ -136,3 +157,13 @@ def session_scores(details: dict[str, Any]) -> dict[str, float]:
         "has_duration": float(has_duration),
         "has_reps": float(has_reps),
     }
+
+
+def infer_session_metric(details: dict[str, Any]) -> str | None:
+    """Infer whether a session-exercise was logged as duration (TUL) or reps."""
+    scores = session_scores(details)
+    if scores["has_duration"]:
+        return "duration"
+    if scores["has_reps"]:
+        return "reps"
+    return None
