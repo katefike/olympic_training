@@ -38,11 +38,28 @@
       "targets": [
         {
           "format": "time_series",
-          "rawSql": "SELECT m.session_date AS time, m.progress_score\nFROM workouts.v_session_exercise_metrics m\nJOIN workouts.exercise e ON e.canonical_name = m.canonical_name\nWHERE e.include_in_reports\n  AND m.canonical_name = '$exercise'\n  AND m.progress_score IS NOT NULL\n  AND m.progress_score > 0\nORDER BY m.session_date;",
+          "rawSql": "SELECT m.session_date AS time, m.session_volume\nFROM workouts.v_session_exercise_metrics m\nJOIN workouts.exercise e ON e.canonical_name = m.canonical_name\nWHERE e.include_in_reports\n  AND e.progress_metric = 'duration'\n  AND m.canonical_name = '$exercise'\n  AND m.session_volume IS NOT NULL\n  AND m.session_volume > 0\nORDER BY m.session_date;",
           "refId": "A"
         }
       ],
-      "title": "Progress score — $exercise",
+      "title": "Volume (TUL × weight, lbs·sec) — $exercise",
+      "type": "timeseries"
+    },
+    {
+      "datasource": "Olympic Training Postgres",
+      "gridPos": { "h": 9, "w": 24, "x": 0, "y": 18 },
+      "id": 3,
+      "options": {
+        "legend": { "calcs": [], "displayMode": "list", "placement": "bottom" }
+      },
+      "targets": [
+        {
+          "format": "time_series",
+          "rawSql": "SELECT m.session_date AS time, m.progress_score\nFROM workouts.v_session_exercise_metrics m\nJOIN workouts.exercise e ON e.canonical_name = m.canonical_name\nWHERE e.include_in_reports\n  AND e.progress_metric = 'reps'\n  AND m.canonical_name = '$exercise'\n  AND m.progress_score IS NOT NULL\n  AND m.progress_score > 0\nORDER BY m.session_date;",
+          "refId": "A"
+        }
+      ],
+      "title": "Progress score (weight × reps) — $exercise",
       "type": "timeseries"
     }
   ],
