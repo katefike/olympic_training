@@ -98,7 +98,8 @@ LEFT JOIN workouts.session_exercise sx ON sx.workout_session_id = ws.id
 LEFT JOIN workouts.set_entry se ON se.session_exercise_id = sx.id
 GROUP BY ws.id;
 
-CREATE OR REPLACE VIEW workouts.v_session_exercise_metrics AS
+DROP VIEW IF EXISTS workouts.v_session_exercise_metrics;
+CREATE VIEW workouts.v_session_exercise_metrics AS
 WITH set_metrics AS (
   SELECT
     sx.id AS session_exercise_id,
