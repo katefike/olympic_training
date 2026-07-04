@@ -246,14 +246,15 @@
       "gridPos": { "h": 8, "w": 12, "x": 12, "y": 22 },
       "id": 8,
       "options": {
+        "displayLabels": ["name", "percent"],
         "legend": {
           "displayMode": "table",
           "placement": "right",
-          "calcs": ["sum"]
+          "values": ["value", "percent"]
         },
         "pieType": "pie",
         "reduceOptions": {
-          "calcs": ["sum"],
+          "calcs": ["lastNotNull"],
           "fields": "",
           "values": false
         },
@@ -262,7 +263,7 @@
       "targets": [
         {
           "format": "table",
-          "rawSql": "SELECT\n  meal,\n  SUM(calories) AS calories\nFROM myfitnesspal.nutrition_meal\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\nGROUP BY meal\nORDER BY calories DESC;",
+          "rawSql": "SELECT\n  SUM(calories) FILTER (WHERE meal = 'Breakfast') AS \"Breakfast\",\n  SUM(calories) FILTER (WHERE meal = 'Lunch') AS \"Lunch\",\n  SUM(calories) FILTER (WHERE meal = 'Dinner') AS \"Dinner\",\n  SUM(calories) FILTER (WHERE meal = 'Snacks') AS \"Snacks\"\nFROM myfitnesspal.nutrition_meal\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date;",
           "refId": "A"
         }
       ],
