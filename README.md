@@ -24,8 +24,20 @@ Postgres init runs [`docker/db/init/001_schema.sql`](docker/db/init/001_schema.s
   - **Exercise Progress** — allowlisted exercises; max weight chart, then volume (TUL × weight) for duration exercises or progress score for rep-based exercises
   - **Exercise Explorer** — all exercises + debug table
   - **Workout Overview** — daily total volume
+  - **Body Weight** — MyFitnessPal weight over time (7-day average) and circumference measurements
+  - **Nutrition** — daily calories, macros, meal breakdown from MyFitnessPal
 - API docs: `http://localhost:8000/docs`
 - psql: `docker exec -it olympic-training-db psql -U postgres -d olympic_training`
+
+## MyFitnessPal exports
+
+Place dated export folders under `src_data/myfitnesspal/exports/` (gitignored). Each folder should contain:
+
+- `Measurement-Summary-*.csv`
+- `Nutrition-Summary-*.csv`
+- `Exercise-Summary-*.csv`
+
+Load the latest export folder with `bash scripts/local-dev-setup.sh`, then refresh committed seed data with `bash scripts/dump-db-seed.sh`.
 
 ## Refresh data from JSON
 
@@ -81,6 +93,9 @@ Main tables:
 - `workouts.session_exercise`
 - `workouts.set_entry` (`weight_lbs` canonical, original weight + unit preserved)
 - `workouts.strength_standard`
+- `myfitnesspal.measurement` (body weight + circumference)
+- `myfitnesspal.nutrition_meal` (per-meal macros)
+- `myfitnesspal.exercise_entry` (MFP exercise / calorie adjustments)
 
 Views for dashboards:
 
@@ -88,6 +103,9 @@ Views for dashboards:
 - `workouts.v_reportable_exercises` — allowlist for Grafana
 - `workouts.v_daily_volume`
 - `workouts.v_session_summary`
+- `myfitnesspal.v_weight` — non-null body weight by day
+- `myfitnesspal.v_daily_nutrition` — daily calorie/macro totals
+- `myfitnesspal.v_meal_nutrition` — meal-level macros
 
 Schema diagram:
 
