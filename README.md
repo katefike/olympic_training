@@ -25,7 +25,7 @@ Postgres init runs [`docker/db/init/001_schema.sql`](docker/db/init/001_schema.s
   - **Exercise Explorer** — all exercises + debug table
   - **Workout Overview** — daily total volume
   - **Body Measurements** — MyFitnessPal weight over time (7-day average) and circumference measurements
-  - **Nutrition** — daily calories, macros, meal breakdown from MyFitnessPal
+  - **Nutrition** — daily calories, macros, meal breakdown from MyFitnessPal (Complete Days toggle: all vs complete; complete = ≥2 meals or ≥700 kcal)
 - API docs: `http://localhost:8000/docs`
 - psql: `docker exec -it olympic-training-db psql -U postgres -d olympic_training`
 
@@ -104,7 +104,7 @@ Views for dashboards:
 - `workouts.v_daily_volume`
 - `workouts.v_session_summary`
 - `myfitnesspal.v_weight` — non-null body weight by day
-- `myfitnesspal.v_daily_nutrition` — daily calorie/macro totals
+- `myfitnesspal.v_daily_nutrition` — daily calorie/macro totals plus `is_complete` (≥2 meals or ≥700 kcal)
 - `myfitnesspal.v_meal_nutrition` — meal-level macros
 
 Schema diagram:

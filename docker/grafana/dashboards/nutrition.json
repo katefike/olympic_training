@@ -27,7 +27,7 @@
       "targets": [
         {
           "format": "table",
-          "rawSql": "SELECT calories FROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date;",
+          "rawSql": "SELECT calories FROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND ('$day_filter' = 'all' OR is_complete);",
           "refId": "A"
         }
       ],
@@ -55,7 +55,7 @@
       "targets": [
         {
           "format": "table",
-          "rawSql": "SELECT protein_g FROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date;",
+          "rawSql": "SELECT protein_g FROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND ('$day_filter' = 'all' OR is_complete);",
           "refId": "A"
         }
       ],
@@ -83,7 +83,7 @@
       "targets": [
         {
           "format": "table",
-          "rawSql": "SELECT carbohydrates_g FROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date;",
+          "rawSql": "SELECT carbohydrates_g FROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND ('$day_filter' = 'all' OR is_complete);",
           "refId": "A"
         }
       ],
@@ -111,7 +111,7 @@
       "targets": [
         {
           "format": "table",
-          "rawSql": "SELECT fat_g FROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date;",
+          "rawSql": "SELECT fat_g FROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND ('$day_filter' = 'all' OR is_complete);",
           "refId": "A"
         }
       ],
@@ -156,7 +156,7 @@
       "targets": [
         {
           "format": "time_series",
-          "rawSql": "SELECT\n  logged_on AS time,\n  calories,\n  AVG(calories) OVER (\n    ORDER BY logged_on\n    ROWS BETWEEN 6 PRECEDING AND CURRENT ROW\n  ) AS calories_7d_avg\nFROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\nORDER BY logged_on;",
+          "rawSql": "SELECT\n  logged_on AS time,\n  calories,\n  AVG(calories) OVER (\n    ORDER BY logged_on\n    ROWS BETWEEN 6 PRECEDING AND CURRENT ROW\n  ) AS calories_7d_avg\nFROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND ('$day_filter' = 'all' OR is_complete)\nORDER BY logged_on;",
           "refId": "A"
         }
       ],
@@ -192,7 +192,7 @@
       "targets": [
         {
           "format": "time_series",
-          "rawSql": "SELECT\n  logged_on AS time,\n  protein_g,\n  carbohydrates_g,\n  fat_g\nFROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\nORDER BY logged_on;",
+          "rawSql": "SELECT\n  logged_on AS time,\n  protein_g,\n  carbohydrates_g,\n  fat_g\nFROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND ('$day_filter' = 'all' OR is_complete)\nORDER BY logged_on;",
           "refId": "A"
         }
       ],
@@ -229,7 +229,7 @@
       "targets": [
         {
           "format": "time_series",
-          "rawSql": "SELECT\n  logged_on AS time,\n  protein_kcal / NULLIF(protein_kcal + carb_kcal + fat_kcal, 0) AS protein_share,\n  carb_kcal / NULLIF(protein_kcal + carb_kcal + fat_kcal, 0) AS carb_share,\n  fat_kcal / NULLIF(protein_kcal + carb_kcal + fat_kcal, 0) AS fat_share\nFROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\nORDER BY logged_on;",
+          "rawSql": "SELECT\n  logged_on AS time,\n  protein_kcal / NULLIF(protein_kcal + carb_kcal + fat_kcal, 0) AS protein_share,\n  carb_kcal / NULLIF(protein_kcal + carb_kcal + fat_kcal, 0) AS carb_share,\n  fat_kcal / NULLIF(protein_kcal + carb_kcal + fat_kcal, 0) AS fat_share\nFROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND ('$day_filter' = 'all' OR is_complete)\nORDER BY logged_on;",
           "refId": "A"
         }
       ],
@@ -263,7 +263,7 @@
       "targets": [
         {
           "format": "table",
-          "rawSql": "SELECT\n  SUM(calories) FILTER (WHERE meal = 'Breakfast') AS \"Breakfast\",\n  SUM(calories) FILTER (WHERE meal = 'Lunch') AS \"Lunch\",\n  SUM(calories) FILTER (WHERE meal = 'Dinner') AS \"Dinner\",\n  SUM(calories) FILTER (WHERE meal = 'Snacks') AS \"Snacks\"\nFROM myfitnesspal.nutrition_meal\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date;",
+          "rawSql": "SELECT\n  SUM(m.calories) FILTER (WHERE m.meal = 'Breakfast') AS \"Breakfast\",\n  SUM(m.calories) FILTER (WHERE m.meal = 'Lunch') AS \"Lunch\",\n  SUM(m.calories) FILTER (WHERE m.meal = 'Dinner') AS \"Dinner\",\n  SUM(m.calories) FILTER (WHERE m.meal = 'Snacks') AS \"Snacks\"\nFROM myfitnesspal.nutrition_meal m\nJOIN myfitnesspal.v_daily_nutrition d ON d.logged_on = m.logged_on\nWHERE m.logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND ('$day_filter' = 'all' OR d.is_complete);",
           "refId": "A"
         }
       ],
@@ -296,7 +296,7 @@
       "targets": [
         {
           "format": "time_series",
-          "rawSql": "SELECT\n  logged_on AS time,\n  fiber_g,\n  sugar_g\nFROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\nORDER BY logged_on;",
+          "rawSql": "SELECT\n  logged_on AS time,\n  fiber_g,\n  sugar_g\nFROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND ('$day_filter' = 'all' OR is_complete)\nORDER BY logged_on;",
           "refId": "A"
         }
       ],
@@ -329,7 +329,7 @@
       "targets": [
         {
           "format": "time_series",
-          "rawSql": "SELECT\n  logged_on AS time,\n  sodium_mg\nFROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\nORDER BY logged_on;",
+          "rawSql": "SELECT\n  logged_on AS time,\n  sodium_mg\nFROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND ('$day_filter' = 'all' OR is_complete)\nORDER BY logged_on;",
           "refId": "A"
         }
       ],
@@ -352,7 +352,7 @@
       "targets": [
         {
           "format": "table",
-          "rawSql": "SELECT\n  meal,\n  COUNT(*) AS days,\n  ROUND(AVG(calories)::numeric, 0) AS avg_calories,\n  ROUND(AVG(protein_g)::numeric, 1) AS avg_protein_g,\n  ROUND(AVG(carbohydrates_g)::numeric, 1) AS avg_carbs_g,\n  ROUND(AVG(fat_g)::numeric, 1) AS avg_fat_g\nFROM myfitnesspal.nutrition_meal\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\nGROUP BY meal\nORDER BY avg_calories DESC;",
+          "rawSql": "SELECT\n  m.meal,\n  COUNT(*) AS days,\n  ROUND(AVG(m.calories)::numeric, 0) AS avg_calories,\n  ROUND(AVG(m.protein_g)::numeric, 1) AS avg_protein_g,\n  ROUND(AVG(m.carbohydrates_g)::numeric, 1) AS avg_carbs_g,\n  ROUND(AVG(m.fat_g)::numeric, 1) AS avg_fat_g\nFROM myfitnesspal.nutrition_meal m\nJOIN myfitnesspal.v_daily_nutrition d ON d.logged_on = m.logged_on\nWHERE m.logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND ('$day_filter' = 'all' OR d.is_complete)\nGROUP BY m.meal\nORDER BY avg_calories DESC;",
           "refId": "A"
         }
       ],
@@ -364,7 +364,38 @@
   "schemaVersion": 39,
   "style": "dark",
   "tags": ["myfitnesspal", "nutrition"],
-  "templating": { "list": [] },
+  "templating": {
+    "list": [
+      {
+        "current": {
+          "selected": true,
+          "text": "All days",
+          "value": "all"
+        },
+        "description": "Complete days have at least 2 meals or at least 700 calories",
+        "hide": 0,
+        "includeAll": false,
+        "label": "Complete Days",
+        "multi": false,
+        "name": "day_filter",
+        "options": [
+          {
+            "selected": true,
+            "text": "All days",
+            "value": "all"
+          },
+          {
+            "selected": false,
+            "text": "Complete days",
+            "value": "complete"
+          }
+        ],
+        "query": "All days : all,Complete days : complete",
+        "skipUrlSync": false,
+        "type": "custom"
+      }
+    ]
+  },
   "time": {
     "from": "now-1y",
     "to": "now"

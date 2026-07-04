@@ -240,23 +240,43 @@ ORDER BY measured_on;
 CREATE OR REPLACE VIEW myfitnesspal.v_daily_nutrition AS
 SELECT
   logged_on,
-  SUM(calories) AS calories,
-  SUM(fat_g) AS fat_g,
-  SUM(saturated_fat_g) AS saturated_fat_g,
-  SUM(carbohydrates_g) AS carbohydrates_g,
-  SUM(fiber_g) AS fiber_g,
-  SUM(sugar_g) AS sugar_g,
-  SUM(protein_g) AS protein_g,
-  SUM(sodium_mg) AS sodium_mg,
-  SUM(potassium_mg) AS potassium_mg,
-  SUM(cholesterol_mg) AS cholesterol_mg,
-  COUNT(*) AS meal_count,
-  -- Macro calories (Atwater factors) for share charts
-  SUM(protein_g) * 4 AS protein_kcal,
-  SUM(carbohydrates_g) * 4 AS carb_kcal,
-  SUM(fat_g) * 9 AS fat_kcal
-FROM myfitnesspal.nutrition_meal
-GROUP BY logged_on;
+  calories,
+  fat_g,
+  saturated_fat_g,
+  carbohydrates_g,
+  fiber_g,
+  sugar_g,
+  protein_g,
+  sodium_mg,
+  potassium_mg,
+  cholesterol_mg,
+  meal_count,
+  protein_kcal,
+  carb_kcal,
+  fat_kcal,
+  -- Complete day: at least 2 meals or at least 700 calories
+  (meal_count >= 2 OR calories >= 700) AS is_complete
+FROM (
+  SELECT
+    logged_on,
+    SUM(calories) AS calories,
+    SUM(fat_g) AS fat_g,
+    SUM(saturated_fat_g) AS saturated_fat_g,
+    SUM(carbohydrates_g) AS carbohydrates_g,
+    SUM(fiber_g) AS fiber_g,
+    SUM(sugar_g) AS sugar_g,
+    SUM(protein_g) AS protein_g,
+    SUM(sodium_mg) AS sodium_mg,
+    SUM(potassium_mg) AS potassium_mg,
+    SUM(cholesterol_mg) AS cholesterol_mg,
+    COUNT(*) AS meal_count,
+    -- Macro calories (Atwater factors) for share charts
+    SUM(protein_g) * 4 AS protein_kcal,
+    SUM(carbohydrates_g) * 4 AS carb_kcal,
+    SUM(fat_g) * 9 AS fat_kcal
+  FROM myfitnesspal.nutrition_meal
+  GROUP BY logged_on
+) daily;
 
 CREATE OR REPLACE VIEW myfitnesspal.v_meal_nutrition AS
 SELECT
