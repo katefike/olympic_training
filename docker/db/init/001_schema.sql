@@ -161,3 +161,132 @@ SELECT canonical_name, progress_metric
 FROM workouts.exercise
 WHERE include_in_reports
 ORDER BY canonical_name;
+
+-- MyFitnessPal exports (measurements, nutrition, exercise calories)
+CREATE SCHEMA IF NOT EXISTS myfitnesspal;
+
+CREATE TABLE IF NOT EXISTS myfitnesspal.measurement (
+  id BIGSERIAL PRIMARY KEY,
+  measured_on DATE NOT NULL UNIQUE,
+  weight_lbs NUMERIC(6,2),
+  chest NUMERIC(6,2),
+  chest_under_armpits NUMERIC(6,2),
+  hips NUMERIC(6,2),
+  neck NUMERIC(6,2),
+  suprailiac_mm NUMERIC(6,2),
+  thigh_mm NUMERIC(6,2),
+  total_body_fat_mm NUMERIC(6,2),
+  tricep_mm NUMERIC(6,2),
+  waist NUMERIC(6,2),
+  source_file TEXT NOT NULL,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS myfitnesspal.nutrition_meal (
+  id BIGSERIAL PRIMARY KEY,
+  logged_on DATE NOT NULL,
+  meal TEXT NOT NULL,
+  calories NUMERIC(10,2),
+  fat_g NUMERIC(10,2),
+  saturated_fat_g NUMERIC(10,2),
+  polyunsaturated_fat_g NUMERIC(10,2),
+  monounsaturated_fat_g NUMERIC(10,2),
+  trans_fat_g NUMERIC(10,2),
+  cholesterol_mg NUMERIC(10,2),
+  sodium_mg NUMERIC(10,2),
+  potassium_mg NUMERIC(10,2),
+  carbohydrates_g NUMERIC(10,2),
+  fiber_g NUMERIC(10,2),
+  sugar_g NUMERIC(10,2),
+  protein_g NUMERIC(10,2),
+  vitamin_a NUMERIC(10,2),
+  vitamin_c NUMERIC(10,2),
+  calcium NUMERIC(10,2),
+  iron NUMERIC(10,2),
+  note TEXT,
+  source_file TEXT NOT NULL,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  UNIQUE (logged_on, meal)
+);
+
+CREATE TABLE IF NOT EXISTS myfitnesspal.exercise_entry (
+  id BIGSERIAL PRIMARY KEY,
+  logged_on DATE NOT NULL,
+  exercise_name TEXT NOT NULL,
+  exercise_type TEXT,
+  calories NUMERIC(10,2),
+  minutes NUMERIC(10,2),
+  sets INTEGER,
+  reps_per_set INTEGER,
+  pounds NUMERIC(10,2),
+  steps INTEGER,
+  note TEXT,
+  source_file TEXT NOT NULL,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_mfp_nutrition_meal_logged_on
+  ON myfitnesspal.nutrition_meal (logged_on);
+
+CREATE INDEX IF NOT EXISTS idx_mfp_exercise_entry_logged_on
+  ON myfitnesspal.exercise_entry (logged_on);
+
+CREATE OR REPLACE VIEW myfitnesspal.v_weight AS
+SELECT measured_on, weight_lbs
+FROM myfitnesspal.measurement
+WHERE weight_lbs IS NOT NULL
+ORDER BY measured_on;
+
+CREATE OR REPLACE VIEW myfitnesspal.v_daily_nutrition AS
+SELECT
+  logged_on,
+  calories,
+  fat_g,
+  saturated_fat_g,
+  carbohydrates_g,
+  fiber_g,
+  sugar_g,
+  protein_g,
+  sodium_mg,
+  potassium_mg,
+  cholesterol_mg,
+  meal_count,
+  protein_kcal,
+  carb_kcal,
+  fat_kcal,
+  -- Complete day: at least 2 meals or at least 700 calories
+  (meal_count >= 2 OR calories >= 700) AS is_complete
+FROM (
+  SELECT
+    logged_on,
+    SUM(calories) AS calories,
+    SUM(fat_g) AS fat_g,
+    SUM(saturated_fat_g) AS saturated_fat_g,
+    SUM(carbohydrates_g) AS carbohydrates_g,
+    SUM(fiber_g) AS fiber_g,
+    SUM(sugar_g) AS sugar_g,
+    SUM(protein_g) AS protein_g,
+    SUM(sodium_mg) AS sodium_mg,
+    SUM(potassium_mg) AS potassium_mg,
+    SUM(cholesterol_mg) AS cholesterol_mg,
+    COUNT(*) AS meal_count,
+    -- Macro calories (Atwater factors) for share charts
+    SUM(protein_g) * 4 AS protein_kcal,
+    SUM(carbohydrates_g) * 4 AS carb_kcal,
+    SUM(fat_g) * 9 AS fat_kcal
+  FROM myfitnesspal.nutrition_meal
+  GROUP BY logged_on
+) daily;
+
+CREATE OR REPLACE VIEW myfitnesspal.v_meal_nutrition AS
+SELECT
+  logged_on,
+  meal,
+  calories,
+  fat_g,
+  carbohydrates_g,
+  protein_g,
+  fiber_g,
+  sugar_g,
+  sodium_mg
+FROM myfitnesspal.nutrition_meal;

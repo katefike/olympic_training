@@ -1,0 +1,408 @@
+{
+  "annotations": { "list": [] },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 1,
+  "id": null,
+  "links": [],
+  "panels": [
+    {
+      "datasource": "Olympic Training Postgres",
+      "fieldConfig": {
+        "defaults": {
+          "decimals": 0,
+          "unit": "none"
+        }
+      },
+      "gridPos": { "h": 4, "w": 6, "x": 0, "y": 0 },
+      "id": 1,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": { "calcs": ["mean"], "fields": "", "values": false },
+        "textMode": "auto"
+      },
+      "targets": [
+        {
+          "format": "table",
+          "rawSql": "SELECT calories FROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND ('$day_filter' = 'all' OR is_complete);",
+          "refId": "A"
+        }
+      ],
+      "title": "Avg daily calories",
+      "type": "stat"
+    },
+    {
+      "datasource": "Olympic Training Postgres",
+      "fieldConfig": {
+        "defaults": {
+          "decimals": 0,
+          "unit": "massg"
+        }
+      },
+      "gridPos": { "h": 4, "w": 6, "x": 6, "y": 0 },
+      "id": 2,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": { "calcs": ["mean"], "fields": "", "values": false },
+        "textMode": "auto"
+      },
+      "targets": [
+        {
+          "format": "table",
+          "rawSql": "SELECT protein_g FROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND ('$day_filter' = 'all' OR is_complete);",
+          "refId": "A"
+        }
+      ],
+      "title": "Avg daily protein",
+      "type": "stat"
+    },
+    {
+      "datasource": "Olympic Training Postgres",
+      "fieldConfig": {
+        "defaults": {
+          "decimals": 0,
+          "unit": "massg"
+        }
+      },
+      "gridPos": { "h": 4, "w": 6, "x": 12, "y": 0 },
+      "id": 3,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": { "calcs": ["mean"], "fields": "", "values": false },
+        "textMode": "auto"
+      },
+      "targets": [
+        {
+          "format": "table",
+          "rawSql": "SELECT carbohydrates_g FROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND ('$day_filter' = 'all' OR is_complete);",
+          "refId": "A"
+        }
+      ],
+      "title": "Avg daily carbs",
+      "type": "stat"
+    },
+    {
+      "datasource": "Olympic Training Postgres",
+      "fieldConfig": {
+        "defaults": {
+          "decimals": 0,
+          "unit": "massg"
+        }
+      },
+      "gridPos": { "h": 4, "w": 6, "x": 18, "y": 0 },
+      "id": 4,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": { "calcs": ["mean"], "fields": "", "values": false },
+        "textMode": "auto"
+      },
+      "targets": [
+        {
+          "format": "table",
+          "rawSql": "SELECT fat_g FROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND ('$day_filter' = 'all' OR is_complete);",
+          "refId": "A"
+        }
+      ],
+      "title": "Avg daily fat",
+      "type": "stat"
+    },
+    {
+      "datasource": "Olympic Training Postgres",
+      "fieldConfig": {
+        "defaults": {
+          "decimals": 0,
+          "custom": {
+            "drawStyle": "bars",
+            "fillOpacity": 50,
+            "lineWidth": 1,
+            "showPoints": "never",
+            "spanNulls": false
+          }
+        },
+        "overrides": [
+          {
+            "matcher": { "id": "byName", "options": "calories_7d_avg" },
+            "properties": [
+              { "id": "custom.drawStyle", "value": "line" },
+              { "id": "custom.lineWidth", "value": 3 },
+              { "id": "custom.fillOpacity", "value": 0 },
+              { "id": "color", "value": { "fixedColor": "orange", "mode": "fixed" } }
+            ]
+          }
+        ]
+      },
+      "gridPos": { "h": 9, "w": 24, "x": 0, "y": 4 },
+      "id": 5,
+      "options": {
+        "legend": {
+          "calcs": ["mean", "min", "max"],
+          "displayMode": "table",
+          "placement": "bottom"
+        },
+        "tooltip": { "mode": "multi", "sort": "none" }
+      },
+      "targets": [
+        {
+          "format": "time_series",
+          "rawSql": "SELECT\n  logged_on AS time,\n  calories,\n  AVG(calories) OVER (\n    ORDER BY logged_on\n    ROWS BETWEEN 6 PRECEDING AND CURRENT ROW\n  ) AS calories_7d_avg\nFROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND ('$day_filter' = 'all' OR is_complete)\nORDER BY logged_on;",
+          "refId": "A"
+        }
+      ],
+      "title": "Daily calories",
+      "type": "timeseries"
+    },
+    {
+      "datasource": "Olympic Training Postgres",
+      "fieldConfig": {
+        "defaults": {
+          "unit": "massg",
+          "decimals": 0,
+          "custom": {
+            "drawStyle": "line",
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "fillOpacity": 15,
+            "showPoints": "never",
+            "spanNulls": false
+          }
+        }
+      },
+      "gridPos": { "h": 9, "w": 24, "x": 0, "y": 13 },
+      "id": 6,
+      "options": {
+        "legend": {
+          "calcs": ["mean"],
+          "displayMode": "table",
+          "placement": "bottom"
+        },
+        "tooltip": { "mode": "multi", "sort": "none" }
+      },
+      "targets": [
+        {
+          "format": "time_series",
+          "rawSql": "SELECT\n  logged_on AS time,\n  protein_g,\n  carbohydrates_g,\n  fat_g\nFROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND ('$day_filter' = 'all' OR is_complete)\nORDER BY logged_on;",
+          "refId": "A"
+        }
+      ],
+      "title": "Daily macros (g)",
+      "type": "timeseries"
+    },
+    {
+      "datasource": "Olympic Training Postgres",
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit",
+          "decimals": 1,
+          "min": 0,
+          "max": 1,
+          "custom": {
+            "drawStyle": "line",
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "fillOpacity": 20,
+            "stacking": { "mode": "normal", "group": "A" },
+            "showPoints": "never"
+          }
+        }
+      },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 22 },
+      "id": 7,
+      "options": {
+        "legend": {
+          "calcs": ["mean"],
+          "displayMode": "table",
+          "placement": "bottom"
+        }
+      },
+      "targets": [
+        {
+          "format": "time_series",
+          "rawSql": "SELECT\n  logged_on AS time,\n  protein_kcal / NULLIF(protein_kcal + carb_kcal + fat_kcal, 0) AS protein_share,\n  carb_kcal / NULLIF(protein_kcal + carb_kcal + fat_kcal, 0) AS carb_share,\n  fat_kcal / NULLIF(protein_kcal + carb_kcal + fat_kcal, 0) AS fat_share\nFROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND ('$day_filter' = 'all' OR is_complete)\nORDER BY logged_on;",
+          "refId": "A"
+        }
+      ],
+      "title": "Macro calorie share",
+      "type": "timeseries"
+    },
+    {
+      "datasource": "Olympic Training Postgres",
+      "fieldConfig": {
+        "defaults": {
+          "decimals": 0
+        }
+      },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 22 },
+      "id": 8,
+      "options": {
+        "displayLabels": ["name", "percent"],
+        "legend": {
+          "displayMode": "table",
+          "placement": "right",
+          "values": ["value", "percent"]
+        },
+        "pieType": "pie",
+        "reduceOptions": {
+          "calcs": ["lastNotNull"],
+          "fields": "",
+          "values": false
+        },
+        "tooltip": { "mode": "single", "sort": "none" }
+      },
+      "targets": [
+        {
+          "format": "table",
+          "rawSql": "SELECT\n  SUM(m.calories) FILTER (WHERE m.meal = 'Breakfast') AS \"Breakfast\",\n  SUM(m.calories) FILTER (WHERE m.meal = 'Lunch') AS \"Lunch\",\n  SUM(m.calories) FILTER (WHERE m.meal = 'Dinner') AS \"Dinner\",\n  SUM(m.calories) FILTER (WHERE m.meal = 'Snacks') AS \"Snacks\"\nFROM myfitnesspal.nutrition_meal m\nJOIN myfitnesspal.v_daily_nutrition d ON d.logged_on = m.logged_on\nWHERE m.logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND ('$day_filter' = 'all' OR d.is_complete);",
+          "refId": "A"
+        }
+      ],
+      "title": "Calories by meal",
+      "type": "piechart"
+    },
+    {
+      "datasource": "Olympic Training Postgres",
+      "fieldConfig": {
+        "defaults": {
+          "unit": "massg",
+          "decimals": 0,
+          "custom": {
+            "drawStyle": "line",
+            "lineWidth": 2,
+            "fillOpacity": 10,
+            "showPoints": "never"
+          }
+        }
+      },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 30 },
+      "id": 9,
+      "options": {
+        "legend": {
+          "calcs": ["mean"],
+          "displayMode": "list",
+          "placement": "bottom"
+        }
+      },
+      "targets": [
+        {
+          "format": "time_series",
+          "rawSql": "SELECT\n  logged_on AS time,\n  fiber_g,\n  sugar_g\nFROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND ('$day_filter' = 'all' OR is_complete)\nORDER BY logged_on;",
+          "refId": "A"
+        }
+      ],
+      "title": "Fiber and sugar (g)",
+      "type": "timeseries"
+    },
+    {
+      "datasource": "Olympic Training Postgres",
+      "fieldConfig": {
+        "defaults": {
+          "unit": "massmg",
+          "decimals": 0,
+          "custom": {
+            "drawStyle": "line",
+            "lineWidth": 2,
+            "fillOpacity": 10,
+            "showPoints": "never"
+          }
+        }
+      },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 30 },
+      "id": 10,
+      "options": {
+        "legend": {
+          "calcs": ["mean"],
+          "displayMode": "list",
+          "placement": "bottom"
+        }
+      },
+      "targets": [
+        {
+          "format": "time_series",
+          "rawSql": "SELECT\n  logged_on AS time,\n  sodium_mg\nFROM myfitnesspal.v_daily_nutrition\nWHERE logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND ('$day_filter' = 'all' OR is_complete)\nORDER BY logged_on;",
+          "refId": "A"
+        }
+      ],
+      "title": "Daily sodium (mg)",
+      "type": "timeseries"
+    },
+    {
+      "datasource": "Olympic Training Postgres",
+      "fieldConfig": {
+        "defaults": {
+          "decimals": 1
+        }
+      },
+      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 38 },
+      "id": 11,
+      "options": {
+        "showHeader": true,
+        "sortBy": [{ "desc": true, "displayName": "days" }]
+      },
+      "targets": [
+        {
+          "format": "table",
+          "rawSql": "SELECT\n  m.meal,\n  COUNT(*) AS days,\n  ROUND(AVG(m.calories)::numeric, 0) AS avg_calories,\n  ROUND(AVG(m.protein_g)::numeric, 1) AS avg_protein_g,\n  ROUND(AVG(m.carbohydrates_g)::numeric, 1) AS avg_carbs_g,\n  ROUND(AVG(m.fat_g)::numeric, 1) AS avg_fat_g\nFROM myfitnesspal.nutrition_meal m\nJOIN myfitnesspal.v_daily_nutrition d ON d.logged_on = m.logged_on\nWHERE m.logged_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND ('$day_filter' = 'all' OR d.is_complete)\nGROUP BY m.meal\nORDER BY avg_calories DESC;",
+          "refId": "A"
+        }
+      ],
+      "title": "Meal averages",
+      "type": "table"
+    }
+  ],
+  "refresh": "30s",
+  "schemaVersion": 39,
+  "style": "dark",
+  "tags": ["myfitnesspal", "nutrition"],
+  "templating": {
+    "list": [
+      {
+        "current": {
+          "selected": true,
+          "text": "All days",
+          "value": "all"
+        },
+        "description": "Complete days have at least 2 meals or at least 700 calories",
+        "hide": 0,
+        "includeAll": false,
+        "label": "Complete Days",
+        "multi": false,
+        "name": "day_filter",
+        "options": [
+          {
+            "selected": true,
+            "text": "All days",
+            "value": "all"
+          },
+          {
+            "selected": false,
+            "text": "Complete days",
+            "value": "complete"
+          }
+        ],
+        "query": "All days : all,Complete days : complete",
+        "skipUrlSync": false,
+        "type": "custom"
+      }
+    ]
+  },
+  "time": {
+    "from": "now-1y",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "America/New_York",
+  "title": "Nutrition",
+  "version": 1,
+  "weekStart": ""
+}

@@ -74,3 +74,38 @@ erDiagram
     EXERCISE ||--o{ SESSION_EXERCISE : performed_as
     SESSION_EXERCISE ||--o{ SET_ENTRY : has_sets
     EXERCISE ||--o{ STRENGTH_STANDARD : benchmarked_by
+
+    MEASUREMENT {
+        bigint id PK
+        date measured_on UK
+        numeric weight_lbs
+        numeric chest
+        numeric hips
+        numeric waist
+        numeric neck
+        text source_file
+    }
+
+    NUTRITION_MEAL {
+        bigint id PK
+        date logged_on
+        text meal
+        numeric calories
+        numeric fat_g
+        numeric carbohydrates_g
+        numeric protein_g
+        numeric fiber_g
+        numeric sugar_g
+        numeric sodium_mg
+        text source_file
+    }
+
+    EXERCISE_ENTRY {
+        bigint id PK
+        date logged_on
+        text exercise_name
+        text exercise_type
+        numeric calories
+        numeric minutes
+        text source_file
+    }

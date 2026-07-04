@@ -1,0 +1,217 @@
+{
+  "annotations": { "list": [] },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 1,
+  "id": null,
+  "links": [],
+  "panels": [
+    {
+      "datasource": "Olympic Training Postgres",
+      "fieldConfig": {
+        "defaults": {
+          "unit": "masslb",
+          "decimals": 1
+        }
+      },
+      "gridPos": { "h": 4, "w": 6, "x": 0, "y": 0 },
+      "id": 1,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": { "calcs": ["lastNotNull"], "fields": "", "values": false },
+        "textMode": "auto"
+      },
+      "targets": [
+        {
+          "format": "table",
+          "rawSql": "SELECT weight_lbs FROM myfitnesspal.v_weight ORDER BY measured_on DESC LIMIT 1;",
+          "refId": "A"
+        }
+      ],
+      "title": "Latest weight",
+      "type": "stat"
+    },
+    {
+      "datasource": "Olympic Training Postgres",
+      "fieldConfig": {
+        "defaults": {
+          "unit": "masslb",
+          "decimals": 1
+        }
+      },
+      "gridPos": { "h": 4, "w": 6, "x": 6, "y": 0 },
+      "id": 2,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": { "calcs": ["mean"], "fields": "", "values": false },
+        "textMode": "auto"
+      },
+      "targets": [
+        {
+          "format": "table",
+          "rawSql": "SELECT weight_lbs FROM myfitnesspal.v_weight\nWHERE measured_on BETWEEN $__timeFrom()::date AND $__timeTo()::date;",
+          "refId": "A"
+        }
+      ],
+      "title": "Average (range)",
+      "type": "stat"
+    },
+    {
+      "datasource": "Olympic Training Postgres",
+      "fieldConfig": {
+        "defaults": {
+          "unit": "masslb",
+          "decimals": 1
+        }
+      },
+      "gridPos": { "h": 4, "w": 6, "x": 12, "y": 0 },
+      "id": 3,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": { "calcs": ["min"], "fields": "", "values": false },
+        "textMode": "auto"
+      },
+      "targets": [
+        {
+          "format": "table",
+          "rawSql": "SELECT weight_lbs FROM myfitnesspal.v_weight\nWHERE measured_on BETWEEN $__timeFrom()::date AND $__timeTo()::date;",
+          "refId": "A"
+        }
+      ],
+      "title": "Min (range)",
+      "type": "stat"
+    },
+    {
+      "datasource": "Olympic Training Postgres",
+      "fieldConfig": {
+        "defaults": {
+          "unit": "masslb",
+          "decimals": 1
+        }
+      },
+      "gridPos": { "h": 4, "w": 6, "x": 18, "y": 0 },
+      "id": 4,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": { "calcs": ["max"], "fields": "", "values": false },
+        "textMode": "auto"
+      },
+      "targets": [
+        {
+          "format": "table",
+          "rawSql": "SELECT weight_lbs FROM myfitnesspal.v_weight\nWHERE measured_on BETWEEN $__timeFrom()::date AND $__timeTo()::date;",
+          "refId": "A"
+        }
+      ],
+      "title": "Max (range)",
+      "type": "stat"
+    },
+    {
+      "datasource": "Olympic Training Postgres",
+      "fieldConfig": {
+        "defaults": {
+          "unit": "masslb",
+          "decimals": 1,
+          "custom": {
+            "drawStyle": "line",
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "fillOpacity": 10,
+            "showPoints": "auto",
+            "pointSize": 4,
+            "spanNulls": false
+          }
+        },
+        "overrides": [
+          {
+            "matcher": { "id": "byName", "options": "weight_7d_avg" },
+            "properties": [
+              { "id": "custom.lineWidth", "value": 3 },
+              { "id": "custom.fillOpacity", "value": 0 },
+              { "id": "custom.showPoints", "value": "never" },
+              { "id": "color", "value": { "fixedColor": "orange", "mode": "fixed" } }
+            ]
+          },
+          {
+            "matcher": { "id": "byName", "options": "weight_lbs" },
+            "properties": [
+              { "id": "color", "value": { "fixedColor": "blue", "mode": "fixed" } }
+            ]
+          }
+        ]
+      },
+      "gridPos": { "h": 12, "w": 24, "x": 0, "y": 4 },
+      "id": 5,
+      "options": {
+        "legend": {
+          "calcs": ["mean", "min", "max", "lastNotNull"],
+          "displayMode": "table",
+          "placement": "bottom"
+        },
+        "tooltip": { "mode": "multi", "sort": "none" }
+      },
+      "targets": [
+        {
+          "format": "time_series",
+          "rawSql": "SELECT\n  measured_on AS time,\n  weight_lbs,\n  AVG(weight_lbs) OVER (\n    ORDER BY measured_on\n    ROWS BETWEEN 6 PRECEDING AND CURRENT ROW\n  ) AS weight_7d_avg\nFROM myfitnesspal.v_weight\nWHERE measured_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\nORDER BY measured_on;",
+          "refId": "A"
+        }
+      ],
+      "title": "Body weight over time",
+      "type": "timeseries"
+    },
+    {
+      "datasource": "Olympic Training Postgres",
+      "fieldConfig": {
+        "defaults": {
+          "unit": "lengthin",
+          "decimals": 1
+        }
+      },
+      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 16 },
+      "id": 6,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom"
+        }
+      },
+      "targets": [
+        {
+          "format": "time_series",
+          "rawSql": "SELECT\n  measured_on AS time,\n  waist,\n  hips,\n  chest_under_armpits AS \"Chest (under armpits)\"\nFROM myfitnesspal.measurement\nWHERE measured_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND (waist IS NOT NULL OR hips IS NOT NULL OR chest_under_armpits IS NOT NULL)\nORDER BY measured_on;",
+          "refId": "A"
+        }
+      ],
+      "title": "Circumference measurements (when logged)",
+      "type": "timeseries"
+    }
+  ],
+  "refresh": "30s",
+  "schemaVersion": 39,
+  "style": "dark",
+  "tags": ["myfitnesspal", "measurements"],
+  "templating": { "list": [] },
+  "time": {
+    "from": "now-2y",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "America/New_York",
+  "title": "Body Measurements",
+  "version": 1,
+  "weekStart": ""
+}
