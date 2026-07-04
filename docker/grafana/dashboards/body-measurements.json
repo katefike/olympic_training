@@ -192,7 +192,7 @@
       "targets": [
         {
           "format": "time_series",
-          "rawSql": "SELECT\n  measured_on AS time,\n  waist,\n  hips,\n  chest\nFROM myfitnesspal.measurement\nWHERE measured_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND (waist IS NOT NULL OR hips IS NOT NULL OR chest IS NOT NULL)\nORDER BY measured_on;",
+          "rawSql": "SELECT\n  measured_on AS time,\n  waist,\n  hips,\n  chest_under_armpits AS \"Chest (under armpits)\"\nFROM myfitnesspal.measurement\nWHERE measured_on BETWEEN $__timeFrom()::date AND $__timeTo()::date\n  AND (waist IS NOT NULL OR hips IS NOT NULL OR chest_under_armpits IS NOT NULL)\nORDER BY measured_on;",
           "refId": "A"
         }
       ],
@@ -203,7 +203,7 @@
   "refresh": "30s",
   "schemaVersion": 39,
   "style": "dark",
-  "tags": ["myfitnesspal", "weight"],
+  "tags": ["myfitnesspal", "measurements"],
   "templating": { "list": [] },
   "time": {
     "from": "now-2y",
@@ -211,7 +211,7 @@
   },
   "timepicker": {},
   "timezone": "America/New_York",
-  "title": "Body Weight",
+  "title": "Body Measurements",
   "version": 1,
   "weekStart": ""
 }

@@ -24,7 +24,7 @@ Postgres init runs [`docker/db/init/001_schema.sql`](docker/db/init/001_schema.s
   - **Exercise Progress** — allowlisted exercises; max weight chart, then volume (TUL × weight) for duration exercises or progress score for rep-based exercises
   - **Exercise Explorer** — all exercises + debug table
   - **Workout Overview** — daily total volume
-  - **Body Weight** — MyFitnessPal weight over time (7-day average) and circumference measurements
+  - **Body Measurements** — MyFitnessPal weight over time (7-day average) and circumference measurements
   - **Nutrition** — daily calories, macros, meal breakdown from MyFitnessPal
 - API docs: `http://localhost:8000/docs`
 - psql: `docker exec -it olympic-training-db psql -U postgres -d olympic_training`
